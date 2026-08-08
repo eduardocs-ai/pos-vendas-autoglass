@@ -1,0 +1,1586 @@
+{
+  "meta": {
+    "period": "Julho de 2026",
+    "periodKey": "2026-07",
+    "team": "Time Fornecimento",
+    "firstResponseFormula": "tmpa_open_to_first_attendance",
+    "serviceRows": 1142,
+    "surveyRows": 151,
+    "statusCounts": {
+      "Em atendimento": 16,
+      "Transferido": 221,
+      "Finalizado": 618,
+      "Finalizado por inatividade": 33
+    },
+    "agentCounts": {
+      "Lívia Neves": 273,
+      "Luciano Padilha": 308,
+      "Eduardo Calegari": 109,
+      "Amanda Piaz": 198
+    }
+  },
+  "agents": {
+    "Luciano Padilha": {
+      "attendanceCount": 308,
+      "completedCount": 300,
+      "timedCount": 300,
+      "totalSeconds": 18414315,
+      "averageSeconds": 61381,
+      "averageQueueSeconds": 1190,
+      "firstResponseCount": 308,
+      "averageFirstResponseSeconds": 2396,
+      "minSeconds": 22,
+      "maxSeconds": 334305,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 271201,
+      "ratings": {
+        "Ruim": 3,
+        "Regular": 0,
+        "Bom": 5,
+        "Ótimo": 44
+      },
+      "ratingTotal": 52,
+      "csat": 94.2,
+      "topServices": [
+        [
+          "Devoluções - Peça errada",
+          111
+        ],
+        [
+          "Devoluções - Suporte Devolução",
+          61
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          39
+        ],
+        [
+          "Devoluções - Peça com defeito",
+          22
+        ],
+        [
+          "Devoluções - Coleta de Peças",
+          19
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701683",
+          "date": "31/07/2026 16:06:03",
+          "service": "Devoluções - Peça avariada",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 3,
+          "finished": false,
+          "firstResponseSeconds": 193
+        },
+        {
+          "protocol": "202603701450",
+          "date": "31/07/2026 15:12:11",
+          "service": "Devoluções - Peça errada",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 2,
+          "finished": false,
+          "firstResponseSeconds": 64
+        },
+        {
+          "protocol": "202603700376",
+          "date": "31/07/2026 14:09:13",
+          "service": "Devolução Fornecimento ES",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 0,
+          "finished": false,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701019",
+          "date": "31/07/2026 13:36:35",
+          "service": "Devoluções - Peça errada",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 3,
+          "finished": false,
+          "firstResponseSeconds": 110
+        },
+        {
+          "protocol": "202603700986",
+          "date": "31/07/2026 13:29:05",
+          "service": "Devoluções - Peça errada",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 2,
+          "finished": false,
+          "firstResponseSeconds": 66
+        },
+        {
+          "protocol": "202603700254",
+          "date": "31/07/2026 10:48:54",
+          "service": "Devoluções - Suporte Devolução",
+          "status": "Transferido",
+          "seconds": 337,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 379
+        },
+        {
+          "protocol": "202603700213",
+          "date": "31/07/2026 10:38:44",
+          "service": "Devoluções - Peça errada",
+          "status": "Transferido",
+          "seconds": 2250,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 72
+        },
+        {
+          "protocol": "202603699462",
+          "date": "31/07/2026 10:29:01",
+          "service": "Devoluções - Peça errada",
+          "status": "Transferido",
+          "seconds": 1174,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 85
+        }
+      ],
+      "surveyDetails": [
+        {
+          "protocol": "202603699184",
+          "date": "31/07/2026 10:24:03",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603695216",
+          "date": "30/07/2026 16:00:56",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603673969",
+          "date": "30/07/2026 09:55:54",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603674205",
+          "date": "30/07/2026 09:50:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603674148",
+          "date": "29/07/2026 17:04:17",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603673774",
+          "date": "29/07/2026 16:09:41",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603672970",
+          "date": "29/07/2026 12:18:07",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603673685",
+          "date": "29/07/2026 11:30:11",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603669552",
+          "date": "28/07/2026 15:23:45",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603672913",
+          "date": "28/07/2026 13:50:09",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603668593",
+          "date": "28/07/2026 13:25:49",
+          "rating": "Ruim",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603668142",
+          "date": "28/07/2026 11:54:58",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603666859",
+          "date": "28/07/2026 09:53:12",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603666527",
+          "date": "27/07/2026 17:40:03",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603665415",
+          "date": "27/07/2026 14:11:36",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603664861",
+          "date": "27/07/2026 08:46:12",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603660278",
+          "date": "24/07/2026 17:28:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603655722",
+          "date": "24/07/2026 15:21:01",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603659884",
+          "date": "24/07/2026 14:57:55",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603660085",
+          "date": "24/07/2026 13:44:17",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603660081",
+          "date": "24/07/2026 11:05:40",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603650490",
+          "date": "23/07/2026 15:58:29",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603648851",
+          "date": "23/07/2026 15:44:05",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603645707",
+          "date": "22/07/2026 16:33:28",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603646450",
+          "date": "22/07/2026 14:45:04",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603638071",
+          "date": "21/07/2026 15:22:57",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603640986",
+          "date": "21/07/2026 10:35:39",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603642017",
+          "date": "21/07/2026 10:06:32",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603638303",
+          "date": "20/07/2026 17:01:29",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603635120",
+          "date": "20/07/2026 14:15:46",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603632339",
+          "date": "17/07/2026 15:44:59",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603631690",
+          "date": "17/07/2026 14:49:46",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603632300",
+          "date": "17/07/2026 10:44:51",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603624481",
+          "date": "15/07/2026 17:16:41",
+          "rating": "Bom",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603624500",
+          "date": "15/07/2026 15:00:32",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603628366",
+          "date": "15/07/2026 14:32:11",
+          "rating": "Ótimo",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603625996",
+          "date": "15/07/2026 11:04:34",
+          "rating": "Ruim",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603621950",
+          "date": "14/07/2026 10:41:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603620462",
+          "date": "13/07/2026 16:49:55",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603620009",
+          "date": "13/07/2026 14:57:31",
+          "rating": "Bom",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603619935",
+          "date": "13/07/2026 09:37:48",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603614884",
+          "date": "10/07/2026 17:39:26",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601921",
+          "date": "10/07/2026 10:14:13",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603614848",
+          "date": "09/07/2026 15:05:00",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603602084",
+          "date": "09/07/2026 13:16:50",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603599732",
+          "date": "08/07/2026 13:34:40",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601983",
+          "date": "08/07/2026 13:02:05",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603564205",
+          "date": "03/07/2026 13:02:50",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603564763",
+          "date": "03/07/2026 09:41:33",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603562687",
+          "date": "02/07/2026 10:23:50",
+          "rating": "Ruim",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603559401",
+          "date": "02/07/2026 09:08:26",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603555151",
+          "date": "01/07/2026 09:47:26",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        }
+      ]
+    },
+    "Lívia Neves": {
+      "attendanceCount": 273,
+      "completedCount": 268,
+      "timedCount": 268,
+      "totalSeconds": 10897205,
+      "averageSeconds": 40661,
+      "averageQueueSeconds": 80,
+      "firstResponseCount": 273,
+      "averageFirstResponseSeconds": 7323,
+      "minSeconds": 8,
+      "maxSeconds": 369788,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 1219211,
+      "ratings": {
+        "Ruim": 1,
+        "Regular": 1,
+        "Bom": 7,
+        "Ótimo": 24
+      },
+      "ratingTotal": 33,
+      "csat": 93.9,
+      "topServices": [
+        [
+          "Devoluções - Peça errada",
+          76
+        ],
+        [
+          "Devoluções - Suporte Devolução",
+          68
+        ],
+        [
+          "Devoluções - Peça com defeito",
+          22
+        ],
+        [
+          "Devoluções - Acompanhamento de Status",
+          21
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          21
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701722",
+          "date": "31/07/2026 16:17:09",
+          "service": "Devoluções - Suporte Devolução",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 3,
+          "finished": false,
+          "firstResponseSeconds": 64
+        },
+        {
+          "protocol": "202603701595",
+          "date": "31/07/2026 15:41:37",
+          "service": "Devoluções - Suporte Devolução",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 2,
+          "finished": false,
+          "firstResponseSeconds": 66
+        },
+        {
+          "protocol": "202603701301",
+          "date": "31/07/2026 15:27:15",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Transferido",
+          "seconds": 1402,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701347",
+          "date": "31/07/2026 14:51:17",
+          "service": "Devoluções - Coleta de Peças",
+          "status": "Finalizado",
+          "seconds": 644,
+          "queueSeconds": 4,
+          "finished": true,
+          "firstResponseSeconds": 45
+        },
+        {
+          "protocol": "202603701337",
+          "date": "31/07/2026 14:50:00",
+          "service": "Devoluções - Suporte Devolução",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 3,
+          "finished": false,
+          "firstResponseSeconds": 2077
+        },
+        {
+          "protocol": "202603701144",
+          "date": "31/07/2026 14:05:59",
+          "service": "Devoluções - Peça com defeito",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 1,
+          "finished": false,
+          "firstResponseSeconds": 6310
+        },
+        {
+          "protocol": "202603699200",
+          "date": "31/07/2026 11:17:27",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 10620,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603698561",
+          "date": "31/07/2026 11:17:27",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 13424,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        }
+      ],
+      "surveyDetails": [
+        {
+          "protocol": "202603699462",
+          "date": "31/07/2026 15:05:11",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603701347",
+          "date": "31/07/2026 15:02:53",
+          "rating": "Ótimo",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603697712",
+          "date": "31/07/2026 14:16:50",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603696303",
+          "date": "30/07/2026 15:22:48",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603673638",
+          "date": "29/07/2026 14:13:45",
+          "rating": "Bom",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603672539",
+          "date": "29/07/2026 09:50:28",
+          "rating": "Bom",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603669748",
+          "date": "28/07/2026 16:49:07",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603665850",
+          "date": "27/07/2026 14:27:22",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603665191",
+          "date": "27/07/2026 09:39:23",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603650652",
+          "date": "24/07/2026 12:09:05",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603654140",
+          "date": "23/07/2026 13:57:00",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603648786",
+          "date": "23/07/2026 10:26:19",
+          "rating": "Bom",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603644460",
+          "date": "21/07/2026 17:24:59",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603642951",
+          "date": "21/07/2026 15:29:10",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603642584",
+          "date": "21/07/2026 11:12:50",
+          "rating": "Bom",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603642267",
+          "date": "21/07/2026 10:34:39",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603633883",
+          "date": "17/07/2026 14:47:08",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603622663",
+          "date": "14/07/2026 11:42:32",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603615923",
+          "date": "10/07/2026 14:58:06",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603615303",
+          "date": "10/07/2026 08:23:50",
+          "rating": "Ruim",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603613876",
+          "date": "09/07/2026 12:38:16",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601963",
+          "date": "08/07/2026 17:11:15",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603567034",
+          "date": "03/07/2026 15:09:56",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603567228",
+          "date": "03/07/2026 13:35:57",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603565860",
+          "date": "03/07/2026 11:33:19",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603563207",
+          "date": "02/07/2026 12:31:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603564899",
+          "date": "02/07/2026 12:30:05",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603562577",
+          "date": "02/07/2026 11:18:13",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603562611",
+          "date": "02/07/2026 11:16:49",
+          "rating": "Regular",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603556500",
+          "date": "02/07/2026 10:17:28",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603559615",
+          "date": "01/07/2026 15:24:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603561126",
+          "date": "01/07/2026 11:54:02",
+          "rating": "Bom",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603559785",
+          "date": "01/07/2026 09:00:06",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        }
+      ]
+    },
+    "Eduardo Calegari": {
+      "attendanceCount": 109,
+      "completedCount": 106,
+      "timedCount": 106,
+      "totalSeconds": 5865050,
+      "averageSeconds": 55331,
+      "averageQueueSeconds": 53,
+      "firstResponseCount": 109,
+      "averageFirstResponseSeconds": 106,
+      "minSeconds": 13,
+      "maxSeconds": 338665,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 2306,
+      "ratings": {
+        "Ruim": 1,
+        "Regular": 0,
+        "Bom": 5,
+        "Ótimo": 19
+      },
+      "ratingTotal": 25,
+      "csat": 96.0,
+      "topServices": [
+        [
+          "Devoluções - Outros Assuntos",
+          51
+        ],
+        [
+          "Devolução Fornecimento ES",
+          27
+        ],
+        [
+          "Devoluções - Peça errada",
+          12
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          7
+        ],
+        [
+          "Devoluções - Suporte Devolução",
+          6
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701498",
+          "date": "31/07/2026 15:22:12",
+          "service": "Devolução Fornecimento ES",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 0,
+          "finished": false,
+          "firstResponseSeconds": 200
+        },
+        {
+          "protocol": "202603700522",
+          "date": "31/07/2026 15:01:48",
+          "service": "Devolução Fornecimento ES",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 0,
+          "finished": false,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603697016",
+          "date": "30/07/2026 17:40:36",
+          "service": "Devolução Fornecimento ES",
+          "status": "Finalizado",
+          "seconds": 57023,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603698372",
+          "date": "30/07/2026 17:02:58",
+          "service": "Devolução Fornecimento ES",
+          "status": "Em atendimento",
+          "seconds": 0,
+          "queueSeconds": 4,
+          "finished": false,
+          "firstResponseSeconds": 103
+        },
+        {
+          "protocol": "202603697040",
+          "date": "30/07/2026 13:41:28",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 10755,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603694604",
+          "date": "29/07/2026 17:50:09",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 59208,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603683759",
+          "date": "29/07/2026 09:45:35",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 29266,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603683690",
+          "date": "29/07/2026 09:43:20",
+          "service": "Devoluções - Outros Assuntos",
+          "status": "Finalizado",
+          "seconds": 334,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        }
+      ],
+      "surveyDetails": [
+        {
+          "protocol": "202603697016",
+          "date": "31/07/2026 09:34:03",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603694604",
+          "date": "30/07/2026 10:39:19",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603675131",
+          "date": "29/07/2026 14:45:46",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603675140",
+          "date": "29/07/2026 11:00:48",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603654215",
+          "date": "23/07/2026 14:05:01",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603618174",
+          "date": "23/07/2026 13:08:39",
+          "rating": "Ruim",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603649465",
+          "date": "23/07/2026 10:47:59",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603648778",
+          "date": "22/07/2026 15:29:41",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603643358",
+          "date": "22/07/2026 13:52:57",
+          "rating": "Bom",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603641004",
+          "date": "20/07/2026 17:19:16",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603639085",
+          "date": "20/07/2026 15:20:39",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603635075",
+          "date": "17/07/2026 15:43:25",
+          "rating": "Bom",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603630290",
+          "date": "16/07/2026 13:22:26",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603452250",
+          "date": "15/07/2026 13:49:24",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603624438",
+          "date": "15/07/2026 10:59:36",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603617385",
+          "date": "10/07/2026 15:03:55",
+          "rating": "Bom",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603605324",
+          "date": "09/07/2026 17:44:34",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603604891",
+          "date": "09/07/2026 10:30:57",
+          "rating": "Bom",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603600275",
+          "date": "08/07/2026 13:05:57",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601194",
+          "date": "08/07/2026 10:27:52",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601185",
+          "date": "08/07/2026 09:45:09",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603565300",
+          "date": "02/07/2026 13:27:26",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603563186",
+          "date": "02/07/2026 13:16:03",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603563135",
+          "date": "02/07/2026 10:46:32",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603560782",
+          "date": "01/07/2026 09:03:47",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        }
+      ]
+    },
+    "Amanda Piaz": {
+      "attendanceCount": 198,
+      "completedCount": 198,
+      "timedCount": 198,
+      "totalSeconds": 13305866,
+      "averageSeconds": 67201,
+      "averageQueueSeconds": 1356,
+      "firstResponseCount": 198,
+      "averageFirstResponseSeconds": 1644,
+      "minSeconds": 15,
+      "maxSeconds": 535940,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 55789,
+      "ratings": {
+        "Ruim": 0,
+        "Regular": 2,
+        "Bom": 5,
+        "Ótimo": 33
+      },
+      "ratingTotal": 40,
+      "csat": 95.0,
+      "topServices": [
+        [
+          "Devoluções - Peça errada",
+          59
+        ],
+        [
+          "Devoluções - Suporte Devolução",
+          46
+        ],
+        [
+          "Devoluções - Peça com defeito",
+          25
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          24
+        ],
+        [
+          "Devoluções - Coleta de Peças",
+          14
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603662941",
+          "date": "24/07/2026 16:26:38",
+          "service": "Devoluções - Peça errada",
+          "status": "Finalizado",
+          "seconds": 4588,
+          "queueSeconds": 4,
+          "finished": true,
+          "firstResponseSeconds": 382
+        },
+        {
+          "protocol": "202603662399",
+          "date": "24/07/2026 14:20:03",
+          "service": "Devoluções - Peça avariada",
+          "status": "Finalizado",
+          "seconds": 5878,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 2456
+        },
+        {
+          "protocol": "202603661236",
+          "date": "24/07/2026 11:58:01",
+          "service": "Devoluções - Peça com defeito",
+          "status": "Finalizado",
+          "seconds": 15604,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 91
+        },
+        {
+          "protocol": "202603660835",
+          "date": "24/07/2026 10:46:12",
+          "service": "Devoluções - Peça errada",
+          "status": "Finalizado",
+          "seconds": 19521,
+          "queueSeconds": 3,
+          "finished": true,
+          "firstResponseSeconds": 144
+        },
+        {
+          "protocol": "202603660285",
+          "date": "24/07/2026 09:12:22",
+          "service": "Devoluções - Suporte Devolução",
+          "status": "Transferido",
+          "seconds": 33,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 72
+        },
+        {
+          "protocol": "202603656593",
+          "date": "24/07/2026 07:47:04",
+          "service": "Devoluções - Prazo de entrega",
+          "status": "Finalizado",
+          "seconds": 6428,
+          "queueSeconds": 1295,
+          "finished": true,
+          "firstResponseSeconds": 1347
+        },
+        {
+          "protocol": "202603656330",
+          "date": "23/07/2026 17:49:01",
+          "service": "Devoluções - Peça errada",
+          "status": "Finalizado",
+          "seconds": 28756,
+          "queueSeconds": 51544,
+          "finished": true,
+          "firstResponseSeconds": 51630
+        },
+        {
+          "protocol": "202603656297",
+          "date": "23/07/2026 17:33:38",
+          "service": "Devoluções - Prazo de entrega",
+          "status": "Finalizado",
+          "seconds": 15328,
+          "queueSeconds": 52503,
+          "finished": true,
+          "firstResponseSeconds": 52553
+        }
+      ],
+      "surveyDetails": [
+        {
+          "protocol": "202603660835",
+          "date": "24/07/2026 16:20:33",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603656593",
+          "date": "24/07/2026 09:57:06",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603649041",
+          "date": "23/07/2026 11:03:03",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603645896",
+          "date": "23/07/2026 09:42:31",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603643453",
+          "date": "22/07/2026 09:26:11",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603640182",
+          "date": "22/07/2026 08:25:01",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603644290",
+          "date": "21/07/2026 18:09:09",
+          "rating": "Ótimo",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603643656",
+          "date": "21/07/2026 17:40:38",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603642718",
+          "date": "21/07/2026 17:25:42",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603638509",
+          "date": "20/07/2026 09:44:24",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603632746",
+          "date": "17/07/2026 15:53:21",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603628699",
+          "date": "17/07/2026 10:55:02",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603628846",
+          "date": "17/07/2026 09:41:50",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603628641",
+          "date": "16/07/2026 15:04:13",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603625447",
+          "date": "15/07/2026 17:01:49",
+          "rating": "Bom",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603624441",
+          "date": "15/07/2026 10:15:55",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603622938",
+          "date": "15/07/2026 08:45:22",
+          "rating": "Bom",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603624498",
+          "date": "14/07/2026 17:00:03",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603623058",
+          "date": "14/07/2026 15:30:09",
+          "rating": "Ótimo",
+          "service": "Devoluções - Acompanhamento de Status",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603621104",
+          "date": "14/07/2026 11:32:51",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603621204",
+          "date": "14/07/2026 10:57:17",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603620253",
+          "date": "13/07/2026 10:26:28",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603614789",
+          "date": "10/07/2026 10:27:19",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603614880",
+          "date": "09/07/2026 17:06:35",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603602087",
+          "date": "09/07/2026 16:16:00",
+          "rating": "Bom",
+          "service": "Devoluções - Peça avariada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603604714",
+          "date": "09/07/2026 15:38:25",
+          "rating": "Ótimo",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603606544",
+          "date": "09/07/2026 15:25:56",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603601926",
+          "date": "09/07/2026 10:38:53",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603600323",
+          "date": "08/07/2026 11:02:56",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603599510",
+          "date": "07/07/2026 16:31:09",
+          "rating": "Regular",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603587622",
+          "date": "07/07/2026 09:18:13",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603586098",
+          "date": "06/07/2026 11:14:14",
+          "rating": "Regular",
+          "service": "Devoluções - Prazo de entrega",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603565403",
+          "date": "03/07/2026 17:41:38",
+          "rating": "Bom",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603582850",
+          "date": "03/07/2026 15:28:29",
+          "rating": "Bom",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603566609",
+          "date": "03/07/2026 14:45:03",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça errada",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603561293",
+          "date": "03/07/2026 10:22:36",
+          "rating": "Ótimo",
+          "service": "Devoluções - Coleta de Peças",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603564518",
+          "date": "02/07/2026 14:00:44",
+          "rating": "Ótimo",
+          "service": "Devoluções - Peça com defeito",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603562422",
+          "date": "01/07/2026 17:23:57",
+          "rating": "Ótimo",
+          "service": "Devoluções - Outros Assuntos",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603560689",
+          "date": "01/07/2026 14:02:15",
+          "rating": "Ótimo",
+          "service": "Devolução Fornecimento ES",
+          "channel": "Whatsapp"
+        },
+        {
+          "protocol": "202603558256",
+          "date": "01/07/2026 14:01:28",
+          "rating": "Ótimo",
+          "service": "Devoluções - Suporte Devolução",
+          "channel": "Whatsapp"
+        }
+      ]
+    }
+  }
+}

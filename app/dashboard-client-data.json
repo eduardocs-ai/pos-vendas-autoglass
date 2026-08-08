@@ -1,0 +1,535 @@
+{
+  "meta": {
+    "period": "Julho de 2026",
+    "periodKey": "2026-07",
+    "team": "Time Cliente",
+    "firstResponseFormula": "tmpa_open_to_first_attendance",
+    "serviceRows": 1973,
+    "surveyRows": 0,
+    "statusCounts": {
+      "Finalizado": 1787,
+      "Transferido": 185,
+      "Em pesquisa": 1
+    },
+    "agentCounts": {
+      "Gerlaine Lima": 598,
+      "Emilly Freitas": 564,
+      "Raissa de Oliveira Rauta": 595,
+      "Iasmim Macedo": 216
+    },
+    "importedAt": "2026-08-08T17:13:23.662Z",
+    "sourceFiles": [
+      "relatorio_atendimento_analitico_6a731bcb4f149-1.csv"
+    ]
+  },
+  "agents": {
+    "Gerlaine Lima": {
+      "attendanceCount": 598,
+      "completedCount": 598,
+      "timedCount": 598,
+      "totalSeconds": 7826401,
+      "averageSeconds": 13088,
+      "averageQueueSeconds": 1168,
+      "firstResponseCount": 598,
+      "averageFirstResponseSeconds": 2657,
+      "minSeconds": 15,
+      "maxSeconds": 522754,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 434085,
+      "ratings": {
+        "Ruim": 0,
+        "Regular": 0,
+        "Bom": 0,
+        "Ótimo": 0
+      },
+      "ratingTotal": 0,
+      "csat": 0,
+      "topServices": [
+        [
+          "Solicitação - Abertura e posicionamento",
+          188
+        ],
+        [
+          "Solicitação - NF e documentação",
+          114
+        ],
+        [
+          "Informação - Abertura e posicionamento",
+          99
+        ],
+        [
+          "Devolução Autoglass",
+          68
+        ],
+        [
+          "Finalizado por inatividade",
+          41
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701865",
+          "date": "31/07/2026 16:56:56",
+          "service": "Informação - Abertura e posicionamento",
+          "status": "Finalizado",
+          "seconds": 2971,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 79
+        },
+        {
+          "protocol": "202603701824",
+          "date": "31/07/2026 16:45:36",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 3650,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 221
+        },
+        {
+          "protocol": "202603701667",
+          "date": "31/07/2026 15:57:26",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 5538,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 17
+        },
+        {
+          "protocol": "202603701301",
+          "date": "31/07/2026 15:50:37",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 4135,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 2
+        },
+        {
+          "protocol": "202603701514",
+          "date": "31/07/2026 15:26:05",
+          "service": "Solicitação - Abertura e posicionamento",
+          "status": "Finalizado",
+          "seconds": 3406,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 23
+        },
+        {
+          "protocol": "202603701253",
+          "date": "31/07/2026 14:31:04",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 5229,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 27
+        },
+        {
+          "protocol": "202603701062",
+          "date": "31/07/2026 13:47:50",
+          "service": "Informação - Financeiro",
+          "status": "Finalizado",
+          "seconds": 2509,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 1211
+        },
+        {
+          "protocol": "202603701012",
+          "date": "31/07/2026 13:35:44",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 609,
+          "queueSeconds": 5,
+          "finished": true,
+          "firstResponseSeconds": 17
+        }
+      ],
+      "surveyDetails": []
+    },
+    "Emilly Freitas": {
+      "attendanceCount": 564,
+      "completedCount": 564,
+      "timedCount": 564,
+      "totalSeconds": 8119320,
+      "averageSeconds": 14396,
+      "averageQueueSeconds": 1405,
+      "firstResponseCount": 563,
+      "averageFirstResponseSeconds": 3428,
+      "minSeconds": 10,
+      "maxSeconds": 437320,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 455348,
+      "ratings": {
+        "Ruim": 0,
+        "Regular": 0,
+        "Bom": 0,
+        "Ótimo": 0
+      },
+      "ratingTotal": 0,
+      "csat": 0,
+      "topServices": [
+        [
+          "Atendimento concluído",
+          407
+        ],
+        [
+          "Finalizado por inatividade",
+          87
+        ],
+        [
+          "Devolução Autoglass",
+          53
+        ],
+        [
+          "FINALIZADO POR INATIVIDADE",
+          11
+        ],
+        [
+          "ATENDIMENTO CONCLUÍDO",
+          6
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701863",
+          "date": "31/07/2026 16:56:45",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 164,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 50
+        },
+        {
+          "protocol": "202603701810",
+          "date": "31/07/2026 16:43:06",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 2382,
+          "queueSeconds": 3,
+          "finished": true,
+          "firstResponseSeconds": 88
+        },
+        {
+          "protocol": "202603701619",
+          "date": "31/07/2026 15:55:53",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 5140,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603700587",
+          "date": "31/07/2026 15:40:33",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 5424,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603697688",
+          "date": "31/07/2026 15:38:11",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 2950,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701578",
+          "date": "31/07/2026 15:38:06",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 6507,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 972
+        },
+        {
+          "protocol": "202603701532",
+          "date": "31/07/2026 15:29:45",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 903,
+          "queueSeconds": 3,
+          "finished": true,
+          "firstResponseSeconds": 163
+        },
+        {
+          "protocol": "202603701466",
+          "date": "31/07/2026 15:28:17",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 2812,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        }
+      ],
+      "surveyDetails": []
+    },
+    "Raissa de Oliveira Rauta": {
+      "attendanceCount": 595,
+      "completedCount": 595,
+      "timedCount": 595,
+      "totalSeconds": 9348758,
+      "averageSeconds": 15712,
+      "averageQueueSeconds": 3028,
+      "firstResponseCount": 595,
+      "averageFirstResponseSeconds": 3962,
+      "minSeconds": 21,
+      "maxSeconds": 359050,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 228677,
+      "ratings": {
+        "Ruim": 0,
+        "Regular": 0,
+        "Bom": 0,
+        "Ótimo": 0
+      },
+      "ratingTotal": 0,
+      "csat": 0,
+      "topServices": [
+        [
+          "Atendimento concluído",
+          392
+        ],
+        [
+          "Finalizado por inatividade",
+          119
+        ],
+        [
+          "Devolução Autoglass",
+          51
+        ],
+        [
+          "FINALIZADO POR INATIVIDADE",
+          21
+        ],
+        [
+          "ATENDIMENTO CONCLUÍDO",
+          12
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701977",
+          "date": "31/07/2026 17:32:33",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 178,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701863",
+          "date": "31/07/2026 17:00:19",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 617,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701815",
+          "date": "31/07/2026 16:44:04",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 3076,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 21
+        },
+        {
+          "protocol": "202603701775",
+          "date": "31/07/2026 16:33:02",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 189,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701734",
+          "date": "31/07/2026 16:22:11",
+          "service": "Atendimento concluído",
+          "status": "Finalizado",
+          "seconds": 1701,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701513",
+          "date": "31/07/2026 15:26:05",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 57,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 57
+        },
+        {
+          "protocol": "202603701470",
+          "date": "31/07/2026 15:15:48",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 642,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 156
+        },
+        {
+          "protocol": "202603701466",
+          "date": "31/07/2026 15:14:38",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 785,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 34
+        }
+      ],
+      "surveyDetails": []
+    },
+    "Iasmim Macedo": {
+      "attendanceCount": 216,
+      "completedCount": 216,
+      "timedCount": 216,
+      "totalSeconds": 4661469,
+      "averageSeconds": 21581,
+      "averageQueueSeconds": 12,
+      "firstResponseCount": 216,
+      "averageFirstResponseSeconds": 5750,
+      "minSeconds": 76,
+      "maxSeconds": 616253,
+      "minFirstResponseSeconds": 0,
+      "maxFirstResponseSeconds": 616259,
+      "ratings": {
+        "Ruim": 0,
+        "Regular": 0,
+        "Bom": 0,
+        "Ótimo": 0
+      },
+      "ratingTotal": 0,
+      "csat": 0,
+      "topServices": [
+        [
+          "Informação - NF e documentação",
+          57
+        ],
+        [
+          "Finalizado por inatividade",
+          52
+        ],
+        [
+          "Informação - Abertura e posicionamento",
+          36
+        ],
+        [
+          "Devolução Autoglass",
+          13
+        ],
+        [
+          "Solicitação - Abertura e posicionamento",
+          10
+        ]
+      ],
+      "recent": [
+        {
+          "protocol": "202603701803",
+          "date": "31/07/2026 16:40:40",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 2432,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 50
+        },
+        {
+          "protocol": "202603701642",
+          "date": "31/07/2026 15:56:02",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 3670,
+          "queueSeconds": 1544,
+          "finished": true,
+          "firstResponseSeconds": 1544
+        },
+        {
+          "protocol": "202603701470",
+          "date": "31/07/2026 15:29:06",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 1090,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603701491",
+          "date": "31/07/2026 15:20:11",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 5925,
+          "queueSeconds": 1,
+          "finished": true,
+          "firstResponseSeconds": 15
+        },
+        {
+          "protocol": "202603700587",
+          "date": "31/07/2026 11:53:52",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 13548,
+          "queueSeconds": 3,
+          "finished": true,
+          "firstResponseSeconds": 53
+        },
+        {
+          "protocol": "202603700570",
+          "date": "31/07/2026 11:49:58",
+          "service": "Informação - NF e documentação",
+          "status": "Finalizado",
+          "seconds": 146,
+          "queueSeconds": 0,
+          "finished": true,
+          "firstResponseSeconds": 0
+        },
+        {
+          "protocol": "202603700522",
+          "date": "31/07/2026 11:40:27",
+          "service": "Devolução Autoglass",
+          "status": "Transferido",
+          "seconds": 11973,
+          "queueSeconds": 3,
+          "finished": true,
+          "firstResponseSeconds": 109
+        },
+        {
+          "protocol": "202603700446",
+          "date": "31/07/2026 11:25:08",
+          "service": "Finalizado por inatividade",
+          "status": "Finalizado",
+          "seconds": 10232,
+          "queueSeconds": 2,
+          "finished": true,
+          "firstResponseSeconds": 209
+        }
+      ],
+      "surveyDetails": []
+    }
+  }
+}
