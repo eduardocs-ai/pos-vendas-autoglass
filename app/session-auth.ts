@@ -10,6 +10,7 @@ const USERS = {
   "amanda.piaz": { displayName: "Amanda Piaz", role: "agent" },
   "elizandra.viana": { displayName: "Elizandra Viana", role: "leader" },
   "rhanaiza.kinack": { displayName: "Rhanaiza Kinack", role: "leader" },
+  "stefany.moreira": { displayName: "Stefany Moreira", role: "leader" },
   "milena.vassoler": { displayName: "Milena Vassoler", role: "coordinator" },
 } as const;
 
