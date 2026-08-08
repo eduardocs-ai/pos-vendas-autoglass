@@ -1,0 +1,8 @@
+worker
+examples
+.openai
+.wrangler
+.vinext
+dist
+build
+github-upload-pos-vendas-*
