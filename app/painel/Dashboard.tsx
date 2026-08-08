@@ -53,13 +53,14 @@ const teamAgentGroups: Record<TeamName, string[]> = {
   "Time Cliente": ["Gerlaine Lima", "Emilly Freitas", "Raissa de Oliveira Rauta", "Iasmim Macedo"],
   "Time Fornecimento": ["Luciano Padilha", "Lívia Neves", "Eduardo Calegari", "Amanda Piaz"],
 };
-const indicatorExcludedAgents = new Set(["Elizandra Viana", "Rhanaiza Kinack"]);
+const indicatorExcludedAgents = new Set(["Elizandra Viana", "Rhanaiza Kinack", "Stefany Moreira"]);
 type DashboardUserRole = "agent" | "leader" | "coordinator";
 
 const leaderGroups = [
   { leader: "Elizandra Viana", roleLabel: "Líder", agents: ["Luciano Padilha", "Lívia Neves", "Eduardo Calegari", "Amanda Piaz", "Gerlaine Lima", "Emilly Freitas", "Raissa de Oliveira Rauta", "Iasmim Macedo"] },
   { leader: "Rhanaiza Kinack", roleLabel: "Líder", agents: [] },
   { leader: "Lorraine Santos", roleLabel: "Líder", agents: [] },
+  { leader: "Stefany Moreira", roleLabel: "Líder", agents: [] },
 ];
 
 function dashboardTeam(dashboard: DashboardData): TeamName {
