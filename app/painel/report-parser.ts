@@ -84,15 +84,24 @@ async function rowsFromFile(file: File) {
   if (/\.(csv|tsv)$/i.test(file.name)) return [parseDelimited(await file.text())];
   const XLSX = await import("xlsx");
   const workbook = XLSX.read(await file.arrayBuffer(), { type: "array", cellDates: false });
-  return workbook.SheetNames.map((name) =>
-    XLSX.utils.sheet_to_json<ReportRow>(workbook.Sheets[name], { defval: "", raw: false }).map(cleanRow),
-  );
+  return workbook.SheetNames.map((name) => {
+    const matrix = XLSX.utils.sheet_to_json<unknown[]>(workbook.Sheets[name], { header: 1, defval: "", raw: false });
+    const headerIndex = matrix.findIndex((row) => {
+      const headers = row.map((value) => normalize(value));
+      return headers.includes("AGENTE") && (headers.includes("DATA") || headers.includes("DATA DE ENTRADA"));
+    });
+    const header = matrix[headerIndex >= 0 ? headerIndex : 0].map((value) => String(value ?? "").trim());
+    return matrix.slice((headerIndex >= 0 ? headerIndex : 0) + 1)
+      .map((values) => cleanRow(Object.fromEntries(header.map((key, index) => [key, values[index] ?? ""]))));
+  });
 }
 
 function rowKind(rows: ReportRow[]) {
   const headers = new Set(Object.keys(rows[0] ?? {}));
   if (headers.has("Tempo de Atendimento") && headers.has("Data de Entrada")) return "service";
   if (headers.has("Resposta") && headers.has("Data") && headers.has("Protocolo")) return "survey";
+  if (headers.has("Pausa") && headers.has("Data da Pausa") && headers.has("Tempo Pausado")) return "pause";
+  if (headers.has("Data de Login") && headers.has("Tempo Logado (segundos)")) return "login";
   return "unknown";
 }
 
@@ -113,7 +122,8 @@ function emptyAgent(): AgentData {
     firstResponseCount: 0, averageFirstResponseSeconds: 0,
     minSeconds: 0, maxSeconds: 0, minFirstResponseSeconds: 0, maxFirstResponseSeconds: 0,
     ratings: { Ruim: 0, Regular: 0, Bom: 0, "Ótimo": 0 },
-    ratingTotal: 0, csat: 0, topServices: [], daily: {}, recent: [], surveyDetails: [],
+    ratingTotal: 0, csat: 0, loggedSeconds: 0, pausedSeconds: 0, pauseCount: 0, pauseTypes: {},
+    topServices: [], daily: {}, recent: [], attendanceDetails: [], surveyDetails: [],
   };
 }
 
@@ -122,6 +132,7 @@ function emptyDailyAttendance(date: string): DailyAttendance {
     date, attendanceCount: 0, completedCount: 0, timedCount: 0,
     totalSeconds: 0, averageSeconds: 0,
     firstResponseCount: 0, firstResponseSeconds: 0, averageFirstResponseSeconds: 0,
+    loggedSeconds: 0, pausedSeconds: 0, pauseCount: 0, pauseTypes: {},
   };
 }
 
@@ -144,16 +155,22 @@ export async function processReportFiles(
 ): Promise<DashboardData> {
   const serviceRows: ReportRow[] = [];
   const surveyRows: ReportRow[] = [];
+  const pauseRows: ReportRow[] = [];
+  const loginRows: ReportRow[] = [];
   for (const file of files) {
     for (const rows of await rowsFromFile(file)) {
       const kind = rowKind(rows);
       if (kind === "service") serviceRows.push(...rows);
       if (kind === "survey") surveyRows.push(...rows);
+      if (kind === "pause") pauseRows.push(...rows);
+      if (kind === "login") loginRows.push(...rows);
     }
   }
 
   const services = dedupe(serviceRows, ["Protocolo", "Agente", "Data de Entrada"]);
   const surveys = dedupe(surveyRows, ["Protocolo", "Agente", "Data"]);
+  const pauses = dedupe(pauseRows, ["Agente", "Pausa", "Data da Pausa", "Data da Despausa"]);
+  const logins = dedupe(loginRows, ["Agente", "Data de Login", "Data de Logout"]);
   if (!services.length) {
     throw new Error("Selecione o relatório analítico de atendimentos.");
   }
@@ -245,6 +262,39 @@ export async function processReportFiles(
     });
   }
 
+  for (const row of pauses) {
+    const agent = AGENT_ALIASES[normalize(row.Agente)];
+    const date = parseDate(row["Data da Pausa"]);
+    if (!agent || !inPeriod(date)) continue;
+    const seconds = parseDuration(row["Tempo Pausado"]);
+    const pause = String(row.Pausa || "Pausa não informada");
+    const data = agents[agent];
+    const dayKey = date ? date.toISOString().slice(0, 10) : "";
+    const daily = dayKey ? (data.daily ??= {})[dayKey] ?? ((data.daily ??= {})[dayKey] = emptyDailyAttendance(dayKey)) : null;
+    data.pausedSeconds = (data.pausedSeconds ?? 0) + seconds;
+    data.pauseCount = (data.pauseCount ?? 0) + 1;
+    data.pauseTypes = data.pauseTypes ?? {};
+    data.pauseTypes[pause] = (data.pauseTypes[pause] ?? 0) + 1;
+    if (daily) {
+      daily.pausedSeconds = (daily.pausedSeconds ?? 0) + seconds;
+      daily.pauseCount = (daily.pauseCount ?? 0) + 1;
+      daily.pauseTypes = daily.pauseTypes ?? {};
+      daily.pauseTypes[pause] = (daily.pauseTypes[pause] ?? 0) + 1;
+    }
+  }
+
+  for (const row of logins) {
+    const agent = AGENT_ALIASES[normalize(row.Agente)];
+    const date = parseDate(row["Data de Login"]);
+    if (!agent || !inPeriod(date)) continue;
+    const seconds = parseDuration(row["Tempo Logado (segundos)"]);
+    const data = agents[agent];
+    const dayKey = date ? date.toISOString().slice(0, 10) : "";
+    const daily = dayKey ? (data.daily ??= {})[dayKey] ?? ((data.daily ??= {})[dayKey] = emptyDailyAttendance(dayKey)) : null;
+    data.loggedSeconds = (data.loggedSeconds ?? 0) + seconds;
+    if (daily) daily.loggedSeconds = (daily.loggedSeconds ?? 0) + seconds;
+  }
+
   for (const name of AGENTS) {
     const data = agents[name];
     data.averageQueueSeconds = data.attendanceCount ? Math.round(data.averageQueueSeconds / data.attendanceCount) : 0;
@@ -260,6 +310,7 @@ export async function processReportFiles(
       daily.averageFirstResponseSeconds = daily.firstResponseCount ? Math.round(daily.firstResponseSeconds / daily.firstResponseCount) : 0;
     });
     data.recent = callsByAgent[name].sort((a, b) => (parseDate(b.date)?.getTime() ?? 0) - (parseDate(a.date)?.getTime() ?? 0)).slice(0, 8);
+    data.attendanceDetails = callsByAgent[name].sort((a, b) => (parseDate(b.date)?.getTime() ?? 0) - (parseDate(a.date)?.getTime() ?? 0));
     data.surveyDetails.sort((a, b) => (parseDate(b.date)?.getTime() ?? 0) - (parseDate(a.date)?.getTime() ?? 0));
   }
 
