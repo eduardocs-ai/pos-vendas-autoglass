@@ -6,10 +6,10 @@ import dashboardData from "../dashboard-data.json";
 import clientDashboardData from "../dashboard-client-data.json";
 import { processReportFiles } from "./report-parser";
 import LogoutButton from "./LogoutButton";
-import type { AgentData, DailyAttendance, DashboardData, RatingName, TeamName } from "./dashboard-types";
+import type { AgentData, DailyAttendance, DashboardData, RatingName, RecentCall, TeamName } from "./dashboard-types";
 
 type RatingFilter = "Todas" | RatingName;
-type ViewName = "overview" | "agents" | "avaya" | "ratings" | "attendances" | "uploads";
+type ViewName = "overview" | "agents" | "avaya" | "uploads";
 
 type AvayaMetrics = {
   callCount: number;
@@ -242,6 +242,10 @@ function agentProductivityRows(agent: AgentData, avaya?: AvayaAgentData) {
       total: (asc?.attendanceCount ?? 0) + (phone?.callCount ?? 0),
       ascTma: asc?.averageSeconds ?? 0,
       ascTmpa: asc?.averageFirstResponseSeconds ?? 0,
+      ascLogged: asc?.loggedSeconds ?? 0,
+      ascPaused: asc?.pausedSeconds ?? 0,
+      ascPauseCount: asc?.pauseCount ?? 0,
+      ascPauseTypes: asc?.pauseTypes ?? {},
       avayaMissed: phone?.missedCalls ?? 0,
       avayaAbandoned: phone?.abandonedCalls ?? 0,
       avayaTransferred: phone?.transferredCalls ?? 0,
@@ -307,15 +311,20 @@ function SatisfactionDonut({ data }: { data: Pick<AgentData, "ratingTotal" | "ra
   </div>;
 }
 
-function KpiCard({ icon, tone, title, value, children }: { icon: string; tone: string; title: string; value: string | number; children: ReactNode }) {
+function KpiCard({ icon, tone, title, value, children, onOpen }: { icon: string; tone: string; title: string; value: string | number; children: ReactNode; onOpen?: () => void }) {
   return <article className={`kpi-card ${tone}`}>
     <div className={`kpi-icon ${tone}`}>{icon}</div>
     <div><p>{title}</p><strong>{value}</strong></div>
-    <details className="kpi-more">
+    {onOpen ? <button type="button" className="kpi-more-trigger" aria-label={`Ver detalhes de ${title}`} title="Ver detalhes" onClick={onOpen}>+</button> : <details className="kpi-more">
       <summary aria-label={`Ver detalhes de ${title}`} title="Ver detalhes">+</summary>
       <div>{children}</div>
-    </details>
+    </details>}
   </article>;
+}
+
+function pauseTypesLabel(types: Record<string, number>) {
+  const entries = Object.entries(types).sort((a, b) => b[1] - a[1]);
+  return entries.length ? entries.map(([type, count]) => `${type.trim()}: ${count}`).join(" · ") : "Sem pausas registradas";
 }
 
 function AgentSelector({ names, activeName, dashboard, onChange }: { names: string[]; activeName: string; dashboard: DashboardData; onChange: (name: string) => void }) {
@@ -399,9 +408,40 @@ function ProductivityDetails({ name, rows, onClose }: { name: string; rows: Retu
         <div><p className="eyebrow">Detalhes por dia</p><h2 id="productivity-detail-title">Produtividade diária · {name}</h2><p>Quebra diária do total mensal apresentado no card de produtividade.</p></div>
         <button type="button" className="modal-close" onClick={onClose} aria-label="Fechar detalhes">×</button>
       </div>
-      <div className="table-wrap avaya-table-wrap"><table><thead><tr><th>Dia</th><th>Atendimentos ASC</th><th>Chamadas Avaya</th><th>Total produtivo</th><th>TMA ASC</th><th>TMPA ASC</th><th>Perdidas</th><th>Abandonadas</th><th>Transferidas</th></tr></thead><tbody>
-        {rows.map((row) => <tr key={row.day}><td><strong>{formatDateLabel(row.day)}</strong></td><td>{row.ascCount}</td><td>{row.avayaCount}</td><td><strong>{row.total}</strong></td><td>{formatDuration(row.ascTma)}</td><td>{formatDuration(row.ascTmpa)}</td><td>{row.avayaMissed}</td><td>{row.avayaAbandoned}</td><td>{row.avayaTransferred}</td></tr>)}
+      <div className="table-wrap avaya-table-wrap"><table><thead><tr><th>Dia</th><th>Atendimentos ASC</th><th>Chamadas 0800</th><th>Total produtivo</th><th>Logado ASC</th><th>Pausado ASC</th><th>Pausas ASC</th><th>TMA ASC</th><th>TMPA ASC</th><th>Perdidas</th><th>Abandonadas</th><th>Transferidas</th></tr></thead><tbody>
+        {rows.map((row) => <tr key={row.day}><td><strong>{formatDateLabel(row.day)}</strong></td><td>{row.ascCount}</td><td>{row.avayaCount}</td><td><strong>{row.total}</strong></td><td>{formatDuration(row.ascLogged, true)}</td><td>{formatDuration(row.ascPaused, true)}</td><td>{row.ascPauseCount ? pauseTypesLabel(row.ascPauseTypes) : "—"}</td><td>{formatDuration(row.ascTma)}</td><td>{formatDuration(row.ascTmpa)}</td><td>{row.avayaMissed}</td><td>{row.avayaAbandoned}</td><td>{row.avayaTransferred}</td></tr>)}
       </tbody></table>{!rows.length ? <p className="empty-state">Nenhum detalhe diário disponível para este agente.</p> : null}</div>
+    </section>
+  </div>;
+}
+
+function AttendanceDetails({ name, calls, onClose }: { name: string; calls: RecentCall[]; onClose: () => void }) {
+  return <div className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="attendance-detail-title">
+    <section className="modal-card attendance-modal">
+      <div className="modal-heading">
+        <div><p className="eyebrow">Protocolos do ASC</p><h2 id="attendance-detail-title">Atendimentos · {name}</h2><p>Todos os atendimentos do mês, com protocolo, data, status e tempos principais.</p></div>
+        <button type="button" className="modal-close" onClick={onClose} aria-label="Fechar detalhes">×</button>
+      </div>
+      <div className="table-wrap avaya-table-wrap"><table className="attendance-table"><thead><tr><th>Protocolo</th><th>Data e hora</th><th>Motivo</th><th>Status</th><th>TMA</th><th>TMPA</th><th>Fila</th></tr></thead><tbody>
+        {calls.map((call, index) => <tr key={`${call.protocol}-${call.date}-${index}`}><td><strong>{call.protocol}</strong></td><td>{call.date.slice(0, 16)}</td><td>{call.service.replace("Devoluções - ", "")}</td><td><span className={`table-status ${call.finished ? "done" : "open"}`}>{call.status}</span></td><td>{call.finished ? formatDuration(call.seconds) : "Em curso"}</td><td>{typeof call.firstResponseSeconds === "number" ? formatDuration(call.firstResponseSeconds) : "—"}</td><td>{formatDuration(call.queueSeconds)}</td></tr>)}
+      </tbody></table>{!calls.length ? <p className="empty-state">Nenhum atendimento disponível para este agente.</p> : null}</div>
+    </section>
+  </div>;
+}
+
+function SurveyDetails({ name, data, filter, onFilterChange, onClose }: { name: string; data: AgentData; filter: RatingFilter; onFilterChange: (filter: RatingFilter) => void; onClose: () => void }) {
+  const surveys = filter === "Todas" ? data.surveyDetails : data.surveyDetails.filter((survey) => survey.rating === filter);
+  const engagement = data.attendanceCount ? (data.ratingTotal / data.attendanceCount) * 100 : 0;
+  return <div className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="survey-detail-title">
+    <section className="modal-card survey-modal">
+      <div className="modal-heading">
+        <div><p className="eyebrow">Avaliações do ASC</p><h2 id="survey-detail-title">Notas por protocolo · {name}</h2><p>{formatPercent(engagement)} de engajamento das notas no mês.</p></div>
+        <button type="button" className="modal-close" onClick={onClose} aria-label="Fechar detalhes">×</button>
+      </div>
+      <div className="rating-filters">
+        {(["Todas", ...ratingOrder] as RatingFilter[]).map((item) => <button key={item} type="button" className={filter === item ? `rating-filter active ${item.toLowerCase()}` : "rating-filter"} onClick={() => onFilterChange(item)}>{item} <strong>{item === "Todas" ? data.ratingTotal : data.ratings[item]}</strong></button>)}
+      </div>
+      <div className="table-wrap survey-table-wrap"><table className="survey-table"><thead><tr><th>Protocolo</th><th>Nota do cliente</th><th>Data da avaliação</th><th>Motivo do contato</th><th>Canal</th></tr></thead><tbody>{surveys.map((survey) => <tr key={`${survey.protocol}-${survey.date}`}><td><strong>{survey.protocol}</strong></td><td><span className={`rating-pill ${survey.rating.toLowerCase()}`}><i />{survey.rating}</span></td><td>{survey.date.slice(0, 16)}</td><td>{survey.service.replace("Devoluções - ", "")}</td><td>{survey.channel}</td></tr>)}</tbody></table>{!surveys.length ? <p className="empty-state">Nenhum protocolo recebeu esta nota no período.</p> : null}</div>
     </section>
   </div>;
 }
@@ -463,6 +503,8 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const [ratingFilter, setRatingFilter] = useState<RatingFilter>("Todas");
   const [avayaDetailName, setAvayaDetailName] = useState<string | null>(null);
   const [productivityDetailOpen, setProductivityDetailOpen] = useState(false);
+  const [attendanceDetailOpen, setAttendanceDetailOpen] = useState(false);
+  const [surveyDetailOpen, setSurveyDetailOpen] = useState(false);
   const [selectedLeaderName, setSelectedLeaderName] = useState<string | null>(userRole === "leader" ? userName : null);
   const teamDashboards = useMemo(() => sortDashboards(availableDashboards.filter((dashboard) => dashboardTeam(dashboard) === selectedTeam)), [availableDashboards, selectedTeam]);
   const currentDashboard = teamDashboards.find((dashboard) => dashboardPeriodKey(dashboard) === selectedPeriodKey) ?? teamDashboards[teamDashboards.length - 1] ?? null;
@@ -519,7 +561,6 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const maxTma = data?.maxSeconds ?? (fallbackFinished.length ? Math.max(...fallbackFinished) : 0);
   const minTmpa = data?.minFirstResponseSeconds ?? (fallbackFirst.length ? Math.min(...fallbackFirst) : 0);
   const maxTmpa = data?.maxFirstResponseSeconds ?? (fallbackFirst.length ? Math.max(...fallbackFirst) : 0);
-  const filteredSurveys = data ? (ratingFilter === "Todas" ? data.surveyDetails : data.surveyDetails.filter((survey) => survey.rating === ratingFilter)) : [];
   const avayaDetailData = avayaDetailName ? avayaDashboard.agents[avayaDetailName] : null;
   const avayaAgentNames = avayaNamesForContext(selectedTeam, selectedLeaderGroup);
   const avayaTeamData = aggregateAvayaAgents(avayaAgentNames.map((name) => avayaDashboard.agents[name]).filter(Boolean));
@@ -531,14 +572,13 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const roleLabel = userRole === "coordinator" ? "Coordenadora" : userRole === "leader" ? "Líder" : "Agente";
 
   const menu: Array<{ view: ViewName; icon: string; label: string }> = [
-    { view: "overview", icon: "⌂", label: "Visão Geral" }, { view: "agents", icon: "◎", label: "Visão Agente" }, { view: "avaya", icon: "☎", label: "Avaya" },
-    { view: "ratings", icon: "★", label: "Avaliações" }, { view: "attendances", icon: "◷", label: "Atendimentos" }, { view: "uploads", icon: "⇧", label: "Uploads" },
+    { view: "overview", icon: "⌂", label: "Visão Geral" }, { view: "agents", icon: "◎", label: "Visão Agente" }, { view: "avaya", icon: "☎", label: "Avaya" }, { view: "uploads", icon: "⇧", label: "Uploads" },
   ];
 
   return <main className="dashboard-shell"><aside className="sidebar"><button className="sidebar-brand brand-button" onClick={() => setActiveView("overview")} aria-label="Abrir visão geral"><img src="/autoglass-logo-oficial.png" alt="Autoglass" width={132} height={40} /><span>PÓS-VENDAS</span></button><nav aria-label="Navegação principal">
     {menu.map((item) => <button key={item.view} className={activeView === item.view ? "nav-item active" : "nav-item"} onClick={() => setActiveView(item.view)}><span>{item.icon}</span>{item.label}</button>)}
   </nav>
-    <button className="sidebar-csat" onClick={() => setActiveView("ratings")}><span>ENGAJAMENTO DAS NOTAS</span><strong>{metrics ? formatPercent(metrics.engagement) : "—"}</strong><small>{metrics ? `${metrics.ratingTotal} notas em ${metrics.attendanceCount} atendimentos` : "Sem dados para o time"}</small></button>
+    <button className="sidebar-csat" onClick={() => setActiveView("agents")}><span>ENGAJAMENTO DAS NOTAS</span><strong>{metrics ? formatPercent(metrics.engagement) : "—"}</strong><small>{metrics ? `${metrics.ratingTotal} notas em ${metrics.attendanceCount} atendimentos` : "Sem dados para o time"}</small></button>
     <div className="sidebar-foot"><p>Competência</p><strong>{currentDashboard?.meta.period ?? "Sem dados"}</strong><span>{selectedTeam}</span></div>
   </aside><section className="dashboard-main"><header className="topbar"><div><p className="eyebrow">Painel de indicadores</p><h1>Olá, {firstName}</h1></div><div className="topbar-actions">
     {userRole === "coordinator" && selectedLeaderGroup ? <button type="button" className="detail-button" onClick={() => { setSelectedLeaderName(null); setActiveView("overview"); }}>Trocar liderança</button> : null}
@@ -563,9 +603,14 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   {!isChoosingLeader && scopedDashboard && data && activeView === "agents" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Desempenho individual</p><h2>Visão Agente</h2><p>Todos os indicadores exclusivos de cada agente.</p></div></div><AgentSelector names={names} activeName={activeName} dashboard={scopedDashboard} onChange={(name) => { setActiveName(name); setRatingFilter("Todas"); }} /><div className="profile-heading compact"><div><h2>{activeName}</h2><p>{selectedLeaderGroup ? `${selectedLeaderGroup.leader} · ` : ""}{selectedTeam} · {scopedDashboard.meta.period}</p></div></div><section className="kpi-grid">
     <KpiCard icon="◷" tone="primary" title="Tempo médio de atendimento" value={formatDuration(data.averageSeconds)}><div className="sla-range"><span>Menor SLA <b>{formatDuration(minTma)}</b></span><span>Maior SLA <b>{formatDuration(maxTma)}</b></span></div></KpiCard>
     <KpiCard icon="↯" tone="first-response" title="Tempo médio do primeiro atendimento" value={formatDuration(data.averageFirstResponseSeconds)}><div className="sla-range"><span>Menor SLA <b>{formatDuration(minTmpa)}</b></span><span>Maior SLA <b>{formatDuration(maxTmpa)}</b></span></div></KpiCard>
-    <KpiCard icon="★" tone="engagement" title="% de engajamento das notas" value={formatPercent(agentEngagement)}><p><strong>Número exato</strong></p><p>{data.ratingTotal} notas ÷ {data.attendanceCount} atendimentos × 100 = <b>{formatPercent(agentEngagement)}</b></p></KpiCard>
-    <KpiCard icon="◎" tone="attendance-total" title="Quantidade de atendimentos" value={data.attendanceCount}><p><strong>Média por dia</strong></p><p>{data.attendanceCount} ÷ {days} dias = <b>{(data.attendanceCount / days).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} atendimentos/dia</b></p></KpiCard>
+    <KpiCard icon="★" tone="engagement" title="% de engajamento das notas" value={formatPercent(agentEngagement)} onOpen={() => { setRatingFilter("Todas"); setSurveyDetailOpen(true); }}><p><strong>Número exato</strong></p><p>{data.ratingTotal} notas ÷ {data.attendanceCount} atendimentos × 100 = <b>{formatPercent(agentEngagement)}</b></p></KpiCard>
+    <KpiCard icon="◎" tone="attendance-total" title="Quantidade de atendimentos" value={data.attendanceCount} onOpen={() => setAttendanceDetailOpen(true)}><p><strong>Média por dia</strong></p><p>{data.attendanceCount} ÷ {days} dias = <b>{(data.attendanceCount / days).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} atendimentos/dia</b></p></KpiCard>
   </section><section className="charts-grid"><RatingDistribution ratings={data.ratings} total={data.ratingTotal} data={data} /><ServicesPanel services={data.topServices} /></section>
+    <section className="panel asc-agent-panel"><div className="panel-heading"><div><p className="eyebrow">ASC</p><h3>Operação do ASC · {activeName}</h3><span className="panel-subtitle">Tempo logado, tempo pausado e tipos de pausa no mês.</span></div></div><div className="avaya-agent-grid">
+      <KpiCard icon="⌁" tone="primary" title="Tempo logado ASC" value={formatDuration(data.loggedSeconds ?? 0, true)}><p>Total logado no ASC em {scopedDashboard.meta.period.toLowerCase()}.</p></KpiCard>
+      <KpiCard icon="Ⅱ" tone="attendance-total" title="Tempo pausado ASC" value={formatDuration(data.pausedSeconds ?? 0, true)}><p>Total pausado no ASC em {scopedDashboard.meta.period.toLowerCase()}.</p></KpiCard>
+      <KpiCard icon="☰" tone="engagement" title="Pausas registradas" value={data.pauseCount ?? 0}>{Object.entries(data.pauseTypes ?? {}).sort((a, b) => b[1] - a[1]).map(([type, count]) => <p key={type}>{type.trim()}: <b>{count}</b></p>)}{!Object.keys(data.pauseTypes ?? {}).length ? <p>Nenhuma pausa registrada no período.</p> : null}</KpiCard>
+    </div></section>
     {avayaAgentData ? <section className="panel avaya-agent-panel"><div className="panel-heading"><div><p className="eyebrow">0800</p><h3>Avaya · {activeName}</h3><span className="panel-subtitle">Resumo macro do agente no período.</span></div><button type="button" className="detail-button" onClick={() => setAvayaDetailName(activeName)}>Ver detalhes</button></div><div className="avaya-agent-grid">
       <KpiCard icon="☎" tone="primary" title="Quantidade de chamadas" value={avayaAgentData.callCount}><p>{avayaAgentData.answeredCalls} atendidas no período.</p></KpiCard>
       <KpiCard icon="!" tone="orange" title="Chamadas perdidas" value={avayaAgentData.missedCalls}><p>Chamadas não atendidas pelo fluxo mapeado do Avaya.</p></KpiCard>
@@ -593,16 +638,12 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
     })}
   </tbody></table></div></section></section> : null}
 
-  {!isChoosingLeader && scopedDashboard && data && activeView === "ratings" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Rastreabilidade das notas</p><h2>Avaliações</h2><p>Consulte a nota atribuída a cada protocolo.</p></div></div><AgentSelector names={names} activeName={activeName} dashboard={scopedDashboard} onChange={(name) => { setActiveName(name); setRatingFilter("Todas"); }} /><section className="panel survey-detail-panel"><div className="panel-heading survey-heading"><div><h3>Protocolos por avaliação · {activeName}</h3><span className="panel-subtitle">{formatPercent(agentEngagement)} de engajamento das notas</span></div><span className="count-badge">{data.ratingTotal} avaliações</span></div><div className="rating-filters">
-    {(["Todas", ...ratingOrder] as RatingFilter[]).map((filter) => <button key={filter} type="button" className={ratingFilter === filter ? `rating-filter active ${filter.toLowerCase()}` : "rating-filter"} onClick={() => setRatingFilter(filter)}>{filter} <strong>{filter === "Todas" ? data.ratingTotal : data.ratings[filter]}</strong></button>)}
-  </div><div className="table-wrap survey-table-wrap"><table className="survey-table"><thead><tr><th>Protocolo</th><th>Nota do cliente</th><th>Data da avaliação</th><th>Motivo do contato</th><th>Canal</th></tr></thead><tbody>{filteredSurveys.map((survey) => <tr key={`${survey.protocol}-${survey.date}`}><td><strong>{survey.protocol}</strong></td><td><span className={`rating-pill ${survey.rating.toLowerCase()}`}><i />{survey.rating}</span></td><td>{survey.date.slice(0, 16)}</td><td>{survey.service.replace("Devoluções - ", "")}</td><td>{survey.channel}</td></tr>)}</tbody></table>{!filteredSurveys.length ? <p className="empty-state">Nenhum protocolo recebeu esta nota no período.</p> : null}</div></section></section> : null}
-
-  {!isChoosingLeader && scopedDashboard && data && activeView === "attendances" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Registros do período</p><h2>Atendimentos</h2><p>Acompanhe os últimos protocolos de cada agente.</p></div></div><AgentSelector names={names} activeName={activeName} dashboard={scopedDashboard} onChange={setActiveName} /><section className="panel table-panel"><div className="panel-heading"><div><h3>Atendimentos recentes · {activeName}</h3></div><span className="count-badge">{data.attendanceCount} no mês</span></div><div className="table-wrap"><table><thead><tr><th>Protocolo</th><th>Data e hora</th><th>Motivo</th><th>Status</th><th>Tempo</th></tr></thead><tbody>{data.recent.map((call) => <tr key={call.protocol}><td><strong>{call.protocol}</strong></td><td>{call.date.slice(0, 16)}</td><td>{call.service.replace("Devoluções - ", "")}</td><td><span className={`table-status ${call.finished ? "done" : "open"}`}>{call.status}</span></td><td>{call.finished ? formatDuration(call.seconds) : "Em curso"}</td></tr>)}</tbody></table></div></section></section> : null}
-
   {activeView === "uploads" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Gestão de dados</p><h2>Uploads</h2><p>Importe os relatórios no time selecionado no topo da tela.</p></div></div><ImportPanel team={selectedTeam} onUpdated={updateDashboard} /></section> : null}
 
   {avayaDetailName && avayaDetailData ? <AvayaAgentDetails name={avayaDetailName} data={avayaDetailData} onClose={() => setAvayaDetailName(null)} /> : null}
   {productivityDetailOpen && data ? <ProductivityDetails name={activeName} rows={productivityRows} onClose={() => setProductivityDetailOpen(false)} /> : null}
+  {attendanceDetailOpen && data ? <AttendanceDetails name={activeName} calls={data.attendanceDetails ?? data.recent} onClose={() => setAttendanceDetailOpen(false)} /> : null}
+  {surveyDetailOpen && data ? <SurveyDetails name={activeName} data={data} filter={ratingFilter} onFilterChange={setRatingFilter} onClose={() => setSurveyDetailOpen(false)} /> : null}
 
   <footer className="dashboard-note"><span>i</span><p><strong>Como calculamos:</strong> TMA considera os registros finalizados, inclusive por inatividade. TMPA mede da abertura até o primeiro atendimento registrado. Engajamento das notas é a quantidade de avaliações recebidas dividida pela quantidade de atendimentos do período.</p></footer>
   </section></main>;
