@@ -6,7 +6,7 @@ const SESSION_SECONDS = 60 * 60 * 12;
 const USERS = {
   "luciano.padilla": { displayName: "Luciano Padilha", role: "agent" },
   "livia.neves": { displayName: "Lívia Neves", role: "agent" },
-  "eduardo.calegari": { displayName: "Eduardo Calegari", role: "agent" },
+  "eduardo.calegari": { displayName: "Eduardo Calegari", role: "coordinator" },
   "amanda.piaz": { displayName: "Amanda Piaz", role: "agent" },
   "elizandra.viana": { displayName: "Elizandra Viana", role: "leader" },
   "rhanaiza.kinack": { displayName: "Rhanaiza Kinack", role: "leader" },
