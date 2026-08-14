@@ -476,7 +476,7 @@ function CoordinatorLeaderPicker({ onSelect }: { onSelect: (leader: string) => v
   return <section className="coordinator-home view-page">
     <div className="coordinator-hero panel">
       <p className="eyebrow">Coordenação</p>
-      <h2>Olá, Milena. Quais indicadores você gostaria de acompanhar agora?</h2>
+      <h2>Olá! Quais indicadores você gostaria de acompanhar agora?</h2>
       <p>Escolha uma liderança para abrir a visão de indicadores da carteira correspondente. Você pode voltar e trocar de liderança quando quiser.</p>
     </div>
     <div className="coordinator-leaders">
@@ -569,7 +569,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const productivityRows = data ? agentProductivityRows(data, avayaAgentData) : [];
   const productivityTotal = data ? data.attendanceCount + (avayaAgentData?.callCount ?? 0) : 0;
   const pauseSummary = Object.entries(avayaTeamData.pauseTypes);
-  const roleLabel = userRole === "coordinator" ? "Coordenadora" : userRole === "leader" ? "Líder" : "Agente";
+  const roleLabel = userRole === "coordinator" ? "Coordenação" : userRole === "leader" ? "Líder" : "Agente";
 
   const menu: Array<{ view: ViewName; icon: string; label: string }> = [
     { view: "overview", icon: "⌂", label: "Visão Geral" }, { view: "agents", icon: "◎", label: "Visão Agente" }, { view: "avaya", icon: "☎", label: "Avaya" }, { view: "uploads", icon: "⇧", label: "Uploads" },
