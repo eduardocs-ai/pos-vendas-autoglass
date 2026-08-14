@@ -22,6 +22,10 @@ export type DailyAttendance = {
   firstResponseCount: number;
   firstResponseSeconds: number;
   averageFirstResponseSeconds: number;
+  loggedSeconds?: number;
+  pausedSeconds?: number;
+  pauseCount?: number;
+  pauseTypes?: Record<string, number>;
 };
 
 export type SurveyDetail = {
@@ -48,9 +52,14 @@ export type AgentData = {
   ratings: Record<RatingName, number>;
   ratingTotal: number;
   csat: number;
+  loggedSeconds?: number;
+  pausedSeconds?: number;
+  pauseCount?: number;
+  pauseTypes?: Record<string, number>;
   topServices: Array<[string, number]>;
   daily?: Record<string, DailyAttendance>;
   recent: RecentCall[];
+  attendanceDetails?: RecentCall[];
   surveyDetails: SurveyDetail[];
 };
 
