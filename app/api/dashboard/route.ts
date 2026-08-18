@@ -35,7 +35,7 @@ function mergeDashboards(dashboards: DashboardData[]) {
     const key = `${team}:${dashboardPeriodKey(dashboard)}`;
     const normalized = { ...dashboard, meta: { ...dashboard.meta, team } };
     const current = unique.get(key);
-    if (current && isOfficialSupplyJuly(current) && !isOfficialSupplyJuly(normalized)) return;
+    if (current && isOfficialSupplyJuly(current)) return;
     unique.set(key, normalized);
   });
   return [...unique.values()];
