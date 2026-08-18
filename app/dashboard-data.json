@@ -49,24 +49,40 @@
       "csat": 92.5,
       "topServices": [
         [
-          "ATENDIMENTO CONCLUÍDO",
-          146
+          "Devoluções - Peça errada",
+          111
         ],
         [
           "Devoluções - Suporte Devolução",
-          38
+          61
         ],
         [
-          "Devoluções - Peça errada",
-          35
+          "Devoluções - Prazo de entrega",
+          39
         ],
         [
-          "FINALIZADO POR INATIVIDADE",
-          30
+          "Devoluções - Peça com defeito",
+          22
         ],
         [
-          "Atendimento concluído",
-          15
+          "Devoluções - Coleta de Peças",
+          19
+        ],
+        [
+          "Devolução Fornecimento ES",
+          18
+        ],
+        [
+          "Devoluções - Peça avariada",
+          14
+        ],
+        [
+          "Devoluções - Acompanhamento de Status",
+          14
+        ],
+        [
+          "Devoluções - Outros Assuntos",
+          10
         ]
       ],
       "recent": [
@@ -629,7 +645,7 @@
         {
           "protocol": "202603699184",
           "date": "31/07/2026 09:27:02",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 3296,
           "queueSeconds": 3,
@@ -709,7 +725,7 @@
         {
           "protocol": "202603697087",
           "date": "30/07/2026 13:49:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 94400,
           "queueSeconds": 0,
@@ -749,7 +765,7 @@
         {
           "protocol": "202603695668",
           "date": "30/07/2026 10:04:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 101569,
           "queueSeconds": 1,
@@ -769,7 +785,7 @@
         {
           "protocol": "202603695287",
           "date": "30/07/2026 09:07:34",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 25236,
           "queueSeconds": 0,
@@ -779,7 +795,7 @@
         {
           "protocol": "202603695239",
           "date": "30/07/2026 09:02:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 93481,
           "queueSeconds": 1,
@@ -789,7 +805,7 @@
         {
           "protocol": "202603695216",
           "date": "30/07/2026 08:57:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 25113,
           "queueSeconds": 3,
@@ -799,7 +815,7 @@
         {
           "protocol": "202603695119",
           "date": "30/07/2026 08:39:49",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 26503,
           "queueSeconds": 2,
@@ -809,7 +825,7 @@
         {
           "protocol": "202603695008",
           "date": "30/07/2026 08:16:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 93067,
           "queueSeconds": 1283,
@@ -829,7 +845,7 @@
         {
           "protocol": "202603694489",
           "date": "29/07/2026 17:20:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 161638,
           "queueSeconds": 2,
@@ -849,7 +865,7 @@
         {
           "protocol": "202603693969",
           "date": "29/07/2026 15:27:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 154700,
           "queueSeconds": 2,
@@ -859,7 +875,7 @@
         {
           "protocol": "202603693833",
           "date": "29/07/2026 15:06:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 96656,
           "queueSeconds": 1,
@@ -889,7 +905,7 @@
         {
           "protocol": "202603691911",
           "date": "29/07/2026 10:42:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 3013,
           "queueSeconds": 1,
@@ -899,7 +915,7 @@
         {
           "protocol": "202603686964",
           "date": "29/07/2026 10:06:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 166203,
           "queueSeconds": 3,
@@ -909,7 +925,7 @@
         {
           "protocol": "202603674405",
           "date": "29/07/2026 09:25:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 110438,
           "queueSeconds": 0,
@@ -919,7 +935,7 @@
         {
           "protocol": "202603674801",
           "date": "29/07/2026 08:11:02",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 23584,
           "queueSeconds": 0,
@@ -929,7 +945,7 @@
         {
           "protocol": "202603674400",
           "date": "28/07/2026 18:00:11",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 80693,
           "queueSeconds": 0,
@@ -939,7 +955,7 @@
         {
           "protocol": "202603674545",
           "date": "28/07/2026 17:55:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 166211,
           "queueSeconds": 0,
@@ -959,7 +975,7 @@
         {
           "protocol": "202603674193",
           "date": "28/07/2026 16:52:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 169879,
           "queueSeconds": 0,
@@ -969,7 +985,7 @@
         {
           "protocol": "202603674205",
           "date": "28/07/2026 16:29:36",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 148229,
           "queueSeconds": 1,
@@ -979,7 +995,7 @@
         {
           "protocol": "202603674148",
           "date": "28/07/2026 16:15:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 89217,
           "queueSeconds": 5,
@@ -989,7 +1005,7 @@
         {
           "protocol": "202603673969",
           "date": "28/07/2026 15:39:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 151576,
           "queueSeconds": 2,
@@ -999,7 +1015,7 @@
         {
           "protocol": "202603673917",
           "date": "28/07/2026 15:25:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 86554,
           "queueSeconds": 2,
@@ -1019,7 +1035,7 @@
         {
           "protocol": "202603673774",
           "date": "28/07/2026 14:54:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 90846,
           "queueSeconds": 2,
@@ -1029,7 +1045,7 @@
         {
           "protocol": "202603673685",
           "date": "28/07/2026 14:35:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 75002,
           "queueSeconds": 2,
@@ -1039,7 +1055,7 @@
         {
           "protocol": "202603673654",
           "date": "28/07/2026 14:27:27",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 87364,
           "queueSeconds": 4,
@@ -1089,7 +1105,7 @@
         {
           "protocol": "202603672970",
           "date": "28/07/2026 13:40:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 80079,
           "queueSeconds": 3,
@@ -1099,7 +1115,7 @@
         {
           "protocol": "202603672913",
           "date": "28/07/2026 13:32:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 904,
           "queueSeconds": 0,
@@ -1139,7 +1155,7 @@
         {
           "protocol": "202603672226",
           "date": "28/07/2026 11:05:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 83089,
           "queueSeconds": 2,
@@ -1159,7 +1175,7 @@
         {
           "protocol": "202603669552",
           "date": "28/07/2026 08:39:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 23472,
           "queueSeconds": 436,
@@ -1169,7 +1185,7 @@
         {
           "protocol": "202603669517",
           "date": "28/07/2026 08:31:21",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 109904,
           "queueSeconds": 2,
@@ -1189,7 +1205,7 @@
         {
           "protocol": "202603669383",
           "date": "28/07/2026 08:00:08",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 28148,
           "queueSeconds": 1568,
@@ -1199,7 +1215,7 @@
         {
           "protocol": "202603668593",
           "date": "27/07/2026 16:02:14",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 76892,
           "queueSeconds": 1,
@@ -1219,7 +1235,7 @@
         {
           "protocol": "202603668142",
           "date": "27/07/2026 14:46:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 75967,
           "queueSeconds": 2,
@@ -1229,7 +1245,7 @@
         {
           "protocol": "202603667748",
           "date": "27/07/2026 13:32:08",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 85896,
           "queueSeconds": 1,
@@ -1249,7 +1265,7 @@
         {
           "protocol": "202603666859",
           "date": "27/07/2026 11:05:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 81816,
           "queueSeconds": 1,
@@ -1259,7 +1275,7 @@
         {
           "protocol": "202603666837",
           "date": "27/07/2026 11:02:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 84712,
           "queueSeconds": 2,
@@ -1269,7 +1285,7 @@
         {
           "protocol": "202603666527",
           "date": "27/07/2026 10:48:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 24550,
           "queueSeconds": 0,
@@ -1279,7 +1295,7 @@
         {
           "protocol": "202603666649",
           "date": "27/07/2026 10:36:07",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 15114,
           "queueSeconds": 1,
@@ -1289,7 +1305,7 @@
         {
           "protocol": "202603665806",
           "date": "27/07/2026 10:07:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 18085,
           "queueSeconds": 2,
@@ -1309,7 +1325,7 @@
         {
           "protocol": "202603665654",
           "date": "27/07/2026 09:49:32",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 24290,
           "queueSeconds": 2,
@@ -1319,7 +1335,7 @@
         {
           "protocol": "202603665415",
           "date": "27/07/2026 09:18:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 17327,
           "queueSeconds": 2,
@@ -1329,7 +1345,7 @@
         {
           "protocol": "202603664974",
           "date": "27/07/2026 08:34:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 8209,
           "queueSeconds": 2,
@@ -1349,7 +1365,7 @@
         {
           "protocol": "202603664886",
           "date": "27/07/2026 08:20:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 1109,
           "queueSeconds": 2,
@@ -1369,7 +1385,7 @@
         {
           "protocol": "202603664861",
           "date": "27/07/2026 08:16:35",
-          "service": "Atendimento concluído",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 1618,
           "queueSeconds": 1,
@@ -1379,7 +1395,7 @@
         {
           "protocol": "202603664850",
           "date": "27/07/2026 08:15:18",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 9471,
           "queueSeconds": 0,
@@ -1389,7 +1405,7 @@
         {
           "protocol": "202603664747",
           "date": "27/07/2026 07:49:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 22212,
           "queueSeconds": 1198,
@@ -1409,7 +1425,7 @@
         {
           "protocol": "202603663071",
           "date": "24/07/2026 17:06:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 1326,
           "queueSeconds": 1,
@@ -1449,7 +1465,7 @@
         {
           "protocol": "202603660278",
           "date": "24/07/2026 09:18:21",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 29380,
           "queueSeconds": 0,
@@ -1459,7 +1475,7 @@
         {
           "protocol": "202603660085",
           "date": "24/07/2026 08:43:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 17511,
           "queueSeconds": 2,
@@ -1469,7 +1485,7 @@
         {
           "protocol": "202603660081",
           "date": "24/07/2026 08:43:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 8417,
           "queueSeconds": 3,
@@ -1479,7 +1495,7 @@
         {
           "protocol": "202603659884",
           "date": "24/07/2026 08:42:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20971,
           "queueSeconds": 3,
@@ -1489,7 +1505,7 @@
         {
           "protocol": "202603655728",
           "date": "23/07/2026 15:19:30",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 81023,
           "queueSeconds": 2,
@@ -1499,7 +1515,7 @@
         {
           "protocol": "202603655722",
           "date": "23/07/2026 15:16:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 84953,
           "queueSeconds": 1,
@@ -1509,7 +1525,7 @@
         {
           "protocol": "202603655270",
           "date": "23/07/2026 14:21:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 71285,
           "queueSeconds": 1,
@@ -1519,7 +1535,7 @@
         {
           "protocol": "202603654705",
           "date": "23/07/2026 12:07:30",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 79029,
           "queueSeconds": 3,
@@ -1589,7 +1605,7 @@
         {
           "protocol": "202603651060",
           "date": "23/07/2026 10:19:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 85576,
           "queueSeconds": 1,
@@ -1609,7 +1625,7 @@
         {
           "protocol": "202603650543",
           "date": "23/07/2026 08:57:24",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20344,
           "queueSeconds": 3,
@@ -1619,7 +1635,7 @@
         {
           "protocol": "202603650490",
           "date": "23/07/2026 08:50:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 25242,
           "queueSeconds": 2,
@@ -1639,7 +1655,7 @@
         {
           "protocol": "202603646940",
           "date": "22/07/2026 15:08:10",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 65575,
           "queueSeconds": 0,
@@ -1649,7 +1665,7 @@
         {
           "protocol": "202603648840",
           "date": "22/07/2026 14:47:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 74666,
           "queueSeconds": 0,
@@ -1659,7 +1675,7 @@
         {
           "protocol": "202603648851",
           "date": "22/07/2026 14:41:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 89939,
           "queueSeconds": 1,
@@ -1669,7 +1685,7 @@
         {
           "protocol": "202603648763",
           "date": "22/07/2026 14:24:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 14410,
           "queueSeconds": 1,
@@ -1679,7 +1695,7 @@
         {
           "protocol": "202603646450",
           "date": "22/07/2026 11:33:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 11430,
           "queueSeconds": 3,
@@ -1689,7 +1705,7 @@
         {
           "protocol": "202603646183",
           "date": "22/07/2026 11:06:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 25062,
           "queueSeconds": 1,
@@ -1699,7 +1715,7 @@
         {
           "protocol": "202603646122",
           "date": "22/07/2026 10:57:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 9272,
           "queueSeconds": 0,
@@ -1709,7 +1725,7 @@
         {
           "protocol": "202603645707",
           "date": "22/07/2026 09:56:46",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 23688,
           "queueSeconds": 3,
@@ -1719,7 +1735,7 @@
         {
           "protocol": "202603644442",
           "date": "21/07/2026 17:00:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 66375,
           "queueSeconds": 2,
@@ -1729,7 +1745,7 @@
         {
           "protocol": "202603631636",
           "date": "21/07/2026 16:47:01",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 67290,
           "queueSeconds": 0,
@@ -1739,7 +1755,7 @@
         {
           "protocol": "202603644323",
           "date": "21/07/2026 16:39:23",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 91469,
           "queueSeconds": 1,
@@ -1759,7 +1775,7 @@
         {
           "protocol": "202603643480",
           "date": "21/07/2026 13:36:51",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 78598,
           "queueSeconds": 2,
@@ -1789,7 +1805,7 @@
         {
           "protocol": "202603643346",
           "date": "21/07/2026 13:09:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 81569,
           "queueSeconds": 0,
@@ -1849,7 +1865,7 @@
         {
           "protocol": "202603642017",
           "date": "21/07/2026 09:15:16",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 2984,
           "queueSeconds": 1,
@@ -1859,7 +1875,7 @@
         {
           "protocol": "202603641952",
           "date": "21/07/2026 09:06:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 30012,
           "queueSeconds": 24,
@@ -1869,7 +1885,7 @@
         {
           "protocol": "202603641216",
           "date": "20/07/2026 17:12:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 162176,
           "queueSeconds": 1,
@@ -1879,7 +1895,7 @@
         {
           "protocol": "202603640986",
           "date": "20/07/2026 16:25:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 63483,
           "queueSeconds": 3,
@@ -1909,7 +1925,7 @@
         {
           "protocol": "202603638684",
           "date": "20/07/2026 09:45:11",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 178808,
           "queueSeconds": 2,
@@ -1919,7 +1935,7 @@
         {
           "protocol": "202603638071",
           "date": "20/07/2026 09:07:22",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 108919,
           "queueSeconds": 0,
@@ -1929,7 +1945,7 @@
         {
           "protocol": "202603638303",
           "date": "20/07/2026 09:04:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 27374,
           "queueSeconds": 3,
@@ -1939,7 +1955,7 @@
         {
           "protocol": "202603637933",
           "date": "20/07/2026 08:24:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 6532,
           "queueSeconds": 100,
@@ -1949,7 +1965,7 @@
         {
           "protocol": "202603637965",
           "date": "20/07/2026 08:23:07",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 33204,
           "queueSeconds": 194,
@@ -1979,7 +1995,7 @@
         {
           "protocol": "202603635200",
           "date": "17/07/2026 13:38:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 244969,
           "queueSeconds": 1,
@@ -1989,7 +2005,7 @@
         {
           "protocol": "202603635120",
           "date": "17/07/2026 13:16:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 261093,
           "queueSeconds": 1,
@@ -2019,7 +2035,7 @@
         {
           "protocol": "202603633300",
           "date": "16/07/2026 17:41:15",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 87177,
           "queueSeconds": 3,
@@ -2039,7 +2055,7 @@
         {
           "protocol": "202603632339",
           "date": "16/07/2026 13:08:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 95510,
           "queueSeconds": 3,
@@ -2049,7 +2065,7 @@
         {
           "protocol": "202603632314",
           "date": "16/07/2026 13:02:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 92043,
           "queueSeconds": 1,
@@ -2059,7 +2075,7 @@
         {
           "protocol": "202603632300",
           "date": "16/07/2026 12:58:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 78042,
           "queueSeconds": 1,
@@ -2069,7 +2085,7 @@
         {
           "protocol": "202603631690",
           "date": "16/07/2026 10:49:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 100085,
           "queueSeconds": 2,
@@ -2079,7 +2095,7 @@
         {
           "protocol": "202603630126",
           "date": "16/07/2026 09:36:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 86212,
           "queueSeconds": 0,
@@ -2089,7 +2105,7 @@
         {
           "protocol": "202603629136",
           "date": "16/07/2026 08:56:43",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 33856,
           "queueSeconds": 0,
@@ -2109,7 +2125,7 @@
         {
           "protocol": "202603629305",
           "date": "15/07/2026 17:25:18",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 57328,
           "queueSeconds": 1,
@@ -2129,7 +2145,7 @@
         {
           "protocol": "202603628806",
           "date": "15/07/2026 15:11:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 93533,
           "queueSeconds": 3,
@@ -2139,7 +2155,7 @@
         {
           "protocol": "202603628690",
           "date": "15/07/2026 14:44:20",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 81737,
           "queueSeconds": 2,
@@ -2149,7 +2165,7 @@
         {
           "protocol": "202603628599",
           "date": "15/07/2026 14:22:58",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 83249,
           "queueSeconds": 2,
@@ -2159,7 +2175,7 @@
         {
           "protocol": "202603628366",
           "date": "15/07/2026 13:26:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 3651,
           "queueSeconds": 1,
@@ -2169,7 +2185,7 @@
         {
           "protocol": "202603627611",
           "date": "15/07/2026 10:54:36",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 103545,
           "queueSeconds": 2,
@@ -2179,7 +2195,7 @@
         {
           "protocol": "202603627531",
           "date": "15/07/2026 10:36:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 81966,
           "queueSeconds": 1,
@@ -2189,7 +2205,7 @@
         {
           "protocol": "202603627456",
           "date": "15/07/2026 10:21:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 98512,
           "queueSeconds": 4,
@@ -2199,7 +2215,7 @@
         {
           "protocol": "202603627103",
           "date": "15/07/2026 09:56:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 96383,
           "queueSeconds": 0,
@@ -2209,7 +2225,7 @@
         {
           "protocol": "202603627034",
           "date": "15/07/2026 09:55:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 96291,
           "queueSeconds": 0,
@@ -2219,7 +2235,7 @@
         {
           "protocol": "202603626832",
           "date": "15/07/2026 09:53:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 30497,
           "queueSeconds": 0,
@@ -2229,7 +2245,7 @@
         {
           "protocol": "202603627218",
           "date": "15/07/2026 09:34:12",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 85879,
           "queueSeconds": 2,
@@ -2239,7 +2255,7 @@
         {
           "protocol": "202603626104",
           "date": "14/07/2026 17:04:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 61453,
           "queueSeconds": 0,
@@ -2249,7 +2265,7 @@
         {
           "protocol": "202603624500",
           "date": "14/07/2026 16:44:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 79985,
           "queueSeconds": 0,
@@ -2259,7 +2275,7 @@
         {
           "protocol": "202603624481",
           "date": "14/07/2026 16:43:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 88125,
           "queueSeconds": 1,
@@ -2269,7 +2285,7 @@
         {
           "protocol": "202603625587",
           "date": "14/07/2026 16:43:27",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 76611,
           "queueSeconds": 0,
@@ -2279,7 +2295,7 @@
         {
           "protocol": "202603625996",
           "date": "14/07/2026 16:36:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 66044,
           "queueSeconds": 4,
@@ -2289,7 +2305,7 @@
         {
           "protocol": "202603622019",
           "date": "14/07/2026 10:48:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 1215,
           "queueSeconds": 20707,
@@ -2299,7 +2315,7 @@
         {
           "protocol": "202603624137",
           "date": "14/07/2026 10:12:23",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 97232,
           "queueSeconds": 0,
@@ -2319,7 +2335,7 @@
         {
           "protocol": "202603623758",
           "date": "14/07/2026 08:52:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 3109,
           "queueSeconds": 2,
@@ -2339,7 +2355,7 @@
         {
           "protocol": "202603623059",
           "date": "13/07/2026 17:13:08",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 63246,
           "queueSeconds": 0,
@@ -2379,7 +2395,7 @@
         {
           "protocol": "202603622493",
           "date": "13/07/2026 15:19:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 70030,
           "queueSeconds": 0,
@@ -2399,7 +2415,7 @@
         {
           "protocol": "202603621950",
           "date": "13/07/2026 13:20:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 74976,
           "queueSeconds": 2,
@@ -2409,7 +2425,7 @@
         {
           "protocol": "202603621917",
           "date": "13/07/2026 13:16:30",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 75122,
           "queueSeconds": 1,
@@ -2429,7 +2445,7 @@
         {
           "protocol": "202603620896",
           "date": "13/07/2026 10:18:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 85671,
           "queueSeconds": 0,
@@ -2439,7 +2455,7 @@
         {
           "protocol": "202603620687",
           "date": "13/07/2026 09:50:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 30533,
           "queueSeconds": 3,
@@ -2449,7 +2465,7 @@
         {
           "protocol": "202603620462",
           "date": "13/07/2026 09:20:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 26858,
           "queueSeconds": 3,
@@ -2459,7 +2475,7 @@
         {
           "protocol": "202603619895",
           "date": "13/07/2026 09:03:17",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 33724,
           "queueSeconds": 780,
@@ -2469,7 +2485,7 @@
         {
           "protocol": "202603620208",
           "date": "13/07/2026 08:47:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 21438,
           "queueSeconds": 2,
@@ -2489,7 +2505,7 @@
         {
           "protocol": "202603620009",
           "date": "13/07/2026 08:24:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 23183,
           "queueSeconds": 2,
@@ -2499,7 +2515,7 @@
         {
           "protocol": "202603619935",
           "date": "13/07/2026 08:15:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 4805,
           "queueSeconds": 0,
@@ -2539,7 +2555,7 @@
         {
           "protocol": "202603618013",
           "date": "10/07/2026 16:24:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 231668,
           "queueSeconds": 0,
@@ -2549,7 +2565,7 @@
         {
           "protocol": "202603618011",
           "date": "10/07/2026 16:24:13",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 6368,
           "queueSeconds": 1,
@@ -2569,7 +2585,7 @@
         {
           "protocol": "202603617697",
           "date": "10/07/2026 14:58:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 11459,
           "queueSeconds": 2,
@@ -2589,7 +2605,7 @@
         {
           "protocol": "202603616350",
           "date": "10/07/2026 10:30:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 1207,
           "queueSeconds": 0,
@@ -2609,7 +2625,7 @@
         {
           "protocol": "202603616045",
           "date": "10/07/2026 09:01:34",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 263492,
           "queueSeconds": 1,
@@ -2639,7 +2655,7 @@
         {
           "protocol": "202603615227",
           "date": "09/07/2026 16:24:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 76719,
           "queueSeconds": 3,
@@ -2649,7 +2665,7 @@
         {
           "protocol": "202603614884",
           "date": "09/07/2026 14:51:29",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 96234,
           "queueSeconds": 3,
@@ -2659,7 +2675,7 @@
         {
           "protocol": "202603614848",
           "date": "09/07/2026 14:43:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 1105,
           "queueSeconds": 0,
@@ -2669,7 +2685,7 @@
         {
           "protocol": "202603614822",
           "date": "09/07/2026 14:36:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 87566,
           "queueSeconds": 0,
@@ -2679,7 +2695,7 @@
         {
           "protocol": "202603614727",
           "date": "09/07/2026 14:16:42",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 13683,
           "queueSeconds": 2,
@@ -2689,7 +2705,7 @@
         {
           "protocol": "202603614194",
           "date": "09/07/2026 12:33:55",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 14664,
           "queueSeconds": 0,
@@ -2699,7 +2715,7 @@
         {
           "protocol": "202603605417",
           "date": "09/07/2026 10:57:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 84591,
           "queueSeconds": 1,
@@ -2709,7 +2725,7 @@
         {
           "protocol": "202603605208",
           "date": "09/07/2026 10:14:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 100748,
           "queueSeconds": 2,
@@ -2719,7 +2735,7 @@
         {
           "protocol": "202603604827",
           "date": "09/07/2026 08:48:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 33223,
           "queueSeconds": 1,
@@ -2729,7 +2745,7 @@
         {
           "protocol": "202603604054",
           "date": "08/07/2026 16:19:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 81798,
           "queueSeconds": 1,
@@ -2749,7 +2765,7 @@
         {
           "protocol": "202603602942",
           "date": "08/07/2026 14:31:32",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 152965,
           "queueSeconds": 1,
@@ -2759,7 +2775,7 @@
         {
           "protocol": "202603602084",
           "date": "08/07/2026 14:16:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 82783,
           "queueSeconds": 0,
@@ -2769,7 +2785,7 @@
         {
           "protocol": "202603602698",
           "date": "08/07/2026 13:33:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 90213,
           "queueSeconds": 1,
@@ -2779,7 +2795,7 @@
         {
           "protocol": "202603602467",
           "date": "08/07/2026 12:46:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 92991,
           "queueSeconds": 0,
@@ -2789,7 +2805,7 @@
         {
           "protocol": "202603602387",
           "date": "08/07/2026 12:27:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 79691,
           "queueSeconds": 2,
@@ -2799,7 +2815,7 @@
         {
           "protocol": "202603601983",
           "date": "08/07/2026 11:01:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 625,
           "queueSeconds": 2,
@@ -2809,7 +2825,7 @@
         {
           "protocol": "202603601921",
           "date": "08/07/2026 10:50:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 170407,
           "queueSeconds": 2,
@@ -2819,7 +2835,7 @@
         {
           "protocol": "202603601782",
           "date": "08/07/2026 10:26:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 27103,
           "queueSeconds": 2,
@@ -2829,7 +2845,7 @@
         {
           "protocol": "202603601648",
           "date": "08/07/2026 09:58:12",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 1411,
           "queueSeconds": 3,
@@ -2839,7 +2855,7 @@
         {
           "protocol": "202603601506",
           "date": "08/07/2026 09:35:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 89858,
           "queueSeconds": 3,
@@ -2849,7 +2865,7 @@
         {
           "protocol": "202603600618",
           "date": "07/07/2026 17:17:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 82721,
           "queueSeconds": 1,
@@ -2859,7 +2875,7 @@
         {
           "protocol": "202603600550",
           "date": "07/07/2026 16:56:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 92277,
           "queueSeconds": 0,
@@ -2889,7 +2905,7 @@
         {
           "protocol": "202603599732",
           "date": "07/07/2026 14:36:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 81995,
           "queueSeconds": 0,
@@ -2899,7 +2915,7 @@
         {
           "protocol": "202603598889",
           "date": "07/07/2026 11:27:21",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 92247,
           "queueSeconds": 3,
@@ -2909,7 +2925,7 @@
         {
           "protocol": "202603598837",
           "date": "07/07/2026 11:20:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 83015,
           "queueSeconds": 4,
@@ -2959,7 +2975,7 @@
         {
           "protocol": "202603587707",
           "date": "07/07/2026 08:29:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 102302,
           "queueSeconds": 0,
@@ -2979,7 +2995,7 @@
         {
           "protocol": "202603587630",
           "date": "06/07/2026 16:54:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 76306,
           "queueSeconds": 3,
@@ -2989,7 +3005,7 @@
         {
           "protocol": "202603587443",
           "date": "06/07/2026 16:00:13",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 3296,
           "queueSeconds": 1,
@@ -2999,7 +3015,7 @@
         {
           "protocol": "202603587337",
           "date": "06/07/2026 15:44:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 13298,
           "queueSeconds": 0,
@@ -3009,7 +3025,7 @@
         {
           "protocol": "202603587338",
           "date": "06/07/2026 15:33:16",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 12992,
           "queueSeconds": 1,
@@ -3019,7 +3035,7 @@
         {
           "protocol": "202603585828",
           "date": "06/07/2026 14:49:50",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 14299,
           "queueSeconds": 0,
@@ -3029,7 +3045,7 @@
         {
           "protocol": "202603587018",
           "date": "06/07/2026 14:12:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 86741,
           "queueSeconds": 1,
@@ -3039,7 +3055,7 @@
         {
           "protocol": "202603586989",
           "date": "06/07/2026 14:04:53",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 100402,
           "queueSeconds": 1,
@@ -3049,7 +3065,7 @@
         {
           "protocol": "202603586978",
           "date": "06/07/2026 14:03:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 156765,
           "queueSeconds": 2,
@@ -3059,7 +3075,7 @@
         {
           "protocol": "202603586807",
           "date": "06/07/2026 13:19:51",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 103013,
           "queueSeconds": 3,
@@ -3079,7 +3095,7 @@
         {
           "protocol": "202603586121",
           "date": "06/07/2026 10:54:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 25320,
           "queueSeconds": 3,
@@ -3089,7 +3105,7 @@
         {
           "protocol": "202603585703",
           "date": "06/07/2026 09:46:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 25407,
           "queueSeconds": 1,
@@ -3099,7 +3115,7 @@
         {
           "protocol": "202603583429",
           "date": "06/07/2026 09:37:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 23007,
           "queueSeconds": 0,
@@ -3109,7 +3125,7 @@
         {
           "protocol": "202603585504",
           "date": "06/07/2026 09:15:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 21299,
           "queueSeconds": 1,
@@ -3119,7 +3135,7 @@
         {
           "protocol": "202603585465",
           "date": "06/07/2026 09:09:21",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 26990,
           "queueSeconds": 1,
@@ -3129,7 +3145,7 @@
         {
           "protocol": "202603583017",
           "date": "06/07/2026 08:54:03",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 22848,
           "queueSeconds": 0,
@@ -3139,7 +3155,7 @@
         {
           "protocol": "202603584097",
           "date": "04/07/2026 09:51:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 30958,
           "queueSeconds": 166498,
@@ -3149,7 +3165,7 @@
         {
           "protocol": "202603583896",
           "date": "04/07/2026 08:33:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 9475,
           "queueSeconds": 171052,
@@ -3229,7 +3245,7 @@
         {
           "protocol": "202603574933",
           "date": "03/07/2026 11:34:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 4291,
           "queueSeconds": 2,
@@ -3239,7 +3255,7 @@
         {
           "protocol": "202603567420",
           "date": "03/07/2026 10:45:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 277853,
           "queueSeconds": 3,
@@ -3269,7 +3285,7 @@
         {
           "protocol": "202603567000",
           "date": "03/07/2026 09:34:26",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 23795,
           "queueSeconds": 440,
@@ -3289,7 +3305,7 @@
         {
           "protocol": "202603566821",
           "date": "03/07/2026 08:47:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 26758,
           "queueSeconds": 1,
@@ -3299,7 +3315,7 @@
         {
           "protocol": "202603566273",
           "date": "02/07/2026 17:25:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 54781,
           "queueSeconds": 2,
@@ -3309,7 +3325,7 @@
         {
           "protocol": "202603565764",
           "date": "02/07/2026 14:55:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 70269,
           "queueSeconds": 1,
@@ -3329,7 +3345,7 @@
         {
           "protocol": "202603565534",
           "date": "02/07/2026 14:00:47",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 334305,
           "queueSeconds": 1,
@@ -3349,7 +3365,7 @@
         {
           "protocol": "202603565452",
           "date": "02/07/2026 13:40:26",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 92340,
           "queueSeconds": 1,
@@ -3359,7 +3375,7 @@
         {
           "protocol": "202603565330",
           "date": "02/07/2026 13:04:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 89574,
           "queueSeconds": 3,
@@ -3379,7 +3395,7 @@
         {
           "protocol": "202603564763",
           "date": "02/07/2026 10:52:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 80839,
           "queueSeconds": 1,
@@ -3389,7 +3405,7 @@
         {
           "protocol": "202603564424",
           "date": "02/07/2026 09:35:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 23807,
           "queueSeconds": 0,
@@ -3399,7 +3415,7 @@
         {
           "protocol": "202603564395",
           "date": "02/07/2026 09:30:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 109401,
           "queueSeconds": 1,
@@ -3409,7 +3425,7 @@
         {
           "protocol": "202603564293",
           "date": "02/07/2026 09:09:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 107852,
           "queueSeconds": 2,
@@ -3419,7 +3435,7 @@
         {
           "protocol": "202603564205",
           "date": "02/07/2026 08:54:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 100807,
           "queueSeconds": 0,
@@ -3429,7 +3445,7 @@
         {
           "protocol": "202603563254",
           "date": "02/07/2026 08:34:07",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 29099,
           "queueSeconds": 3,
@@ -3439,7 +3455,7 @@
         {
           "protocol": "202603563215",
           "date": "02/07/2026 08:20:18",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 33861,
           "queueSeconds": 1,
@@ -3449,7 +3465,7 @@
         {
           "protocol": "202603562420",
           "date": "01/07/2026 17:21:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 64193,
           "queueSeconds": 0,
@@ -3459,7 +3475,7 @@
         {
           "protocol": "202603562783",
           "date": "01/07/2026 17:07:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 72543,
           "queueSeconds": 2,
@@ -3479,7 +3495,7 @@
         {
           "protocol": "202603562687",
           "date": "01/07/2026 16:40:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 63763,
           "queueSeconds": 0,
@@ -3499,7 +3515,7 @@
         {
           "protocol": "202603562538",
           "date": "01/07/2026 16:03:23",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 67287,
           "queueSeconds": 2,
@@ -3509,7 +3525,7 @@
         {
           "protocol": "202603562062",
           "date": "01/07/2026 15:57:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 465,
           "queueSeconds": 0,
@@ -3519,7 +3535,7 @@
         {
           "protocol": "202603562374",
           "date": "01/07/2026 15:51:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 84389,
           "queueSeconds": 2,
@@ -3529,7 +3545,7 @@
         {
           "protocol": "202603562075",
           "date": "01/07/2026 15:40:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 88150,
           "queueSeconds": 0,
@@ -3539,7 +3555,7 @@
         {
           "protocol": "202603562268",
           "date": "01/07/2026 14:42:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 86499,
           "queueSeconds": 1,
@@ -3559,7 +3575,7 @@
         {
           "protocol": "202603560379",
           "date": "01/07/2026 13:36:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 6884,
           "queueSeconds": 0,
@@ -3569,7 +3585,7 @@
         {
           "protocol": "202603561984",
           "date": "01/07/2026 13:23:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 91805,
           "queueSeconds": 4,
@@ -3579,7 +3595,7 @@
         {
           "protocol": "202603561865",
           "date": "01/07/2026 12:50:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 73303,
           "queueSeconds": 0,
@@ -3589,7 +3605,7 @@
         {
           "protocol": "202603561288",
           "date": "01/07/2026 10:21:12",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 96983,
           "queueSeconds": 1,
@@ -4106,24 +4122,40 @@
       "csat": 94.1,
       "topServices": [
         [
-          "ATENDIMENTO CONCLUÍDO",
-          158
+          "Devoluções - Peça errada",
+          76
         ],
         [
           "Devoluções - Suporte Devolução",
-          42
+          68
         ],
         [
-          "Atendimento concluído",
-          15
+          "Devoluções - Peça com defeito",
+          22
         ],
         [
-          "Devoluções - Peça errada",
-          14
+          "Devoluções - Acompanhamento de Status",
+          21
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          21
         ],
         [
           "Devolução Fornecimento ES",
-          8
+          20
+        ],
+        [
+          "Devoluções - Outros Assuntos",
+          18
+        ],
+        [
+          "Devoluções - Coleta de Peças",
+          16
+        ],
+        [
+          "Devoluções - Peça avariada",
+          11
         ]
       ],
       "recent": [
@@ -4160,7 +4192,7 @@
         {
           "protocol": "202603701347",
           "date": "31/07/2026 14:51:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 644,
           "queueSeconds": 4,
@@ -4190,7 +4222,7 @@
         {
           "protocol": "202603699200",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10620,
           "queueSeconds": 0,
@@ -4200,7 +4232,7 @@
         {
           "protocol": "202603698561",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 13424,
           "queueSeconds": 0,
@@ -4492,7 +4524,7 @@
         {
           "protocol": "202603701347",
           "date": "31/07/2026 14:51:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 644,
           "queueSeconds": 4,
@@ -4522,7 +4554,7 @@
         {
           "protocol": "202603699200",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10620,
           "queueSeconds": 0,
@@ -4532,7 +4564,7 @@
         {
           "protocol": "202603698561",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 13424,
           "queueSeconds": 0,
@@ -4542,7 +4574,7 @@
         {
           "protocol": "202603698144",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 2730,
           "queueSeconds": 0,
@@ -4552,7 +4584,7 @@
         {
           "protocol": "202603697832",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 2788,
           "queueSeconds": 0,
@@ -4562,7 +4594,7 @@
         {
           "protocol": "202603697712",
           "date": "31/07/2026 11:17:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10735,
           "queueSeconds": 0,
@@ -4582,7 +4614,7 @@
         {
           "protocol": "202603700308",
           "date": "31/07/2026 10:59:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 10928,
           "queueSeconds": 2,
@@ -4592,7 +4624,7 @@
         {
           "protocol": "202603699462",
           "date": "31/07/2026 10:50:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 15023,
           "queueSeconds": 3,
@@ -4622,7 +4654,7 @@
         {
           "protocol": "202603698470",
           "date": "30/07/2026 17:29:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 59103,
           "queueSeconds": 4,
@@ -4632,7 +4664,7 @@
         {
           "protocol": "202603698463",
           "date": "30/07/2026 17:27:50",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 63153,
           "queueSeconds": 2,
@@ -4642,7 +4674,7 @@
         {
           "protocol": "202603698009",
           "date": "30/07/2026 15:47:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 70432,
           "queueSeconds": 2,
@@ -4652,7 +4684,7 @@
         {
           "protocol": "202603697802",
           "date": "30/07/2026 15:01:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 67815,
           "queueSeconds": 3,
@@ -4662,7 +4694,7 @@
         {
           "protocol": "202603697686",
           "date": "30/07/2026 14:35:11",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 3260,
           "queueSeconds": 2,
@@ -4672,7 +4704,7 @@
         {
           "protocol": "202603696671",
           "date": "30/07/2026 12:06:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 12595,
           "queueSeconds": 2,
@@ -4682,7 +4714,7 @@
         {
           "protocol": "202603696303",
           "date": "30/07/2026 10:58:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 14448,
           "queueSeconds": 1,
@@ -4692,7 +4724,7 @@
         {
           "protocol": "202603696138",
           "date": "30/07/2026 10:34:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 16943,
           "queueSeconds": 1,
@@ -4702,7 +4734,7 @@
         {
           "protocol": "202603695734",
           "date": "30/07/2026 10:15:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 17110,
           "queueSeconds": 1,
@@ -4712,7 +4744,7 @@
         {
           "protocol": "202603695580",
           "date": "30/07/2026 09:50:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 7830,
           "queueSeconds": 3,
@@ -4722,7 +4754,7 @@
         {
           "protocol": "202603695513",
           "date": "30/07/2026 09:40:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 8453,
           "queueSeconds": 2,
@@ -4732,7 +4764,7 @@
         {
           "protocol": "202603695281",
           "date": "30/07/2026 09:07:02",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 88484,
           "queueSeconds": 3,
@@ -4742,7 +4774,7 @@
         {
           "protocol": "202603694105",
           "date": "29/07/2026 15:53:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 3372,
           "queueSeconds": 4,
@@ -4752,7 +4784,7 @@
         {
           "protocol": "202603693841",
           "date": "29/07/2026 15:07:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 72246,
           "queueSeconds": 3,
@@ -4762,7 +4794,7 @@
         {
           "protocol": "202603693704",
           "date": "29/07/2026 14:40:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 7490,
           "queueSeconds": 1,
@@ -4792,7 +4824,7 @@
         {
           "protocol": "202603691949",
           "date": "29/07/2026 12:27:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 5643,
           "queueSeconds": 731,
@@ -4802,7 +4834,7 @@
         {
           "protocol": "202603691958",
           "date": "29/07/2026 10:48:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 12454,
           "queueSeconds": 0,
@@ -4812,7 +4844,7 @@
         {
           "protocol": "202603691948",
           "date": "29/07/2026 10:46:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 115,
           "queueSeconds": 0,
@@ -4832,7 +4864,7 @@
         {
           "protocol": "202603689718",
           "date": "29/07/2026 10:21:27",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 87299,
           "queueSeconds": 0,
@@ -4842,7 +4874,7 @@
         {
           "protocol": "202603674900",
           "date": "29/07/2026 08:18:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 15464,
           "queueSeconds": 593,
@@ -4862,7 +4894,7 @@
         {
           "protocol": "202603674355",
           "date": "28/07/2026 17:05:42",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 149277,
           "queueSeconds": 2,
@@ -4872,7 +4904,7 @@
         {
           "protocol": "202603673882",
           "date": "28/07/2026 16:54:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 73067,
           "queueSeconds": 2,
@@ -4882,7 +4914,7 @@
         {
           "protocol": "202603673638",
           "date": "28/07/2026 16:54:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 76680,
           "queueSeconds": 0,
@@ -4892,7 +4924,7 @@
         {
           "protocol": "202603674289",
           "date": "28/07/2026 16:50:31",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 76915,
           "queueSeconds": 2,
@@ -4912,7 +4944,7 @@
         {
           "protocol": "202603674160",
           "date": "28/07/2026 16:19:19",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 81233,
           "queueSeconds": 3,
@@ -4932,7 +4964,7 @@
         {
           "protocol": "202603673810",
           "date": "28/07/2026 15:02:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 4791,
           "queueSeconds": 2,
@@ -4942,7 +4974,7 @@
         {
           "protocol": "202603673715",
           "date": "28/07/2026 14:40:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 84698,
           "queueSeconds": 1,
@@ -4952,7 +4984,7 @@
         {
           "protocol": "202603672813",
           "date": "28/07/2026 13:05:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 12845,
           "queueSeconds": 3,
@@ -4992,7 +5024,7 @@
         {
           "protocol": "202603672539",
           "date": "28/07/2026 12:01:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 78440,
           "queueSeconds": 3,
@@ -5002,7 +5034,7 @@
         {
           "protocol": "202603672161",
           "date": "28/07/2026 10:55:48",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 2364,
           "queueSeconds": 3,
@@ -5012,7 +5044,7 @@
         {
           "protocol": "202603672113",
           "date": "28/07/2026 10:48:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 6618,
           "queueSeconds": 2,
@@ -5022,7 +5054,7 @@
         {
           "protocol": "202603671789",
           "date": "28/07/2026 10:48:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 8233,
           "queueSeconds": 0,
@@ -5042,7 +5074,7 @@
         {
           "protocol": "202603670756",
           "date": "28/07/2026 09:38:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 24056,
           "queueSeconds": 1,
@@ -5052,7 +5084,7 @@
         {
           "protocol": "202603670222",
           "date": "28/07/2026 09:36:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 4090,
           "queueSeconds": 2,
@@ -5062,7 +5094,7 @@
         {
           "protocol": "202603669684",
           "date": "28/07/2026 09:30:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 5594,
           "queueSeconds": 0,
@@ -5072,7 +5104,7 @@
         {
           "protocol": "202603669780",
           "date": "28/07/2026 09:17:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 87841,
           "queueSeconds": 0,
@@ -5082,7 +5114,7 @@
         {
           "protocol": "202603669748",
           "date": "28/07/2026 09:15:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 26771,
           "queueSeconds": 3,
@@ -5092,7 +5124,7 @@
         {
           "protocol": "202603668939",
           "date": "27/07/2026 17:16:24",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 2602,
           "queueSeconds": 2,
@@ -5102,7 +5134,7 @@
         {
           "protocol": "202603668450",
           "date": "27/07/2026 15:36:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 67458,
           "queueSeconds": 3,
@@ -5112,7 +5144,7 @@
         {
           "protocol": "202603668096",
           "date": "27/07/2026 14:39:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 70889,
           "queueSeconds": 1,
@@ -5122,7 +5154,7 @@
         {
           "protocol": "202603667010",
           "date": "27/07/2026 11:24:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 3549,
           "queueSeconds": 2,
@@ -5132,7 +5164,7 @@
         {
           "protocol": "202603666987",
           "date": "27/07/2026 11:21:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20656,
           "queueSeconds": 2,
@@ -5142,7 +5174,7 @@
         {
           "protocol": "202603666848",
           "date": "27/07/2026 11:03:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 15934,
           "queueSeconds": 1,
@@ -5152,7 +5184,7 @@
         {
           "protocol": "202603666811",
           "date": "27/07/2026 11:00:02",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 5515,
           "queueSeconds": 2,
@@ -5162,7 +5194,7 @@
         {
           "protocol": "202603666797",
           "date": "27/07/2026 10:57:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 3042,
           "queueSeconds": 0,
@@ -5172,7 +5204,7 @@
         {
           "protocol": "202603666569",
           "date": "27/07/2026 10:25:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 86920,
           "queueSeconds": 3,
@@ -5182,7 +5214,7 @@
         {
           "protocol": "202603665850",
           "date": "27/07/2026 10:16:30",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 14187,
           "queueSeconds": 0,
@@ -5192,7 +5224,7 @@
         {
           "protocol": "202603665755",
           "date": "27/07/2026 10:01:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 331,
           "queueSeconds": 0,
@@ -5202,7 +5234,7 @@
         {
           "protocol": "202603665709",
           "date": "27/07/2026 09:55:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 6495,
           "queueSeconds": 4,
@@ -5212,7 +5244,7 @@
         {
           "protocol": "202603665610",
           "date": "27/07/2026 09:46:18",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 8083,
           "queueSeconds": 0,
@@ -5222,7 +5254,7 @@
         {
           "protocol": "202603665549",
           "date": "27/07/2026 09:34:03",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 5106,
           "queueSeconds": 0,
@@ -5232,7 +5264,7 @@
         {
           "protocol": "202603665345",
           "date": "27/07/2026 09:28:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 30780,
           "queueSeconds": 0,
@@ -5242,7 +5274,7 @@
         {
           "protocol": "202603665474",
           "date": "27/07/2026 09:25:29",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 17025,
           "queueSeconds": 3,
@@ -5252,7 +5284,7 @@
         {
           "protocol": "202603665191",
           "date": "27/07/2026 09:03:17",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 1984,
           "queueSeconds": 3,
@@ -5262,7 +5294,7 @@
         {
           "protocol": "202603664948",
           "date": "27/07/2026 08:30:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 2886,
           "queueSeconds": 3,
@@ -5282,7 +5314,7 @@
         {
           "protocol": "202603662460",
           "date": "24/07/2026 14:31:10",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 267,
           "queueSeconds": 3,
@@ -5292,7 +5324,7 @@
         {
           "protocol": "202603662420",
           "date": "24/07/2026 14:22:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 2593,
           "queueSeconds": 0,
@@ -5302,7 +5334,7 @@
         {
           "protocol": "202603662410",
           "date": "24/07/2026 14:21:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 7445,
           "queueSeconds": 3,
@@ -5312,7 +5344,7 @@
         {
           "protocol": "202603662401",
           "date": "24/07/2026 14:20:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 263148,
           "queueSeconds": 0,
@@ -5342,7 +5374,7 @@
         {
           "protocol": "202603660984",
           "date": "24/07/2026 11:11:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 18796,
           "queueSeconds": 2,
@@ -5372,7 +5404,7 @@
         {
           "protocol": "202603655930",
           "date": "23/07/2026 16:05:23",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 70446,
           "queueSeconds": 3,
@@ -5382,7 +5414,7 @@
         {
           "protocol": "202603655766",
           "date": "23/07/2026 15:26:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 72872,
           "queueSeconds": 1,
@@ -5402,7 +5434,7 @@
         {
           "protocol": "202603655212",
           "date": "23/07/2026 14:07:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 5463,
           "queueSeconds": 3,
@@ -5412,7 +5444,7 @@
         {
           "protocol": "202603655132",
           "date": "23/07/2026 13:48:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 75507,
           "queueSeconds": 0,
@@ -5422,7 +5454,7 @@
         {
           "protocol": "202603654951",
           "date": "23/07/2026 13:07:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 82362,
           "queueSeconds": 1,
@@ -5432,7 +5464,7 @@
         {
           "protocol": "202603650367",
           "date": "23/07/2026 12:47:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 83870,
           "queueSeconds": 2,
@@ -5442,7 +5474,7 @@
         {
           "protocol": "202603654374",
           "date": "23/07/2026 12:44:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 3504,
           "queueSeconds": 4,
@@ -5452,7 +5484,7 @@
         {
           "protocol": "202603648666",
           "date": "23/07/2026 12:44:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 78988,
           "queueSeconds": 0,
@@ -5462,7 +5494,7 @@
         {
           "protocol": "202603650652",
           "date": "23/07/2026 12:44:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 84124,
           "queueSeconds": 2,
@@ -5472,7 +5504,7 @@
         {
           "protocol": "202603654121",
           "date": "23/07/2026 12:02:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 5079,
           "queueSeconds": 2531,
@@ -5482,7 +5514,7 @@
         {
           "protocol": "202603648784",
           "date": "23/07/2026 12:00:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 78515,
           "queueSeconds": 2645,
@@ -5492,7 +5524,7 @@
         {
           "protocol": "202603654168",
           "date": "23/07/2026 11:04:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 10339,
           "queueSeconds": 0,
@@ -5502,7 +5534,7 @@
         {
           "protocol": "202603654140",
           "date": "23/07/2026 10:34:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 11814,
           "queueSeconds": 3,
@@ -5512,7 +5544,7 @@
         {
           "protocol": "202603651025",
           "date": "23/07/2026 10:12:13",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 92186,
           "queueSeconds": 3,
@@ -5522,7 +5554,7 @@
         {
           "protocol": "202603649268",
           "date": "22/07/2026 15:55:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 67040,
           "queueSeconds": 4,
@@ -5532,7 +5564,7 @@
         {
           "protocol": "202603648906",
           "date": "22/07/2026 14:49:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 70542,
           "queueSeconds": 1,
@@ -5542,7 +5574,7 @@
         {
           "protocol": "202603648786",
           "date": "22/07/2026 14:27:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 71224,
           "queueSeconds": 2,
@@ -5562,7 +5594,7 @@
         {
           "protocol": "202603646318",
           "date": "22/07/2026 11:28:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 95249,
           "queueSeconds": 2,
@@ -5572,7 +5604,7 @@
         {
           "protocol": "202603645650",
           "date": "22/07/2026 09:48:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 7299,
           "queueSeconds": 1,
@@ -5582,7 +5614,7 @@
         {
           "protocol": "202603645527",
           "date": "22/07/2026 09:28:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 19405,
           "queueSeconds": 3,
@@ -5592,7 +5624,7 @@
         {
           "protocol": "202603645356",
           "date": "22/07/2026 08:58:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 7315,
           "queueSeconds": 2,
@@ -5602,7 +5634,7 @@
         {
           "protocol": "202603644460",
           "date": "21/07/2026 17:04:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 1131,
           "queueSeconds": 1,
@@ -5612,7 +5644,7 @@
         {
           "protocol": "202603644355",
           "date": "21/07/2026 16:44:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 62278,
           "queueSeconds": 3,
@@ -5622,7 +5654,7 @@
         {
           "protocol": "202603642679",
           "date": "21/07/2026 14:27:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 72810,
           "queueSeconds": 1,
@@ -5632,7 +5664,7 @@
         {
           "protocol": "202603643743",
           "date": "21/07/2026 14:25:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 3732,
           "queueSeconds": 2,
@@ -5652,7 +5684,7 @@
         {
           "protocol": "202603643223",
           "date": "21/07/2026 14:00:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 11602,
           "queueSeconds": 1,
@@ -5662,7 +5694,7 @@
         {
           "protocol": "202603642951",
           "date": "21/07/2026 11:44:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 13123,
           "queueSeconds": 1,
@@ -5672,7 +5704,7 @@
         {
           "protocol": "202603642544",
           "date": "21/07/2026 11:01:08",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 1928,
           "queueSeconds": 2,
@@ -5682,7 +5714,7 @@
         {
           "protocol": "202603642584",
           "date": "21/07/2026 10:46:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 1479,
           "queueSeconds": 3,
@@ -5692,7 +5724,7 @@
         {
           "protocol": "202603642283",
           "date": "21/07/2026 09:57:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 4723,
           "queueSeconds": 4,
@@ -5702,7 +5734,7 @@
         {
           "protocol": "202603642267",
           "date": "21/07/2026 09:54:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 1778,
           "queueSeconds": 2,
@@ -5712,7 +5744,7 @@
         {
           "protocol": "202603641903",
           "date": "21/07/2026 08:56:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 7003,
           "queueSeconds": 4,
@@ -5752,7 +5784,7 @@
         {
           "protocol": "202603638967",
           "date": "20/07/2026 14:42:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 67529,
           "queueSeconds": 0,
@@ -5762,7 +5794,7 @@
         {
           "protocol": "202603640195",
           "date": "20/07/2026 14:01:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 16610,
           "queueSeconds": 3,
@@ -5772,7 +5804,7 @@
         {
           "protocol": "202603639177",
           "date": "20/07/2026 10:53:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 13296,
           "queueSeconds": 3,
@@ -5782,7 +5814,7 @@
         {
           "protocol": "202603639024",
           "date": "20/07/2026 10:34:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 14373,
           "queueSeconds": 1,
@@ -5812,7 +5844,7 @@
         {
           "protocol": "202603638499",
           "date": "20/07/2026 09:22:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 3005,
           "queueSeconds": 2,
@@ -5822,7 +5854,7 @@
         {
           "protocol": "202603638305",
           "date": "20/07/2026 09:04:52",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 8951,
           "queueSeconds": 3,
@@ -5832,7 +5864,7 @@
         {
           "protocol": "202603635653",
           "date": "17/07/2026 15:23:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 238033,
           "queueSeconds": 0,
@@ -5842,7 +5874,7 @@
         {
           "protocol": "202603635589",
           "date": "17/07/2026 15:07:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 239378,
           "queueSeconds": 1,
@@ -5852,7 +5884,7 @@
         {
           "protocol": "202603635510",
           "date": "17/07/2026 14:51:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 242597,
           "queueSeconds": 1,
@@ -5862,7 +5894,7 @@
         {
           "protocol": "202603634656",
           "date": "17/07/2026 11:30:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 2042,
           "queueSeconds": 2,
@@ -5882,7 +5914,7 @@
         {
           "protocol": "202603634351",
           "date": "17/07/2026 10:26:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 5079,
           "queueSeconds": 3,
@@ -5892,7 +5924,7 @@
         {
           "protocol": "202603634170",
           "date": "17/07/2026 09:53:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 7005,
           "queueSeconds": 2,
@@ -5902,7 +5934,7 @@
         {
           "protocol": "202603633883",
           "date": "17/07/2026 08:52:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 19661,
           "queueSeconds": 1,
@@ -5962,7 +5994,7 @@
         {
           "protocol": "202603625773",
           "date": "14/07/2026 15:42:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 65491,
           "queueSeconds": 4,
@@ -5982,7 +6014,7 @@
         {
           "protocol": "202603625593",
           "date": "14/07/2026 15:01:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 67644,
           "queueSeconds": 0,
@@ -5992,7 +6024,7 @@
         {
           "protocol": "202603624815",
           "date": "14/07/2026 11:59:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 76957,
           "queueSeconds": 1,
@@ -6032,7 +6064,7 @@
         {
           "protocol": "202603622834",
           "date": "14/07/2026 10:48:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 81207,
           "queueSeconds": 2,
@@ -6062,7 +6094,7 @@
         {
           "protocol": "202603623744",
           "date": "14/07/2026 08:50:23",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 88079,
           "queueSeconds": 3,
@@ -6082,7 +6114,7 @@
         {
           "protocol": "202603622934",
           "date": "13/07/2026 16:45:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 68828,
           "queueSeconds": 1,
@@ -6092,7 +6124,7 @@
         {
           "protocol": "202603622663",
           "date": "13/07/2026 15:43:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 71688,
           "queueSeconds": 1,
@@ -6102,7 +6134,7 @@
         {
           "protocol": "202603622459",
           "date": "13/07/2026 15:07:38",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 4748,
           "queueSeconds": 2,
@@ -6112,7 +6144,7 @@
         {
           "protocol": "202603622316",
           "date": "13/07/2026 15:04:06",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 4997,
           "queueSeconds": 0,
@@ -6122,7 +6154,7 @@
         {
           "protocol": "202603622184",
           "date": "13/07/2026 14:07:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 77951,
           "queueSeconds": 1,
@@ -6152,7 +6184,7 @@
         {
           "protocol": "202603618038",
           "date": "10/07/2026 16:47:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 255568,
           "queueSeconds": 3,
@@ -6162,7 +6194,7 @@
         {
           "protocol": "202603617741",
           "date": "10/07/2026 15:09:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 8898,
           "queueSeconds": 4,
@@ -6192,7 +6224,7 @@
         {
           "protocol": "202603616763",
           "date": "10/07/2026 11:08:30",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 348310,
           "queueSeconds": 2,
@@ -6202,7 +6234,7 @@
         {
           "protocol": "202603616113",
           "date": "10/07/2026 09:10:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 23972,
           "queueSeconds": 4,
@@ -6212,7 +6244,7 @@
         {
           "protocol": "202603615923",
           "date": "10/07/2026 08:38:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 21242,
           "queueSeconds": 1505,
@@ -6222,7 +6254,7 @@
         {
           "protocol": "202603615856",
           "date": "10/07/2026 08:16:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 22240,
           "queueSeconds": 3,
@@ -6232,7 +6264,7 @@
         {
           "protocol": "202603615303",
           "date": "09/07/2026 16:48:02",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 53259,
           "queueSeconds": 3,
@@ -6242,7 +6274,7 @@
         {
           "protocol": "202603614916",
           "date": "09/07/2026 15:02:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 95021,
           "queueSeconds": 4,
@@ -6252,7 +6284,7 @@
         {
           "protocol": "202603613876",
           "date": "09/07/2026 11:34:08",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 3714,
           "queueSeconds": 1,
@@ -6262,7 +6294,7 @@
         {
           "protocol": "202603605345",
           "date": "09/07/2026 11:20:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 87127,
           "queueSeconds": 0,
@@ -6272,7 +6304,7 @@
         {
           "protocol": "202603606636",
           "date": "09/07/2026 11:03:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 18010,
           "queueSeconds": 2,
@@ -6292,7 +6324,7 @@
         {
           "protocol": "202603604978",
           "date": "09/07/2026 09:24:02",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 94125,
           "queueSeconds": 2,
@@ -6302,7 +6334,7 @@
         {
           "protocol": "202603604881",
           "date": "09/07/2026 08:58:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 21907,
           "queueSeconds": 2,
@@ -6312,7 +6344,7 @@
         {
           "protocol": "202603604226",
           "date": "08/07/2026 17:07:07",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 143833,
           "queueSeconds": 3,
@@ -6322,7 +6354,7 @@
         {
           "protocol": "202603603176",
           "date": "08/07/2026 16:05:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 82593,
           "queueSeconds": 0,
@@ -6332,7 +6364,7 @@
         {
           "protocol": "202603603107",
           "date": "08/07/2026 15:14:37",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 78336,
           "queueSeconds": 4,
@@ -6352,7 +6384,7 @@
         {
           "protocol": "202603602851",
           "date": "08/07/2026 14:10:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 93511,
           "queueSeconds": 0,
@@ -6362,7 +6394,7 @@
         {
           "protocol": "202603602194",
           "date": "08/07/2026 11:39:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 7190,
           "queueSeconds": 2,
@@ -6372,7 +6404,7 @@
         {
           "protocol": "202603602153",
           "date": "08/07/2026 11:34:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20999,
           "queueSeconds": 3,
@@ -6382,7 +6414,7 @@
         {
           "protocol": "202603601963",
           "date": "08/07/2026 10:57:29",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 21934,
           "queueSeconds": 2,
@@ -6392,7 +6424,7 @@
         {
           "protocol": "202603601913",
           "date": "08/07/2026 10:49:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 22734,
           "queueSeconds": 1,
@@ -6412,7 +6444,7 @@
         {
           "protocol": "202603601601",
           "date": "08/07/2026 09:51:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 27008,
           "queueSeconds": 3,
@@ -6442,7 +6474,7 @@
         {
           "protocol": "202603600090",
           "date": "07/07/2026 15:06:28",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 62167,
           "queueSeconds": 1,
@@ -6452,7 +6484,7 @@
         {
           "protocol": "202603599349",
           "date": "07/07/2026 12:42:59",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 83082,
           "queueSeconds": 2,
@@ -6482,7 +6514,7 @@
         {
           "protocol": "202603598763",
           "date": "07/07/2026 11:09:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 89641,
           "queueSeconds": 2,
@@ -6502,7 +6534,7 @@
         {
           "protocol": "202603598601",
           "date": "07/07/2026 10:48:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 85874,
           "queueSeconds": 2,
@@ -6512,7 +6544,7 @@
         {
           "protocol": "202603598378",
           "date": "07/07/2026 10:21:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 85213,
           "queueSeconds": 1,
@@ -6522,7 +6554,7 @@
         {
           "protocol": "202603591629",
           "date": "07/07/2026 09:25:29",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 20428,
           "queueSeconds": 3,
@@ -6532,7 +6564,7 @@
         {
           "protocol": "202603588286",
           "date": "07/07/2026 08:56:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 78327,
           "queueSeconds": 1,
@@ -6542,7 +6574,7 @@
         {
           "protocol": "202603588229",
           "date": "07/07/2026 08:42:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 1923,
           "queueSeconds": 1,
@@ -6552,7 +6584,7 @@
         {
           "protocol": "202603588145",
           "date": "07/07/2026 08:23:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 4356,
           "queueSeconds": 2,
@@ -6562,7 +6594,7 @@
         {
           "protocol": "202603587694",
           "date": "06/07/2026 17:21:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 148874,
           "queueSeconds": 0,
@@ -6642,7 +6674,7 @@
         {
           "protocol": "202603585445",
           "date": "06/07/2026 10:05:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 176182,
           "queueSeconds": 0,
@@ -6682,7 +6714,7 @@
         {
           "protocol": "202603583502",
           "date": "03/07/2026 17:21:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 406,
           "queueSeconds": 1,
@@ -6722,7 +6754,7 @@
         {
           "protocol": "202603582898",
           "date": "03/07/2026 14:53:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 5808,
           "queueSeconds": 4,
@@ -6772,7 +6804,7 @@
         {
           "protocol": "202603567228",
           "date": "03/07/2026 10:08:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 12329,
           "queueSeconds": 3,
@@ -6792,7 +6824,7 @@
         {
           "protocol": "202603567034",
           "date": "03/07/2026 09:30:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20245,
           "queueSeconds": 3,
@@ -6812,7 +6844,7 @@
         {
           "protocol": "202603566684",
           "date": "03/07/2026 08:23:38",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 8295,
           "queueSeconds": 2,
@@ -6832,7 +6864,7 @@
         {
           "protocol": "202603565860",
           "date": "02/07/2026 15:18:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 72381,
           "queueSeconds": 3,
@@ -6842,7 +6874,7 @@
         {
           "protocol": "202603565767",
           "date": "02/07/2026 14:55:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 67267,
           "queueSeconds": 0,
@@ -6852,7 +6884,7 @@
         {
           "protocol": "202603565672",
           "date": "02/07/2026 14:27:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 71365,
           "queueSeconds": 2,
@@ -6872,7 +6904,7 @@
         {
           "protocol": "202603564924",
           "date": "02/07/2026 11:32:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 5115,
           "queueSeconds": 1,
@@ -6882,7 +6914,7 @@
         {
           "protocol": "202603564899",
           "date": "02/07/2026 11:27:02",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 3684,
           "queueSeconds": 2,
@@ -6892,7 +6924,7 @@
         {
           "protocol": "202603564615",
           "date": "02/07/2026 10:16:54",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 369788,
           "queueSeconds": 2,
@@ -6902,7 +6934,7 @@
         {
           "protocol": "202603563207",
           "date": "02/07/2026 08:17:37",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 13522,
           "queueSeconds": 1,
@@ -6912,7 +6944,7 @@
         {
           "protocol": "202603562898",
           "date": "01/07/2026 17:46:05",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 62519,
           "queueSeconds": 1,
@@ -6922,7 +6954,7 @@
         {
           "protocol": "202603562368",
           "date": "01/07/2026 17:38:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 62612,
           "queueSeconds": 0,
@@ -6972,7 +7004,7 @@
         {
           "protocol": "202603562611",
           "date": "01/07/2026 16:22:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 66774,
           "queueSeconds": 1,
@@ -6982,7 +7014,7 @@
         {
           "protocol": "202603562577",
           "date": "01/07/2026 16:13:59",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 65715,
           "queueSeconds": 2,
@@ -7052,7 +7084,7 @@
         {
           "protocol": "202603561285",
           "date": "01/07/2026 12:23:18",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 73446,
           "queueSeconds": 5518,
@@ -7062,7 +7094,7 @@
         {
           "protocol": "202603561724",
           "date": "01/07/2026 12:10:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 11655,
           "queueSeconds": 2,
@@ -7072,7 +7104,7 @@
         {
           "protocol": "202603561692",
           "date": "01/07/2026 12:01:08",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 20508,
           "queueSeconds": 0,
@@ -7092,7 +7124,7 @@
         {
           "protocol": "202603561126",
           "date": "01/07/2026 09:48:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 7430,
           "queueSeconds": 1,
@@ -7102,7 +7134,7 @@
         {
           "protocol": "202603560748",
           "date": "01/07/2026 09:44:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 8756,
           "queueSeconds": 0,
@@ -7112,7 +7144,7 @@
         {
           "protocol": "202603561085",
           "date": "01/07/2026 09:40:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 28570,
           "queueSeconds": 2,
@@ -7142,7 +7174,7 @@
         {
           "protocol": "202603560836",
           "date": "01/07/2026 08:49:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 7729,
           "queueSeconds": 0,
@@ -7152,7 +7184,7 @@
         {
           "protocol": "202603560825",
           "date": "01/07/2026 08:47:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 23825,
           "queueSeconds": 3,
@@ -7162,7 +7194,7 @@
         {
           "protocol": "202603560816",
           "date": "01/07/2026 08:44:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 12062,
           "queueSeconds": 1,
@@ -7172,7 +7204,7 @@
         {
           "protocol": "202603560721",
           "date": "01/07/2026 08:22:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 33157,
           "queueSeconds": 1,
@@ -7621,24 +7653,40 @@
       "csat": 96.2,
       "topServices": [
         [
-          "ATENDIMENTO CONCLUÍDO",
-          61
-        ],
-        [
-          "FINALIZADO POR INATIVIDADE",
-          14
+          "Devoluções - Outros Assuntos",
+          51
         ],
         [
           "Devolução Fornecimento ES",
-          10
+          27
         ],
         [
-          "Devoluções - Outros Assuntos",
+          "Devoluções - Peça errada",
+          12
+        ],
+        [
+          "Devoluções - Prazo de entrega",
+          7
+        ],
+        [
+          "Devoluções - Suporte Devolução",
           6
         ],
         [
-          "Atendimento concluído",
-          6
+          "Devoluções - Peça com defeito",
+          2
+        ],
+        [
+          "Devoluções - Coleta de Peças",
+          2
+        ],
+        [
+          "Devoluções - Peça avariada",
+          1
+        ],
+        [
+          "Devoluções - Acompanhamento de Status",
+          1
         ]
       ],
       "recent": [
@@ -7665,7 +7713,7 @@
         {
           "protocol": "202603697016",
           "date": "30/07/2026 17:40:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 57023,
           "queueSeconds": 0,
@@ -7685,7 +7733,7 @@
         {
           "protocol": "202603697040",
           "date": "30/07/2026 13:41:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10755,
           "queueSeconds": 0,
@@ -7695,7 +7743,7 @@
         {
           "protocol": "202603694604",
           "date": "29/07/2026 17:50:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 59208,
           "queueSeconds": 0,
@@ -7705,7 +7753,7 @@
         {
           "protocol": "202603683759",
           "date": "29/07/2026 09:45:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 29266,
           "queueSeconds": 0,
@@ -7715,7 +7763,7 @@
         {
           "protocol": "202603683690",
           "date": "29/07/2026 09:43:20",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 334,
           "queueSeconds": 0,
@@ -7941,7 +7989,7 @@
         {
           "protocol": "202603697016",
           "date": "30/07/2026 17:40:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 57023,
           "queueSeconds": 0,
@@ -7961,7 +8009,7 @@
         {
           "protocol": "202603697040",
           "date": "30/07/2026 13:41:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10755,
           "queueSeconds": 0,
@@ -7971,7 +8019,7 @@
         {
           "protocol": "202603694604",
           "date": "29/07/2026 17:50:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 59208,
           "queueSeconds": 0,
@@ -7981,7 +8029,7 @@
         {
           "protocol": "202603683759",
           "date": "29/07/2026 09:45:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 29266,
           "queueSeconds": 0,
@@ -7991,7 +8039,7 @@
         {
           "protocol": "202603683690",
           "date": "29/07/2026 09:43:20",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 334,
           "queueSeconds": 0,
@@ -8001,7 +8049,7 @@
         {
           "protocol": "202603675159",
           "date": "29/07/2026 09:05:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 6210,
           "queueSeconds": 2,
@@ -8011,7 +8059,7 @@
         {
           "protocol": "202603675140",
           "date": "29/07/2026 09:03:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 6252,
           "queueSeconds": 3,
@@ -8021,7 +8069,7 @@
         {
           "protocol": "202603675131",
           "date": "29/07/2026 09:02:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 20311,
           "queueSeconds": 1,
@@ -8051,7 +8099,7 @@
         {
           "protocol": "202603672911",
           "date": "28/07/2026 13:32:54",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 8035,
           "queueSeconds": 1,
@@ -8081,7 +8129,7 @@
         {
           "protocol": "202603667012",
           "date": "27/07/2026 11:24:27",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 102166,
           "queueSeconds": 0,
@@ -8101,7 +8149,7 @@
         {
           "protocol": "202603665328",
           "date": "27/07/2026 09:09:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 263562,
           "queueSeconds": 3,
@@ -8111,7 +8159,7 @@
         {
           "protocol": "202603665199",
           "date": "27/07/2026 09:04:29",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 10033,
           "queueSeconds": 0,
@@ -8121,7 +8169,7 @@
         {
           "protocol": "202603660676",
           "date": "24/07/2026 10:17:32",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 24810,
           "queueSeconds": 0,
@@ -8131,7 +8179,7 @@
         {
           "protocol": "202603656599",
           "date": "24/07/2026 08:56:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 2670,
           "queueSeconds": 1,
@@ -8141,7 +8189,7 @@
         {
           "protocol": "202603655058",
           "date": "23/07/2026 13:32:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 328899,
           "queueSeconds": 1,
@@ -8181,7 +8229,7 @@
         {
           "protocol": "202603650574",
           "date": "23/07/2026 12:32:20",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 85563,
           "queueSeconds": 0,
@@ -8201,7 +8249,7 @@
         {
           "protocol": "202603654215",
           "date": "23/07/2026 11:01:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 10844,
           "queueSeconds": 3,
@@ -8211,7 +8259,7 @@
         {
           "protocol": "202603618174",
           "date": "23/07/2026 10:10:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 9140,
           "queueSeconds": 0,
@@ -8221,7 +8269,7 @@
         {
           "protocol": "202603649465",
           "date": "22/07/2026 16:38:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 65308,
           "queueSeconds": 3,
@@ -8231,7 +8279,7 @@
         {
           "protocol": "202603646660",
           "date": "22/07/2026 14:52:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 5574,
           "queueSeconds": 1,
@@ -8241,7 +8289,7 @@
         {
           "protocol": "202603648778",
           "date": "22/07/2026 14:26:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 3756,
           "queueSeconds": 0,
@@ -8261,7 +8309,7 @@
         {
           "protocol": "202603643358",
           "date": "21/07/2026 13:09:31",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 87532,
           "queueSeconds": 0,
@@ -8271,7 +8319,7 @@
         {
           "protocol": "202603642582",
           "date": "21/07/2026 10:44:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 86788,
           "queueSeconds": 0,
@@ -8291,7 +8339,7 @@
         {
           "protocol": "202603641004",
           "date": "20/07/2026 16:28:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 3041,
           "queueSeconds": 0,
@@ -8301,7 +8349,7 @@
         {
           "protocol": "202603640393",
           "date": "20/07/2026 14:35:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 98682,
           "queueSeconds": 0,
@@ -8311,7 +8359,7 @@
         {
           "protocol": "202603640316",
           "date": "20/07/2026 14:22:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 175872,
           "queueSeconds": 0,
@@ -8321,7 +8369,7 @@
         {
           "protocol": "202603640251",
           "date": "20/07/2026 14:10:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 338665,
           "queueSeconds": 0,
@@ -8331,7 +8379,7 @@
         {
           "protocol": "202603640127",
           "date": "20/07/2026 13:48:08",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 329427,
           "queueSeconds": 0,
@@ -8341,7 +8389,7 @@
         {
           "protocol": "202603639085",
           "date": "20/07/2026 10:41:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 16755,
           "queueSeconds": 0,
@@ -8351,7 +8399,7 @@
         {
           "protocol": "202603639068",
           "date": "20/07/2026 10:39:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 193521,
           "queueSeconds": 0,
@@ -8361,7 +8409,7 @@
         {
           "protocol": "202603629399",
           "date": "20/07/2026 09:58:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 26435,
           "queueSeconds": 0,
@@ -8371,7 +8419,7 @@
         {
           "protocol": "202603638584",
           "date": "20/07/2026 09:32:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 4136,
           "queueSeconds": 0,
@@ -8411,7 +8459,7 @@
         {
           "protocol": "202603635075",
           "date": "17/07/2026 13:04:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 9497,
           "queueSeconds": 0,
@@ -8421,7 +8469,7 @@
         {
           "protocol": "202603635071",
           "date": "17/07/2026 13:03:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 109,
           "queueSeconds": 0,
@@ -8451,7 +8499,7 @@
         {
           "protocol": "202603632559",
           "date": "16/07/2026 14:07:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 7184,
           "queueSeconds": 1,
@@ -8461,7 +8509,7 @@
         {
           "protocol": "202603632077",
           "date": "16/07/2026 12:15:13",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 72362,
           "queueSeconds": 251,
@@ -8471,7 +8519,7 @@
         {
           "protocol": "202603632055",
           "date": "16/07/2026 12:09:47",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 92274,
           "queueSeconds": 537,
@@ -8481,7 +8529,7 @@
         {
           "protocol": "202603630290",
           "date": "16/07/2026 10:07:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 11023,
           "queueSeconds": 1,
@@ -8491,7 +8539,7 @@
         {
           "protocol": "202603629369",
           "date": "15/07/2026 17:49:53",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 67844,
           "queueSeconds": 1,
@@ -8501,7 +8549,7 @@
         {
           "protocol": "202603629226",
           "date": "15/07/2026 17:00:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 73079,
           "queueSeconds": 0,
@@ -8511,7 +8559,7 @@
         {
           "protocol": "202603628104",
           "date": "15/07/2026 12:44:28",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 88461,
           "queueSeconds": 0,
@@ -8521,7 +8569,7 @@
         {
           "protocol": "202603627424",
           "date": "15/07/2026 10:15:14",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 97425,
           "queueSeconds": 0,
@@ -8531,7 +8579,7 @@
         {
           "protocol": "202603625345",
           "date": "14/07/2026 13:53:23",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 68342,
           "queueSeconds": 1,
@@ -8541,7 +8589,7 @@
         {
           "protocol": "202603625322",
           "date": "14/07/2026 13:48:29",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 5446,
           "queueSeconds": 2,
@@ -8551,7 +8599,7 @@
         {
           "protocol": "202603625124",
           "date": "14/07/2026 13:06:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 17074,
           "queueSeconds": 0,
@@ -8571,7 +8619,7 @@
         {
           "protocol": "202603624513",
           "date": "14/07/2026 10:58:59",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 95110,
           "queueSeconds": 0,
@@ -8581,7 +8629,7 @@
         {
           "protocol": "202603620998",
           "date": "14/07/2026 10:49:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 6435,
           "queueSeconds": 0,
@@ -8591,7 +8639,7 @@
         {
           "protocol": "202603452250",
           "date": "14/07/2026 10:49:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 97057,
           "queueSeconds": 0,
@@ -8601,7 +8649,7 @@
         {
           "protocol": "202603624438",
           "date": "14/07/2026 10:47:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 86384,
           "queueSeconds": 0,
@@ -8611,7 +8659,7 @@
         {
           "protocol": "202603621116",
           "date": "13/07/2026 10:49:12",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 76757,
           "queueSeconds": 0,
@@ -8621,7 +8669,7 @@
         {
           "protocol": "202603618032",
           "date": "10/07/2026 16:46:30",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 314527,
           "queueSeconds": 0,
@@ -8631,7 +8679,7 @@
         {
           "protocol": "202603617942",
           "date": "10/07/2026 16:03:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 5049,
           "queueSeconds": 1,
@@ -8641,7 +8689,7 @@
         {
           "protocol": "202603617385",
           "date": "10/07/2026 13:38:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 4998,
           "queueSeconds": 1,
@@ -8661,7 +8709,7 @@
         {
           "protocol": "202603617274",
           "date": "10/07/2026 13:09:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 12070,
           "queueSeconds": 0,
@@ -8681,7 +8729,7 @@
         {
           "protocol": "202603615972",
           "date": "10/07/2026 10:30:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 25672,
           "queueSeconds": 2,
@@ -8691,7 +8739,7 @@
         {
           "protocol": "202603616533",
           "date": "10/07/2026 10:29:15",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 253662,
           "queueSeconds": 0,
@@ -8701,7 +8749,7 @@
         {
           "protocol": "202603616509",
           "date": "10/07/2026 10:24:52",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 26021,
           "queueSeconds": 0,
@@ -8721,7 +8769,7 @@
         {
           "protocol": "202603616313",
           "date": "10/07/2026 09:47:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 19554,
           "queueSeconds": 0,
@@ -8731,7 +8779,7 @@
         {
           "protocol": "202603616162",
           "date": "10/07/2026 09:19:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 1722,
           "queueSeconds": 0,
@@ -8751,7 +8799,7 @@
         {
           "protocol": "202603605324",
           "date": "09/07/2026 10:48:33",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 23565,
           "queueSeconds": 0,
@@ -8761,7 +8809,7 @@
         {
           "protocol": "202603604891",
           "date": "09/07/2026 09:54:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 2102,
           "queueSeconds": 0,
@@ -8771,7 +8819,7 @@
         {
           "protocol": "202603604283",
           "date": "08/07/2026 17:23:24",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 83893,
           "queueSeconds": 0,
@@ -8781,7 +8829,7 @@
         {
           "protocol": "202603603162",
           "date": "08/07/2026 15:31:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 9576,
           "queueSeconds": 2,
@@ -8801,7 +8849,7 @@
         {
           "protocol": "202603601143",
           "date": "08/07/2026 08:26:46",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 116302,
           "queueSeconds": 0,
@@ -8811,7 +8859,7 @@
         {
           "protocol": "202603601194",
           "date": "08/07/2026 08:26:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 6370,
           "queueSeconds": 0,
@@ -8821,7 +8869,7 @@
         {
           "protocol": "202603601185",
           "date": "08/07/2026 08:24:48",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 4659,
           "queueSeconds": 2,
@@ -8831,7 +8879,7 @@
         {
           "protocol": "202603600275",
           "date": "07/07/2026 16:58:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 70919,
           "queueSeconds": 0,
@@ -8841,7 +8889,7 @@
         {
           "protocol": "202603600050",
           "date": "07/07/2026 14:51:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 160,
           "queueSeconds": 0,
@@ -8851,7 +8899,7 @@
         {
           "protocol": "202603599615",
           "date": "07/07/2026 13:44:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 75,
           "queueSeconds": 0,
@@ -8861,7 +8909,7 @@
         {
           "protocol": "202603598179",
           "date": "07/07/2026 09:56:57",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 174867,
           "queueSeconds": 0,
@@ -8871,7 +8919,7 @@
         {
           "protocol": "202603588284",
           "date": "07/07/2026 08:56:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 94008,
           "queueSeconds": 0,
@@ -8881,7 +8929,7 @@
         {
           "protocol": "202603588228",
           "date": "07/07/2026 08:42:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 817,
           "queueSeconds": 0,
@@ -8891,7 +8939,7 @@
         {
           "protocol": "202603586094",
           "date": "06/07/2026 10:49:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 79830,
           "queueSeconds": 0,
@@ -8901,7 +8949,7 @@
         {
           "protocol": "202603567288",
           "date": "03/07/2026 10:44:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 11968,
           "queueSeconds": 0,
@@ -8911,7 +8959,7 @@
         {
           "protocol": "202603565300",
           "date": "02/07/2026 12:57:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 1641,
           "queueSeconds": 3,
@@ -8921,7 +8969,7 @@
         {
           "protocol": "202603564791",
           "date": "02/07/2026 11:01:39",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 25787,
           "queueSeconds": 0,
@@ -8931,7 +8979,7 @@
         {
           "protocol": "202603563186",
           "date": "02/07/2026 08:11:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 18136,
           "queueSeconds": 1,
@@ -8941,7 +8989,7 @@
         {
           "protocol": "202603563180",
           "date": "02/07/2026 08:09:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 4667,
           "queueSeconds": 2,
@@ -8951,7 +8999,7 @@
         {
           "protocol": "202603562417",
           "date": "02/07/2026 08:07:45",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 9269,
           "queueSeconds": 0,
@@ -8961,7 +9009,7 @@
         {
           "protocol": "202603563135",
           "date": "02/07/2026 07:54:50",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 9388,
           "queueSeconds": 489,
@@ -8971,7 +9019,7 @@
         {
           "protocol": "202603562683",
           "date": "01/07/2026 16:39:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 4297,
           "queueSeconds": 1,
@@ -8981,7 +9029,7 @@
         {
           "protocol": "202603562559",
           "date": "01/07/2026 16:08:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 178449,
           "queueSeconds": 1,
@@ -8991,7 +9039,7 @@
         {
           "protocol": "202603561953",
           "date": "01/07/2026 13:14:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 2852,
           "queueSeconds": 1,
@@ -9001,7 +9049,7 @@
         {
           "protocol": "202603560782",
           "date": "01/07/2026 08:36:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 1549,
           "queueSeconds": 3,
@@ -9465,31 +9513,47 @@
       "csat": 95.0,
       "topServices": [
         [
-          "ATENDIMENTO CONCLUÍDO",
-          133
+          "Devoluções - Peça errada",
+          59
         ],
         [
           "Devoluções - Suporte Devolução",
+          46
+        ],
+        [
+          "Devoluções - Peça com defeito",
+          25
+        ],
+        [
+          "Devoluções - Prazo de entrega",
           24
         ],
         [
-          "Atendimento concluído",
+          "Devoluções - Coleta de Peças",
           14
         ],
         [
-          "Devoluções - Peça errada",
-          6
+          "Devoluções - Peça avariada",
+          11
         ],
         [
-          "FINALIZADO POR INATIVIDADE",
-          6
+          "Devoluções - Acompanhamento de Status",
+          9
+        ],
+        [
+          "Devoluções - Outros Assuntos",
+          8
+        ],
+        [
+          "Devolução Fornecimento ES",
+          2
         ]
       ],
       "recent": [
         {
           "protocol": "202603662941",
           "date": "24/07/2026 16:26:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 4588,
           "queueSeconds": 4,
@@ -9499,7 +9563,7 @@
         {
           "protocol": "202603662399",
           "date": "24/07/2026 14:20:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 5878,
           "queueSeconds": 0,
@@ -9509,7 +9573,7 @@
         {
           "protocol": "202603661236",
           "date": "24/07/2026 11:58:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 15604,
           "queueSeconds": 2,
@@ -9519,7 +9583,7 @@
         {
           "protocol": "202603660835",
           "date": "24/07/2026 10:46:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 19521,
           "queueSeconds": 3,
@@ -9539,7 +9603,7 @@
         {
           "protocol": "202603656593",
           "date": "24/07/2026 07:47:04",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 6428,
           "queueSeconds": 1295,
@@ -9549,7 +9613,7 @@
         {
           "protocol": "202603656330",
           "date": "23/07/2026 17:49:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 28756,
           "queueSeconds": 51544,
@@ -9559,7 +9623,7 @@
         {
           "protocol": "202603656297",
           "date": "23/07/2026 17:33:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 15328,
           "queueSeconds": 52503,
@@ -9863,7 +9927,7 @@
         {
           "protocol": "202603662941",
           "date": "24/07/2026 16:26:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 4588,
           "queueSeconds": 4,
@@ -9873,7 +9937,7 @@
         {
           "protocol": "202603662399",
           "date": "24/07/2026 14:20:03",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 5878,
           "queueSeconds": 0,
@@ -9883,7 +9947,7 @@
         {
           "protocol": "202603661236",
           "date": "24/07/2026 11:58:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 15604,
           "queueSeconds": 2,
@@ -9893,7 +9957,7 @@
         {
           "protocol": "202603660835",
           "date": "24/07/2026 10:46:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 19521,
           "queueSeconds": 3,
@@ -9913,7 +9977,7 @@
         {
           "protocol": "202603656593",
           "date": "24/07/2026 07:47:04",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 6428,
           "queueSeconds": 1295,
@@ -9923,7 +9987,7 @@
         {
           "protocol": "202603656330",
           "date": "23/07/2026 17:49:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 28756,
           "queueSeconds": 51544,
@@ -9933,7 +9997,7 @@
         {
           "protocol": "202603656297",
           "date": "23/07/2026 17:33:38",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 15328,
           "queueSeconds": 52503,
@@ -9953,7 +10017,7 @@
         {
           "protocol": "202603656236",
           "date": "23/07/2026 17:11:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 4002,
           "queueSeconds": 53592,
@@ -9963,7 +10027,7 @@
         {
           "protocol": "202603656093",
           "date": "23/07/2026 16:39:41",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 14085,
           "queueSeconds": 55692,
@@ -10053,7 +10117,7 @@
         {
           "protocol": "202603649041",
           "date": "22/07/2026 15:14:00",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 71215,
           "queueSeconds": 0,
@@ -10063,7 +10127,7 @@
         {
           "protocol": "202603648997",
           "date": "22/07/2026 15:05:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 66911,
           "queueSeconds": 0,
@@ -10083,7 +10147,7 @@
         {
           "protocol": "202603648713",
           "date": "22/07/2026 14:15:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 67803,
           "queueSeconds": 3,
@@ -10103,7 +10167,7 @@
         {
           "protocol": "202603648477",
           "date": "22/07/2026 13:58:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 69898,
           "queueSeconds": 0,
@@ -10113,7 +10177,7 @@
         {
           "protocol": "202603645896",
           "date": "22/07/2026 10:19:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 83928,
           "queueSeconds": 0,
@@ -10123,7 +10187,7 @@
         {
           "protocol": "202603645777",
           "date": "22/07/2026 09:59:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 81254,
           "queueSeconds": 2,
@@ -10133,7 +10197,7 @@
         {
           "protocol": "202603645652",
           "date": "22/07/2026 09:48:50",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 19069,
           "queueSeconds": 1,
@@ -10143,7 +10207,7 @@
         {
           "protocol": "202603645579",
           "date": "22/07/2026 09:35:54",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 13882,
           "queueSeconds": 3,
@@ -10153,7 +10217,7 @@
         {
           "protocol": "202603644694",
           "date": "21/07/2026 18:00:16",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 59081,
           "queueSeconds": 3,
@@ -10163,7 +10227,7 @@
         {
           "protocol": "202603644502",
           "date": "21/07/2026 17:12:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 72044,
           "queueSeconds": 2,
@@ -10193,7 +10257,7 @@
         {
           "protocol": "202603644290",
           "date": "21/07/2026 16:29:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 5894,
           "queueSeconds": 0,
@@ -10213,7 +10277,7 @@
         {
           "protocol": "202603643453",
           "date": "21/07/2026 14:23:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 68451,
           "queueSeconds": 4,
@@ -10223,7 +10287,7 @@
         {
           "protocol": "202603643474",
           "date": "21/07/2026 14:08:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 12387,
           "queueSeconds": 1,
@@ -10233,7 +10297,7 @@
         {
           "protocol": "202603643656",
           "date": "21/07/2026 14:08:34",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 12432,
           "queueSeconds": 2,
@@ -10243,7 +10307,7 @@
         {
           "protocol": "202603642718",
           "date": "21/07/2026 11:04:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 22782,
           "queueSeconds": 3,
@@ -10253,7 +10317,7 @@
         {
           "protocol": "202603642471",
           "date": "21/07/2026 10:24:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 24234,
           "queueSeconds": 1,
@@ -10263,7 +10327,7 @@
         {
           "protocol": "202603642237",
           "date": "21/07/2026 09:47:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 17005,
           "queueSeconds": 2,
@@ -10273,7 +10337,7 @@
         {
           "protocol": "202603641830",
           "date": "21/07/2026 08:43:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 18430,
           "queueSeconds": 1,
@@ -10293,7 +10357,7 @@
         {
           "protocol": "202603641111",
           "date": "20/07/2026 16:54:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 65733,
           "queueSeconds": 2,
@@ -10313,7 +10377,7 @@
         {
           "protocol": "202603640182",
           "date": "20/07/2026 13:59:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 152605,
           "queueSeconds": 2,
@@ -10323,7 +10387,7 @@
         {
           "protocol": "202603638509",
           "date": "20/07/2026 09:23:19",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 868,
           "queueSeconds": 2,
@@ -10333,7 +10397,7 @@
         {
           "protocol": "202603638311",
           "date": "20/07/2026 09:06:03",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 173679,
           "queueSeconds": 3,
@@ -10343,7 +10407,7 @@
         {
           "protocol": "202603635959",
           "date": "17/07/2026 16:44:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 263451,
           "queueSeconds": 3,
@@ -10353,7 +10417,7 @@
         {
           "protocol": "202603635956",
           "date": "17/07/2026 16:43:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 262232,
           "queueSeconds": 0,
@@ -10363,7 +10427,7 @@
         {
           "protocol": "202603635651",
           "date": "17/07/2026 15:22:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 266525,
           "queueSeconds": 1,
@@ -10373,7 +10437,7 @@
         {
           "protocol": "202603635570",
           "date": "17/07/2026 15:03:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 256984,
           "queueSeconds": 1,
@@ -10383,7 +10447,7 @@
         {
           "protocol": "202603635399",
           "date": "17/07/2026 14:20:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 256365,
           "queueSeconds": 1,
@@ -10393,7 +10457,7 @@
         {
           "protocol": "202603635187",
           "date": "17/07/2026 13:33:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 245910,
           "queueSeconds": 1,
@@ -10403,7 +10467,7 @@
         {
           "protocol": "202603634736",
           "date": "17/07/2026 11:46:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 264947,
           "queueSeconds": 3,
@@ -10423,7 +10487,7 @@
         {
           "protocol": "202603634217",
           "date": "17/07/2026 10:01:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 270152,
           "queueSeconds": 2,
@@ -10443,7 +10507,7 @@
         {
           "protocol": "202603634001",
           "date": "17/07/2026 09:20:35",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 272359,
           "queueSeconds": 1,
@@ -10453,7 +10517,7 @@
         {
           "protocol": "202603633649",
           "date": "17/07/2026 08:19:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 4509,
           "queueSeconds": 1,
@@ -10463,7 +10527,7 @@
         {
           "protocol": "202603632651",
           "date": "16/07/2026 16:24:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 319519,
           "queueSeconds": 0,
@@ -10473,7 +10537,7 @@
         {
           "protocol": "202603633021",
           "date": "16/07/2026 16:12:50",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 92144,
           "queueSeconds": 1,
@@ -10483,7 +10547,7 @@
         {
           "protocol": "202603632804",
           "date": "16/07/2026 15:09:17",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 88845,
           "queueSeconds": 1,
@@ -10493,7 +10557,7 @@
         {
           "protocol": "202603632746",
           "date": "16/07/2026 15:03:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 89269,
           "queueSeconds": 0,
@@ -10503,7 +10567,7 @@
         {
           "protocol": "202603632685",
           "date": "16/07/2026 14:36:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 84970,
           "queueSeconds": 4,
@@ -10513,7 +10577,7 @@
         {
           "protocol": "202603632656",
           "date": "16/07/2026 14:31:00",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 79336,
           "queueSeconds": 1,
@@ -10523,7 +10587,7 @@
         {
           "protocol": "202603632590",
           "date": "16/07/2026 14:15:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 92572,
           "queueSeconds": 1,
@@ -10533,7 +10597,7 @@
         {
           "protocol": "202603632586",
           "date": "16/07/2026 14:14:26",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 85871,
           "queueSeconds": 1,
@@ -10543,7 +10607,7 @@
         {
           "protocol": "202603631730",
           "date": "16/07/2026 11:01:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 23268,
           "queueSeconds": 2,
@@ -10553,7 +10617,7 @@
         {
           "protocol": "202603631672",
           "date": "16/07/2026 10:45:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 82380,
           "queueSeconds": 1,
@@ -10563,7 +10627,7 @@
         {
           "protocol": "202603629213",
           "date": "15/07/2026 16:57:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 63601,
           "queueSeconds": 4,
@@ -10573,7 +10637,7 @@
         {
           "protocol": "202603629126",
           "date": "15/07/2026 16:38:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 60304,
           "queueSeconds": 2,
@@ -10583,7 +10647,7 @@
         {
           "protocol": "202603628959",
           "date": "15/07/2026 15:51:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 89740,
           "queueSeconds": 2,
@@ -10603,7 +10667,7 @@
         {
           "protocol": "202603628846",
           "date": "15/07/2026 15:20:45",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 152069,
           "queueSeconds": 3,
@@ -10613,7 +10677,7 @@
         {
           "protocol": "202603628699",
           "date": "15/07/2026 14:45:54",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 157936,
           "queueSeconds": 2,
@@ -10623,7 +10687,7 @@
         {
           "protocol": "202603628641",
           "date": "15/07/2026 14:35:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 87770,
           "queueSeconds": 1,
@@ -10633,7 +10697,7 @@
         {
           "protocol": "202603627934",
           "date": "15/07/2026 12:01:51",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 19652,
           "queueSeconds": 2,
@@ -10643,7 +10707,7 @@
         {
           "protocol": "202603627745",
           "date": "15/07/2026 11:18:18",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 237,
           "queueSeconds": 2,
@@ -10653,7 +10717,7 @@
         {
           "protocol": "202603627630",
           "date": "15/07/2026 10:57:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 22462,
           "queueSeconds": 4,
@@ -10663,7 +10727,7 @@
         {
           "protocol": "202603627517",
           "date": "15/07/2026 10:33:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 12857,
           "queueSeconds": 1,
@@ -10673,7 +10737,7 @@
         {
           "protocol": "202603625855",
           "date": "15/07/2026 09:55:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 27353,
           "queueSeconds": 0,
@@ -10683,7 +10747,7 @@
         {
           "protocol": "202603624174",
           "date": "15/07/2026 09:55:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 91423,
           "queueSeconds": 0,
@@ -10693,7 +10757,7 @@
         {
           "protocol": "202603627053",
           "date": "15/07/2026 09:03:55",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 22811,
           "queueSeconds": 2,
@@ -10703,7 +10767,7 @@
         {
           "protocol": "202603626993",
           "date": "15/07/2026 08:49:11",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 5996,
           "queueSeconds": 2,
@@ -10713,7 +10777,7 @@
         {
           "protocol": "202603626805",
           "date": "15/07/2026 08:23:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 30816,
           "queueSeconds": 0,
@@ -10733,7 +10797,7 @@
         {
           "protocol": "202603626106",
           "date": "14/07/2026 17:06:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 85506,
           "queueSeconds": 3,
@@ -10743,7 +10807,7 @@
         {
           "protocol": "202603626001",
           "date": "14/07/2026 16:37:48",
-          "service": "Finalizado por inatividade",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 65239,
           "queueSeconds": 2,
@@ -10753,7 +10817,7 @@
         {
           "protocol": "202603625806",
           "date": "14/07/2026 15:52:04",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 66095,
           "queueSeconds": 3,
@@ -10763,7 +10827,7 @@
         {
           "protocol": "202603625656",
           "date": "14/07/2026 15:18:46",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 65716,
           "queueSeconds": 3,
@@ -10773,7 +10837,7 @@
         {
           "protocol": "202603625447",
           "date": "14/07/2026 14:20:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 95703,
           "queueSeconds": 2,
@@ -10783,7 +10847,7 @@
         {
           "protocol": "202603625415",
           "date": "14/07/2026 14:12:13",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 12561,
           "queueSeconds": 3,
@@ -10793,7 +10857,7 @@
         {
           "protocol": "202603625379",
           "date": "14/07/2026 13:59:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 13059,
           "queueSeconds": 1,
@@ -10803,7 +10867,7 @@
         {
           "protocol": "202603625378",
           "date": "14/07/2026 13:59:32",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 13284,
           "queueSeconds": 0,
@@ -10813,7 +10877,7 @@
         {
           "protocol": "202603624498",
           "date": "14/07/2026 10:56:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 21442,
           "queueSeconds": 2,
@@ -10823,7 +10887,7 @@
         {
           "protocol": "202603623058",
           "date": "14/07/2026 10:49:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 16746,
           "queueSeconds": 2,
@@ -10833,7 +10897,7 @@
         {
           "protocol": "202603624441",
           "date": "14/07/2026 10:48:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 81690,
           "queueSeconds": 1,
@@ -10843,7 +10907,7 @@
         {
           "protocol": "202603622620",
           "date": "14/07/2026 10:47:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 15451,
           "queueSeconds": 1,
@@ -10853,7 +10917,7 @@
         {
           "protocol": "202603624364",
           "date": "14/07/2026 10:35:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 22679,
           "queueSeconds": 1,
@@ -10863,7 +10927,7 @@
         {
           "protocol": "202603624099",
           "date": "14/07/2026 09:49:00",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 17307,
           "queueSeconds": 3,
@@ -10873,7 +10937,7 @@
         {
           "protocol": "202603623844",
           "date": "14/07/2026 09:08:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 21272,
           "queueSeconds": 1,
@@ -10893,7 +10957,7 @@
         {
           "protocol": "202603623097",
           "date": "13/07/2026 17:21:49",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 75650,
           "queueSeconds": 0,
@@ -10903,7 +10967,7 @@
         {
           "protocol": "202603622809",
           "date": "13/07/2026 16:51:25",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 81571,
           "queueSeconds": 0,
@@ -10913,7 +10977,7 @@
         {
           "protocol": "202603622938",
           "date": "13/07/2026 16:46:07",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 143560,
           "queueSeconds": 1,
@@ -10923,7 +10987,7 @@
         {
           "protocol": "202603622727",
           "date": "13/07/2026 15:57:01",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 68381,
           "queueSeconds": 3,
@@ -10933,7 +10997,7 @@
         {
           "protocol": "202603622487",
           "date": "13/07/2026 15:13:10",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 72672,
           "queueSeconds": 1,
@@ -10953,7 +11017,7 @@
         {
           "protocol": "202603621516",
           "date": "13/07/2026 11:52:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 9179,
           "queueSeconds": 4,
@@ -10963,7 +11027,7 @@
         {
           "protocol": "202603621204",
           "date": "13/07/2026 11:02:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 86031,
           "queueSeconds": 1,
@@ -10973,7 +11037,7 @@
         {
           "protocol": "202603621104",
           "date": "13/07/2026 10:47:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 88986,
           "queueSeconds": 0,
@@ -10993,7 +11057,7 @@
         {
           "protocol": "202603620818",
           "date": "13/07/2026 10:08:15",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 6223,
           "queueSeconds": 0,
@@ -11003,7 +11067,7 @@
         {
           "protocol": "202603620698",
           "date": "13/07/2026 09:51:44",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 3484,
           "queueSeconds": 1,
@@ -11013,7 +11077,7 @@
         {
           "protocol": "202603620533",
           "date": "13/07/2026 09:31:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 21448,
           "queueSeconds": 2,
@@ -11023,7 +11087,7 @@
         {
           "protocol": "202603617608",
           "date": "13/07/2026 09:03:43",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 87579,
           "queueSeconds": 0,
@@ -11033,7 +11097,7 @@
         {
           "protocol": "202603620253",
           "date": "13/07/2026 08:52:53",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 2687,
           "queueSeconds": 3,
@@ -11083,7 +11147,7 @@
         {
           "protocol": "202603616419",
           "date": "10/07/2026 10:06:21",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 535940,
           "queueSeconds": 3,
@@ -11113,7 +11177,7 @@
         {
           "protocol": "202603615999",
           "date": "10/07/2026 08:49:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 31796,
           "queueSeconds": 3,
@@ -11123,7 +11187,7 @@
         {
           "protocol": "202603615338",
           "date": "09/07/2026 16:58:43",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 59658,
           "queueSeconds": 2,
@@ -11133,7 +11197,7 @@
         {
           "protocol": "202603614880",
           "date": "09/07/2026 14:49:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 8086,
           "queueSeconds": 0,
@@ -11143,7 +11207,7 @@
         {
           "protocol": "202603614789",
           "date": "09/07/2026 14:29:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 69779,
           "queueSeconds": 3,
@@ -11153,7 +11217,7 @@
         {
           "protocol": "202603614640",
           "date": "09/07/2026 13:53:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 88403,
           "queueSeconds": 1,
@@ -11163,7 +11227,7 @@
         {
           "protocol": "202603606544",
           "date": "09/07/2026 11:02:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 15251,
           "queueSeconds": 3,
@@ -11183,7 +11247,7 @@
         {
           "protocol": "202603605183",
           "date": "09/07/2026 10:07:51",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 13998,
           "queueSeconds": 1,
@@ -11193,7 +11257,7 @@
         {
           "protocol": "202603604714",
           "date": "09/07/2026 08:21:49",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 26094,
           "queueSeconds": 3,
@@ -11203,7 +11267,7 @@
         {
           "protocol": "202603603159",
           "date": "08/07/2026 15:30:11",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 86707,
           "queueSeconds": 0,
@@ -11213,7 +11277,7 @@
         {
           "protocol": "202603603007",
           "date": "08/07/2026 14:48:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 96385,
           "queueSeconds": 2,
@@ -11233,7 +11297,7 @@
         {
           "protocol": "202603602764",
           "date": "08/07/2026 13:48:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 176759,
           "queueSeconds": 2,
@@ -11243,7 +11307,7 @@
         {
           "protocol": "202603602431",
           "date": "08/07/2026 13:41:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 73985,
           "queueSeconds": 0,
@@ -11253,7 +11317,7 @@
         {
           "protocol": "202603602258",
           "date": "08/07/2026 11:51:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 83407,
           "queueSeconds": 3,
@@ -11273,7 +11337,7 @@
         {
           "protocol": "202603602087",
           "date": "08/07/2026 11:20:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça avariada",
           "status": "Finalizado",
           "seconds": 103001,
           "queueSeconds": 1,
@@ -11283,7 +11347,7 @@
         {
           "protocol": "202603601926",
           "date": "08/07/2026 10:51:19",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 85482,
           "queueSeconds": 1,
@@ -11293,7 +11357,7 @@
         {
           "protocol": "202603601880",
           "date": "08/07/2026 10:43:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 88815,
           "queueSeconds": 1,
@@ -11303,7 +11367,7 @@
         {
           "protocol": "202603601653",
           "date": "08/07/2026 09:58:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 89914,
           "queueSeconds": 1,
@@ -11323,7 +11387,7 @@
         {
           "protocol": "202603600650",
           "date": "07/07/2026 17:26:15",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 55101,
           "queueSeconds": 3,
@@ -11333,7 +11397,7 @@
         {
           "protocol": "202603600579",
           "date": "07/07/2026 17:06:34",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 66683,
           "queueSeconds": 3,
@@ -11343,7 +11407,7 @@
         {
           "protocol": "202603600323",
           "date": "07/07/2026 16:04:24",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 67128,
           "queueSeconds": 0,
@@ -11363,7 +11427,7 @@
         {
           "protocol": "202603600056",
           "date": "07/07/2026 14:52:43",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 64317,
           "queueSeconds": 4,
@@ -11373,7 +11437,7 @@
         {
           "protocol": "202603599723",
           "date": "07/07/2026 14:07:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 94287,
           "queueSeconds": 3,
@@ -11383,7 +11447,7 @@
         {
           "protocol": "202603599630",
           "date": "07/07/2026 13:47:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 12620,
           "queueSeconds": 1,
@@ -11393,7 +11457,7 @@
         {
           "protocol": "202603599625",
           "date": "07/07/2026 13:46:20",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 12983,
           "queueSeconds": 3,
@@ -11403,7 +11467,7 @@
         {
           "protocol": "202603599510",
           "date": "07/07/2026 13:19:52",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 11150,
           "queueSeconds": 2,
@@ -11423,7 +11487,7 @@
         {
           "protocol": "202603598523",
           "date": "07/07/2026 10:38:05",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 1020,
           "queueSeconds": 1,
@@ -11433,7 +11497,7 @@
         {
           "protocol": "202603598366",
           "date": "07/07/2026 10:19:42",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 80983,
           "queueSeconds": 1,
@@ -11443,7 +11507,7 @@
         {
           "protocol": "202603598176",
           "date": "07/07/2026 09:56:47",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 19414,
           "queueSeconds": 1,
@@ -11453,7 +11517,7 @@
         {
           "protocol": "202603588324",
           "date": "07/07/2026 09:06:18",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 93769,
           "queueSeconds": 2,
@@ -11463,7 +11527,7 @@
         {
           "protocol": "202603588199",
           "date": "07/07/2026 08:35:49",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 3369,
           "queueSeconds": 2,
@@ -11483,7 +11547,7 @@
         {
           "protocol": "202603587622",
           "date": "06/07/2026 16:51:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 58355,
           "queueSeconds": 2,
@@ -11493,7 +11557,7 @@
         {
           "protocol": "202603587185",
           "date": "06/07/2026 14:48:54",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 176945,
           "queueSeconds": 3,
@@ -11513,7 +11577,7 @@
         {
           "protocol": "202603585969",
           "date": "06/07/2026 14:13:57",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 89966,
           "queueSeconds": 0,
@@ -11523,7 +11587,7 @@
         {
           "protocol": "202603585482",
           "date": "06/07/2026 14:13:44",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 95689,
           "queueSeconds": 0,
@@ -11533,7 +11597,7 @@
         {
           "protocol": "202603585247",
           "date": "06/07/2026 14:13:33",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 88452,
           "queueSeconds": 0,
@@ -11543,7 +11607,7 @@
         {
           "protocol": "202603587020",
           "date": "06/07/2026 14:12:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 74313,
           "queueSeconds": 1,
@@ -11563,7 +11627,7 @@
         {
           "protocol": "202603586098",
           "date": "06/07/2026 10:49:55",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 1015,
           "queueSeconds": 1,
@@ -11573,7 +11637,7 @@
         {
           "protocol": "202603585741",
           "date": "06/07/2026 09:56:37",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 26754,
           "queueSeconds": 0,
@@ -11583,7 +11647,7 @@
         {
           "protocol": "202603585606",
           "date": "06/07/2026 09:31:31",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 10409,
           "queueSeconds": 1,
@@ -11603,7 +11667,7 @@
         {
           "protocol": "202603582842",
           "date": "03/07/2026 16:17:39",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 231556,
           "queueSeconds": 2,
@@ -11613,7 +11677,7 @@
         {
           "protocol": "202603582850",
           "date": "03/07/2026 15:04:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 1444,
           "queueSeconds": 0,
@@ -11623,7 +11687,7 @@
         {
           "protocol": "202603567048",
           "date": "03/07/2026 09:33:12",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 15653,
           "queueSeconds": 1,
@@ -11633,7 +11697,7 @@
         {
           "protocol": "202603567028",
           "date": "03/07/2026 09:29:08",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 261300,
           "queueSeconds": 4,
@@ -11653,7 +11717,7 @@
         {
           "protocol": "202603566609",
           "date": "03/07/2026 07:56:40",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 23682,
           "queueSeconds": 78,
@@ -11663,7 +11727,7 @@
         {
           "protocol": "202603566281",
           "date": "02/07/2026 17:30:35",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 56144,
           "queueSeconds": 1,
@@ -11673,7 +11737,7 @@
         {
           "protocol": "202603565995",
           "date": "02/07/2026 15:51:27",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 5683,
           "queueSeconds": 3,
@@ -11683,7 +11747,7 @@
         {
           "protocol": "202603565636",
           "date": "02/07/2026 14:19:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 7116,
           "queueSeconds": 2,
@@ -11693,7 +11757,7 @@
         {
           "protocol": "202603565403",
           "date": "02/07/2026 13:27:28",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 101195,
           "queueSeconds": 2,
@@ -11703,7 +11767,7 @@
         {
           "protocol": "202603564518",
           "date": "02/07/2026 09:57:26",
-          "service": "Atendimento concluído",
+          "service": "Devoluções - Peça com defeito",
           "status": "Finalizado",
           "seconds": 13054,
           "queueSeconds": 3,
@@ -11723,7 +11787,7 @@
         {
           "protocol": "202603564402",
           "date": "02/07/2026 09:31:36",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 21453,
           "queueSeconds": 2,
@@ -11733,7 +11797,7 @@
         {
           "protocol": "202603564378",
           "date": "02/07/2026 09:27:14",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 23955,
           "queueSeconds": 2,
@@ -11743,7 +11807,7 @@
         {
           "protocol": "202603564221",
           "date": "02/07/2026 08:59:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Prazo de entrega",
           "status": "Finalizado",
           "seconds": 19677,
           "queueSeconds": 2,
@@ -11753,7 +11817,7 @@
         {
           "protocol": "202603562906",
           "date": "01/07/2026 17:51:59",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 56750,
           "queueSeconds": 0,
@@ -11763,7 +11827,7 @@
         {
           "protocol": "202603562350",
           "date": "01/07/2026 17:34:22",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 73509,
           "queueSeconds": 0,
@@ -11773,7 +11837,7 @@
         {
           "protocol": "202603562262",
           "date": "01/07/2026 17:34:09",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Suporte Devolução",
           "status": "Finalizado",
           "seconds": 83767,
           "queueSeconds": 0,
@@ -11783,7 +11847,7 @@
         {
           "protocol": "202603562505",
           "date": "01/07/2026 15:53:14",
-          "service": "FINALIZADO POR INATIVIDADE",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 63861,
           "queueSeconds": 0,
@@ -11793,7 +11857,7 @@
         {
           "protocol": "202603529999",
           "date": "01/07/2026 15:50:50",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Peça errada",
           "status": "Finalizado",
           "seconds": 80830,
           "queueSeconds": 0,
@@ -11803,7 +11867,7 @@
         {
           "protocol": "202603562422",
           "date": "01/07/2026 15:29:56",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Outros Assuntos",
           "status": "Finalizado",
           "seconds": 6710,
           "queueSeconds": 0,
@@ -11813,7 +11877,7 @@
         {
           "protocol": "202603561345",
           "date": "01/07/2026 13:32:58",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Acompanhamento de Status",
           "status": "Finalizado",
           "seconds": 5515,
           "queueSeconds": 0,
@@ -11823,7 +11887,7 @@
         {
           "protocol": "202603561293",
           "date": "01/07/2026 10:51:46",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devoluções - Coleta de Peças",
           "status": "Finalizado",
           "seconds": 170493,
           "queueSeconds": 0,
@@ -11833,7 +11897,7 @@
         {
           "protocol": "202603560689",
           "date": "01/07/2026 08:20:53",
-          "service": "ATENDIMENTO CONCLUÍDO",
+          "service": "Devolução Fornecimento ES",
           "status": "Finalizado",
           "seconds": 20269,
           "queueSeconds": 0,
