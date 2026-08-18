@@ -1,6 +1,7 @@
 import { desc } from "drizzle-orm";
 import supplyDashboardData from "../../dashboard-data.json";
 import clientDashboardData from "../../dashboard-client-data.json";
+import { hasFullDashboardAccess, scopeDashboardsToUser } from "../../dashboard-permissions";
 import { getDashboardUser } from "../../session-auth";
 import { getDb } from "../../../db";
 import { dashboardSnapshots } from "../../../db/schema";
@@ -53,7 +54,7 @@ export async function GET() {
   try {
     const snapshots = await getDb().select().from(dashboardSnapshots).orderBy(desc(dashboardSnapshots.id)).limit(120);
     if (!snapshots.length) {
-      const dashboards = bundledDashboards();
+      const dashboards = scopeDashboardsToUser(bundledDashboards(), user);
       return Response.json({ dashboard: dashboards[0] ?? null, dashboards });
     }
     const uniquePeriods = new Map<string, DashboardData>();
@@ -65,7 +66,7 @@ export async function GET() {
       if (uniquePeriods.has(key)) continue;
       uniquePeriods.set(key, dashboard);
     }
-    const dashboards = mergeDashboards([...bundledDashboards(), ...Array.from(uniquePeriods.values())]);
+    const dashboards = scopeDashboardsToUser(mergeDashboards([...bundledDashboards(), ...Array.from(uniquePeriods.values())]), user);
     const snapshot = snapshots[0];
     return Response.json({
       dashboard: dashboards[0],
@@ -83,6 +84,7 @@ export async function GET() {
 export async function POST(request: Request) {
   const user = await authenticatedUser();
   if (!user) return Response.json({ error: "Não autorizado" }, { status: 401 });
+  if (!hasFullDashboardAccess(user)) return Response.json({ error: "Você não tem permissão para importar relatórios." }, { status: 403 });
   try {
     const body = (await request.json()) as { dashboard?: DashboardData };
     const dashboard = body.dashboard;
