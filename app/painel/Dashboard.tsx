@@ -79,7 +79,7 @@ function normalizeDashboardData(dashboard: DashboardData): DashboardData {
   }
   const normalized = { ...dashboard, meta: { ...dashboard.meta, team: dashboardTeam(dashboard) }, agents };
   const bundled = dashboardData as unknown as DashboardData;
-  if (normalized.meta.firstResponseFormula !== "tmpa_open_to_first_attendance" && normalized.meta.period === bundled.meta.period) {
+  if (normalized.meta.firstResponseFormula !== "tmpa_attendance_to_first_agent_message_max_1h" && normalized.meta.period === bundled.meta.period) {
     return normalizeDashboardData({ ...bundled, meta: { ...bundled.meta, team: "Time Fornecimento" } });
   }
   return normalized;
