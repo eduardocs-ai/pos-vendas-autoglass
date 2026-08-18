@@ -11,6 +11,10 @@ const TEAM_ACCESS_USERS: Partial<Record<DashboardUser["username"], TeamName[]>> 
   "livia.neves": ["Time Fornecimento"],
 };
 
+const USER_AGENT_DATA_NAMES: Partial<Record<DashboardUser["username"], string>> = {
+  "luciano.padilla": "Luciano Padilha",
+};
+
 export function hasFullDashboardAccess(user: Pick<DashboardUser, "username">) {
   return FULL_ACCESS_USERS.has(user.username);
 }
@@ -37,12 +41,13 @@ export function canAccessDashboardTeam(user: Pick<DashboardUser, "username">, te
 export function scopeDashboardToUser(dashboard: DashboardData, user: DashboardUser): DashboardData | null {
   if (hasFullDashboardAccess(user)) return dashboard;
   if (canAccessDashboardTeam(user, dashboardTeam(dashboard))) return dashboard;
-  const agent = dashboard.agents[user.displayName];
+  const dataName = USER_AGENT_DATA_NAMES[user.username] ?? user.displayName;
+  const agent = dashboard.agents[dataName];
   if (!agent) return null;
   return {
     ...dashboard,
     agents: {
-      [user.displayName]: agent,
+      [dataName]: agent,
     },
   };
 }
