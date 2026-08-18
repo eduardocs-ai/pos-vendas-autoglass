@@ -3,7 +3,7 @@
     "period": "Julho de 2026",
     "periodKey": "2026-07",
     "team": "Time Cliente",
-    "firstResponseFormula": "tmpa_attendance_to_first_agent_message_max_1h",
+    "firstResponseFormula": "tmpa_attendance_to_first_agent_message_all_records",
     "serviceRows": 1973,
     "surveyRows": 468,
     "statusCounts": {
@@ -33,12 +33,12 @@
       "totalSeconds": 7826401,
       "averageSeconds": 13088,
       "averageQueueSeconds": 1168,
-      "firstResponseCount": 555,
-      "averageFirstResponseSeconds": 94,
+      "firstResponseCount": 557,
+      "averageFirstResponseSeconds": 506,
       "minSeconds": 15,
       "maxSeconds": 522754,
       "minFirstResponseSeconds": 0,
-      "maxFirstResponseSeconds": 998,
+      "maxFirstResponseSeconds": 225218,
       "ratings": {
         "Ruim": 8,
         "Regular": 2,
@@ -3283,7 +3283,7 @@
           "seconds": 232441,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 225218
         },
         {
           "protocol": "202603635827",
@@ -4443,7 +4443,7 @@
           "seconds": 16735,
           "queueSeconds": 2,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 4905
         },
         {
           "protocol": "202603621351",
@@ -7051,9 +7051,9 @@
           "timedCount": 38,
           "totalSeconds": 641093,
           "averageSeconds": 16871,
-          "firstResponseCount": 37,
-          "firstResponseSeconds": 3295,
-          "averageFirstResponseSeconds": 89,
+          "firstResponseCount": 38,
+          "firstResponseSeconds": 8200,
+          "averageFirstResponseSeconds": 216,
           "loggedSeconds": 35826,
           "pausedSeconds": 13998,
           "pauseCount": 6,
@@ -7123,9 +7123,9 @@
           "timedCount": 15,
           "totalSeconds": 748489,
           "averageSeconds": 49899,
-          "firstResponseCount": 14,
-          "firstResponseSeconds": 1104,
-          "averageFirstResponseSeconds": 79,
+          "firstResponseCount": 15,
+          "firstResponseSeconds": 226322,
+          "averageFirstResponseSeconds": 15088,
           "loggedSeconds": 35235,
           "pausedSeconds": 9136,
           "pauseCount": 2,
@@ -7325,12 +7325,12 @@
       "totalSeconds": 8119320,
       "averageSeconds": 14396,
       "averageQueueSeconds": 1405,
-      "firstResponseCount": 509,
-      "averageFirstResponseSeconds": 150,
+      "firstResponseCount": 521,
+      "averageFirstResponseSeconds": 489,
       "minSeconds": 10,
       "maxSeconds": 437320,
       "minFirstResponseSeconds": 0,
-      "maxFirstResponseSeconds": 3251,
+      "maxFirstResponseSeconds": 56841,
       "ratings": {
         "Ruim": 7,
         "Regular": 4,
@@ -7400,7 +7400,7 @@
           "seconds": 5424,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5320
         },
         {
           "protocol": "202603697688",
@@ -8034,7 +8034,7 @@
           "seconds": 5424,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5320
         },
         {
           "protocol": "202603697688",
@@ -8874,7 +8874,7 @@
           "seconds": 5837,
           "queueSeconds": 3,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 4264
         },
         {
           "protocol": "202603668546",
@@ -9784,7 +9784,7 @@
           "seconds": 13550,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 9210
         },
         {
           "protocol": "202603642212",
@@ -9794,7 +9794,7 @@
           "seconds": 12131,
           "queueSeconds": 1,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 9906
         },
         {
           "protocol": "202603642156",
@@ -11564,7 +11564,7 @@
           "seconds": 11615,
           "queueSeconds": 2,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5031
         },
         {
           "protocol": "202603616752",
@@ -11574,7 +11574,7 @@
           "seconds": 18086,
           "queueSeconds": 3,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5415
         },
         {
           "protocol": "202603616727",
@@ -11584,7 +11584,7 @@
           "seconds": 10646,
           "queueSeconds": 3,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5220
         },
         {
           "protocol": "202603616726",
@@ -11594,7 +11594,7 @@
           "seconds": 16569,
           "queueSeconds": 1,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5597
         },
         {
           "protocol": "202603616350",
@@ -11774,7 +11774,7 @@
           "seconds": 70596,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5880
         },
         {
           "protocol": "202603614113",
@@ -12114,7 +12114,7 @@
           "seconds": 25500,
           "queueSeconds": 1,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 9664
         },
         {
           "protocol": "202603601587",
@@ -13354,7 +13354,7 @@
           "seconds": 57049,
           "queueSeconds": 3,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 56841
         },
         {
           "protocol": "202603562682",
@@ -13364,7 +13364,7 @@
           "seconds": 63871,
           "queueSeconds": 1,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 56104
         },
         {
           "protocol": "202603562486",
@@ -13645,9 +13645,9 @@
           "timedCount": 31,
           "totalSeconds": 862117,
           "averageSeconds": 27810,
-          "firstResponseCount": 26,
-          "firstResponseSeconds": 4875,
-          "averageFirstResponseSeconds": 188,
+          "firstResponseCount": 28,
+          "firstResponseSeconds": 117820,
+          "averageFirstResponseSeconds": 4208,
           "loggedSeconds": 35349,
           "pausedSeconds": 15668,
           "pauseCount": 10,
@@ -13756,9 +13756,9 @@
           "timedCount": 27,
           "totalSeconds": 740490,
           "averageSeconds": 27426,
-          "firstResponseCount": 26,
-          "firstResponseSeconds": 3642,
-          "averageFirstResponseSeconds": 140,
+          "firstResponseCount": 27,
+          "firstResponseSeconds": 13306,
+          "averageFirstResponseSeconds": 493,
           "loggedSeconds": 34661,
           "pausedSeconds": 13329,
           "pauseCount": 11,
@@ -13775,9 +13775,9 @@
           "timedCount": 25,
           "totalSeconds": 437085,
           "averageSeconds": 17483,
-          "firstResponseCount": 20,
-          "firstResponseSeconds": 4029,
-          "averageFirstResponseSeconds": 201,
+          "firstResponseCount": 21,
+          "firstResponseSeconds": 9909,
+          "averageFirstResponseSeconds": 472,
           "loggedSeconds": 30516,
           "pausedSeconds": 9806,
           "pauseCount": 7,
@@ -13794,9 +13794,9 @@
           "timedCount": 21,
           "totalSeconds": 593986,
           "averageSeconds": 28285,
-          "firstResponseCount": 17,
-          "firstResponseSeconds": 8030,
-          "averageFirstResponseSeconds": 472,
+          "firstResponseCount": 21,
+          "firstResponseSeconds": 29293,
+          "averageFirstResponseSeconds": 1395,
           "loggedSeconds": 32358,
           "pausedSeconds": 11745,
           "pauseCount": 9,
@@ -13944,9 +13944,9 @@
           "timedCount": 20,
           "totalSeconds": 247223,
           "averageSeconds": 12361,
-          "firstResponseCount": 18,
-          "firstResponseSeconds": 2555,
-          "averageFirstResponseSeconds": 142,
+          "firstResponseCount": 20,
+          "firstResponseSeconds": 21671,
+          "averageFirstResponseSeconds": 1084,
           "loggedSeconds": 35484,
           "pausedSeconds": 16443,
           "pauseCount": 7,
@@ -14021,9 +14021,9 @@
           "timedCount": 26,
           "totalSeconds": 56232,
           "averageSeconds": 2163,
-          "firstResponseCount": 25,
-          "firstResponseSeconds": 1733,
-          "averageFirstResponseSeconds": 69,
+          "firstResponseCount": 26,
+          "firstResponseSeconds": 5997,
+          "averageFirstResponseSeconds": 231,
           "loggedSeconds": 34781,
           "pausedSeconds": 8560,
           "pauseCount": 7,
@@ -14097,9 +14097,9 @@
           "timedCount": 27,
           "totalSeconds": 107608,
           "averageSeconds": 3985,
-          "firstResponseCount": 25,
-          "firstResponseSeconds": 4575,
-          "averageFirstResponseSeconds": 183,
+          "firstResponseCount": 26,
+          "firstResponseSeconds": 9895,
+          "averageFirstResponseSeconds": 381,
           "loggedSeconds": 35220,
           "pausedSeconds": 9263,
           "pauseCount": 6,
@@ -14118,12 +14118,12 @@
       "totalSeconds": 9348758,
       "averageSeconds": 15712,
       "averageQueueSeconds": 3028,
-      "firstResponseCount": 549,
-      "averageFirstResponseSeconds": 240,
+      "firstResponseCount": 551,
+      "averageFirstResponseSeconds": 264,
       "minSeconds": 21,
       "maxSeconds": 359050,
       "minFirstResponseSeconds": 0,
-      "maxFirstResponseSeconds": 2984,
+      "maxFirstResponseSeconds": 8323,
       "ratings": {
         "Ruim": 11,
         "Regular": 2,
@@ -17195,7 +17195,7 @@
           "seconds": 5894,
           "queueSeconds": 4,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 5283
         },
         {
           "protocol": "202603642841",
@@ -19995,7 +19995,7 @@
           "seconds": 10413,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 8323
         },
         {
           "protocol": "202603585773",
@@ -20934,9 +20934,9 @@
           "timedCount": 26,
           "totalSeconds": 314801,
           "averageSeconds": 12108,
-          "firstResponseCount": 24,
-          "firstResponseSeconds": 9084,
-          "averageFirstResponseSeconds": 378,
+          "firstResponseCount": 25,
+          "firstResponseSeconds": 17407,
+          "averageFirstResponseSeconds": 696,
           "loggedSeconds": 35864,
           "pausedSeconds": 12934,
           "pauseCount": 2,
@@ -21145,9 +21145,9 @@
           "timedCount": 38,
           "totalSeconds": 316909,
           "averageSeconds": 8340,
-          "firstResponseCount": 27,
-          "firstResponseSeconds": 5532,
-          "averageFirstResponseSeconds": 205,
+          "firstResponseCount": 28,
+          "firstResponseSeconds": 10815,
+          "averageFirstResponseSeconds": 386,
           "loggedSeconds": 36181,
           "pausedSeconds": 17737,
           "pauseCount": 6,
@@ -21311,12 +21311,12 @@
       "totalSeconds": 4661469,
       "averageSeconds": 21581,
       "averageQueueSeconds": 12,
-      "firstResponseCount": 207,
-      "averageFirstResponseSeconds": 202,
+      "firstResponseCount": 209,
+      "averageFirstResponseSeconds": 240,
       "minSeconds": 76,
       "maxSeconds": 616253,
       "minFirstResponseSeconds": 0,
-      "maxFirstResponseSeconds": 3065,
+      "maxFirstResponseSeconds": 4456,
       "ratings": {
         "Ruim": 2,
         "Regular": 2,
@@ -21947,7 +21947,7 @@
           "seconds": 11130,
           "queueSeconds": 2,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 4456
         },
         {
           "protocol": "202603693279",
@@ -21967,7 +21967,7 @@
           "seconds": 12918,
           "queueSeconds": 2,
           "finished": true,
-          "firstResponseSeconds": null
+          "firstResponseSeconds": 3933
         },
         {
           "protocol": "202603693149",
@@ -23985,9 +23985,9 @@
           "timedCount": 21,
           "totalSeconds": 132750,
           "averageSeconds": 6321,
-          "firstResponseCount": 18,
-          "firstResponseSeconds": 5490,
-          "averageFirstResponseSeconds": 305,
+          "firstResponseCount": 20,
+          "firstResponseSeconds": 13879,
+          "averageFirstResponseSeconds": 694,
           "loggedSeconds": 35759,
           "pausedSeconds": 16263,
           "pauseCount": 9,
