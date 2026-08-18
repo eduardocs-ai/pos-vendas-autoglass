@@ -586,7 +586,6 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   return <main className="dashboard-shell"><aside className="sidebar"><button className="sidebar-brand brand-button" onClick={() => setActiveView("overview")} aria-label="Abrir visão geral"><img src="/autoglass-logo-oficial.png" alt="Autoglass" width={132} height={40} /><span>PÓS-VENDAS</span></button><nav aria-label="Navegação principal">
     {menu.map((item) => <button key={item.view} className={activeView === item.view ? "nav-item active" : "nav-item"} onClick={() => setActiveView(item.view)}><span>{item.icon}</span>{item.label}</button>)}
   </nav>
-    <button className="sidebar-csat" onClick={() => setActiveView("agents")}><span>ENGAJAMENTO DAS NOTAS</span><strong>{metrics ? formatPercent(metrics.engagement) : "—"}</strong><small>{metrics ? `${metrics.ratingTotal} notas em ${metrics.attendanceCount} atendimentos` : "Sem dados para o time"}</small></button>
     <div className="sidebar-foot"><p>Competência</p><strong>{currentDashboard?.meta.period ?? "Sem dados"}</strong><span>{selectedTeam}</span></div>
   </aside><section className="dashboard-main"><header className="topbar"><div><p className="eyebrow">Painel de indicadores</p><h1>Olá, {firstName}</h1></div><div className="topbar-actions">
     {userRole === "coordinator" && selectedLeaderGroup ? <button type="button" className="detail-button" onClick={() => { setSelectedLeaderName(null); setActiveView("overview"); }}>Trocar liderança</button> : null}
