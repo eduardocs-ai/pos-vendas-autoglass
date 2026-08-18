@@ -234,7 +234,7 @@ export async function processReportFiles(
       ? rawFirstResponseSeconds
       : null;
     const finished = isFinishedService(row);
-    const service = String(rowValue(row, "Classificação", "Classifica��o", "Serviço", "Servi�o") || "Sem classificação");
+    const service = String(rowValue(row, "Serviço", "Servi�o", "Classificação", "Classifica��o") || "Sem classificação");
     const call: RecentCall = {
       protocol: String(row.Protocolo || "—"), date: String(row["Data de Entrada"] || "—"),
       service, status, seconds, queueSeconds, finished, firstResponseSeconds,
@@ -329,7 +329,7 @@ export async function processReportFiles(
     data.averageSeconds = data.timedCount ? Math.round(data.totalSeconds / data.timedCount) : 0;
     data.ratingTotal = RATINGS.reduce((sum, rating) => sum + data.ratings[rating], 0);
     data.csat = data.ratingTotal ? Math.round(((data.ratings.Bom + data.ratings["Ótimo"]) / data.ratingTotal) * 1000) / 10 : 0;
-    data.topServices = Object.entries(serviceBuckets[name]).sort((a, b) => b[1] - a[1]).slice(0, 5);
+    data.topServices = Object.entries(serviceBuckets[name]).sort((a, b) => b[1] - a[1]);
     Object.values(data.daily ?? {}).forEach((daily) => {
       daily.averageSeconds = daily.timedCount ? Math.round(daily.totalSeconds / daily.timedCount) : 0;
       daily.averageFirstResponseSeconds = daily.firstResponseCount ? Math.round(daily.firstResponseSeconds / daily.firstResponseCount) : 0;
