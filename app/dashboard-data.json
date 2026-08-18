@@ -3,7 +3,7 @@
     "period": "Julho de 2026",
     "periodKey": "2026-07",
     "team": "Time Fornecimento",
-    "firstResponseFormula": "tmpa_open_to_first_attendance",
+    "firstResponseFormula": "tmpa_attendance_to_first_agent_message_max_1h",
     "serviceRows": 1104,
     "surveyRows": 468,
     "statusCounts": {
@@ -33,12 +33,12 @@
       "totalSeconds": 18159369,
       "averageSeconds": 61557,
       "averageQueueSeconds": 1207,
-      "firstResponseCount": 299,
-      "averageFirstResponseSeconds": 373,
+      "firstResponseCount": 298,
+      "averageFirstResponseSeconds": 181,
       "minSeconds": 22,
       "maxSeconds": 334305,
       "minFirstResponseSeconds": 0,
-      "maxFirstResponseSeconds": 57302,
+      "maxFirstResponseSeconds": 3251,
       "ratings": {
         "Ruim": 4,
         "Regular": 0,
@@ -924,7 +924,7 @@
           "seconds": 166211,
           "queueSeconds": 0,
           "finished": true,
-          "firstResponseSeconds": 57302
+          "firstResponseSeconds": null
         },
         {
           "protocol": "2,02604E+11",
@@ -3635,9 +3635,9 @@
           "timedCount": 27,
           "totalSeconds": 1520867,
           "averageSeconds": 56328,
-          "firstResponseCount": 26,
-          "firstResponseSeconds": 62229,
-          "averageFirstResponseSeconds": 2393,
+          "firstResponseCount": 25,
+          "firstResponseSeconds": 4927,
+          "averageFirstResponseSeconds": 197,
           "loggedSeconds": 34483,
           "pausedSeconds": 11500,
           "pauseCount": 6,
