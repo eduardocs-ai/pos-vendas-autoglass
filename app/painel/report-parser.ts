@@ -221,10 +221,12 @@ export async function processReportFiles(
     const hasFirstResponseColumn = "Primeiro atendimento" in row;
     const firstResponseFromColumn = parseOptionalDuration(row["Primeiro atendimento"]);
     const firstAttendance = parseDate(row["Data de Atendimento"]);
-    const firstResponseFromDates = firstAttendance && entryDate && firstAttendance >= entryDate
-      ? Math.round((firstAttendance.getTime() - entryDate.getTime()) / 1000)
+    const firstAgentMessage = parseDate(row["Primeira Mensagem (Agente)"]);
+    const firstResponseFromDates = firstAttendance && firstAgentMessage && firstAgentMessage >= firstAttendance
+      ? Math.round((firstAgentMessage.getTime() - firstAttendance.getTime()) / 1000)
       : null;
-    const firstResponseSeconds = hasFirstResponseColumn ? firstResponseFromColumn : firstResponseFromDates;
+    const rawFirstResponseSeconds = hasFirstResponseColumn ? firstResponseFromColumn : firstResponseFromDates;
+    const firstResponseSeconds = rawFirstResponseSeconds !== null && rawFirstResponseSeconds <= 3600 ? rawFirstResponseSeconds : null;
     const finished = isFinishedService(row);
     const service = String(rowValue(row, "Classificação", "Classifica��o", "Serviço", "Servi�o") || "Sem classificação");
     const call: RecentCall = {
@@ -338,7 +340,7 @@ export async function processReportFiles(
 
   return {
     meta: {
-      period, periodKey, team, firstResponseFormula: "tmpa_open_to_first_attendance",
+      period, periodKey, team, firstResponseFormula: "tmpa_attendance_to_first_agent_message_max_1h",
       serviceRows: services.length, surveyRows: surveys.length,
       statusCounts, agentCounts, importedAt: new Date().toISOString(), sourceFiles: files.map((file) => file.name),
     },
