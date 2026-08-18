@@ -68,7 +68,7 @@ export type DashboardData = {
     period: string;
     periodKey?: string;
     team?: TeamName;
-    firstResponseFormula?: "tmpa_open_to_first_attendance" | "tmpa_attendance_to_first_agent_message_max_1h";
+    firstResponseFormula?: "tmpa_open_to_first_attendance" | "tmpa_attendance_to_first_agent_message_max_1h" | "tmpa_attendance_to_first_agent_message_all_records";
     serviceRows: number;
     surveyRows: number;
     statusCounts: Record<string, number>;
