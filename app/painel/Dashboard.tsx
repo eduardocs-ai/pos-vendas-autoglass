@@ -99,7 +99,7 @@ function mergeDashboards(dashboards: DashboardData[]) {
   dashboards.forEach((dashboard) => {
     const key = `${dashboardTeam(dashboard)}:${dashboardPeriodKey(dashboard)}`;
     const current = unique.get(key);
-    if (current && isOfficialSupplyJuly(current) && !isOfficialSupplyJuly(dashboard)) return;
+    if (current && isOfficialSupplyJuly(current)) return;
     unique.set(key, dashboard);
   });
   return sortDashboards([...unique.values()]);
@@ -288,7 +288,7 @@ function teamMetrics(dashboard: DashboardData) {
     averageFirstResponseSeconds: firstResponseCount ? Math.round(firstResponseTotal / firstResponseCount) : 0,
     engagement: attendanceCount ? (ratingTotal / attendanceCount) * 100 : 0,
     csat: ratingTotal ? (positive / ratingTotal) * 100 : 0,
-    topServices: [...serviceTotals.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5) as Array<[string, number]>,
+    topServices: [...serviceTotals.entries()].sort((a, b) => b[1] - a[1]) as Array<[string, number]>,
   };
 }
 
@@ -345,9 +345,10 @@ function RatingDistribution({ ratings, total, data }: { ratings: Record<RatingNa
 }
 
 function ServicesPanel({ services }: { services: Array<[string, number]> }) {
-  const visibleServices = services.slice(0, 5);
+  const visibleServices = services;
+  const totalServices = visibleServices.reduce((sum, [, count]) => sum + count, 0);
   const maximum = Math.max(...visibleServices.map((item) => item[1]), 1);
-  return <article className="panel services-panel"><div className="panel-heading"><div><p className="eyebrow">Demanda</p><h3>Principais motivos de contato</h3></div><span className="count-badge">Top 5</span></div><div className="service-list">
+  return <article className="panel services-panel"><div className="panel-heading"><div><p className="eyebrow">Demanda</p><h3>Motivos de acionamento</h3></div><span className="count-badge">{totalServices} atendimentos</span></div><div className="service-list">
     {visibleServices.map(([service, count], index) => <div className="service-row" key={service}><span className="service-rank">{String(index + 1).padStart(2, "0")}</span><div><div className="service-name"><span>{service.replace("Devoluções - ", "")}</span><strong>{count}</strong></div><div className="service-track"><span style={{ width: `${(count / maximum) * 100}%` }} /></div></div></div>)}
     {!visibleServices.length ? <p className="empty-state">Nenhum motivo de contato disponível.</p> : null}
   </div></article>;
