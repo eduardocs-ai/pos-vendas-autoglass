@@ -1,7 +1,7 @@
 import { desc } from "drizzle-orm";
 import supplyDashboardData from "../../dashboard-data.json";
 import clientDashboardData from "../../dashboard-client-data.json";
-import { hasFullDashboardAccess, scopeDashboardsToUser } from "../../dashboard-permissions";
+import { canAccessDashboardTeam, hasDashboardManagementAccess, scopeDashboardsToUser } from "../../dashboard-permissions";
 import { getDashboardUser } from "../../session-auth";
 import { getDb } from "../../../db";
 import { dashboardSnapshots } from "../../../db/schema";
@@ -84,7 +84,7 @@ export async function GET() {
 export async function POST(request: Request) {
   const user = await authenticatedUser();
   if (!user) return Response.json({ error: "Não autorizado" }, { status: 401 });
-  if (!hasFullDashboardAccess(user)) return Response.json({ error: "Você não tem permissão para importar relatórios." }, { status: 403 });
+  if (!hasDashboardManagementAccess(user)) return Response.json({ error: "Você não tem permissão para importar relatórios." }, { status: 403 });
   try {
     const body = (await request.json()) as { dashboard?: DashboardData };
     const dashboard = body.dashboard;
@@ -93,6 +93,7 @@ export async function POST(request: Request) {
     }
     const sourceFiles = dashboard.meta.sourceFiles ?? [];
     const team = dashboard.meta.team ?? "Time Fornecimento";
+    if (!canAccessDashboardTeam(user, team)) return Response.json({ error: `Você não tem permissão para importar relatórios em ${team}.` }, { status: 403 });
     const [snapshot] = await getDb().insert(dashboardSnapshots).values({
       period: `${team} · ${dashboard.meta.period}`,
       payload: JSON.stringify(dashboard),
