@@ -58,6 +58,10 @@ const leaderGroups = [
   { leader: "Stefany Moreira", roleLabel: "Líder", agents: [] },
 ];
 
+const displayToDataAgentName: Record<string, string> = {
+  "Luciano Padilla": "Luciano Padilha",
+};
+
 function dashboardTeam(dashboard: DashboardData): TeamName {
   return isOfficialSupplyJuly(dashboard) ? "Time Fornecimento" : (dashboard.meta.team ?? "Time Fornecimento");
 }
@@ -341,10 +345,11 @@ function RatingDistribution({ ratings, total, data }: { ratings: Record<RatingNa
 }
 
 function ServicesPanel({ services }: { services: Array<[string, number]> }) {
-  const maximum = Math.max(...services.map((item) => item[1]), 1);
+  const visibleServices = services.slice(0, 5);
+  const maximum = Math.max(...visibleServices.map((item) => item[1]), 1);
   return <article className="panel services-panel"><div className="panel-heading"><div><p className="eyebrow">Demanda</p><h3>Principais motivos de contato</h3></div><span className="count-badge">Top 5</span></div><div className="service-list">
-    {services.map(([service, count], index) => <div className="service-row" key={service}><span className="service-rank">{String(index + 1).padStart(2, "0")}</span><div><div className="service-name"><span>{service.replace("Devoluções - ", "")}</span><strong>{count}</strong></div><div className="service-track"><span style={{ width: `${(count / maximum) * 100}%` }} /></div></div></div>)}
-    {!services.length ? <p className="empty-state">Nenhum motivo de contato disponível.</p> : null}
+    {visibleServices.map(([service, count], index) => <div className="service-row" key={service}><span className="service-rank">{String(index + 1).padStart(2, "0")}</span><div><div className="service-name"><span>{service.replace("Devoluções - ", "")}</span><strong>{count}</strong></div><div className="service-track"><span style={{ width: `${(count / maximum) * 100}%` }} /></div></div></div>)}
+    {!visibleServices.length ? <p className="empty-state">Nenhum motivo de contato disponível.</p> : null}
   </div></article>;
 }
 
@@ -519,9 +524,10 @@ export default function Dashboard({ userName, userRole, hasFullAccess, initialDa
   }, []);
 
   const names = scopedDashboard ? activityNames(scopedDashboard) : [];
+  const userDataName = displayToDataAgentName[userName] ?? userName;
   useEffect(() => {
-    if (names.length && !names.includes(activeName)) setActiveName(names.includes(userName) ? userName : names[0]);
-  }, [activeName, names.join("|"), userName]);
+    if (names.length && !names.includes(activeName)) setActiveName(names.includes(userDataName) ? userDataName : names[0]);
+  }, [activeName, names.join("|"), userDataName]);
 
   function chooseTeam(team: TeamName) {
     if (!visibleTeams.includes(team)) return;
@@ -558,7 +564,7 @@ export default function Dashboard({ userName, userRole, hasFullAccess, initialDa
   const minTmpa = data?.minFirstResponseSeconds ?? (fallbackFirst.length ? Math.min(...fallbackFirst) : 0);
   const maxTmpa = data?.maxFirstResponseSeconds ?? (fallbackFirst.length ? Math.max(...fallbackFirst) : 0);
   const avayaDetailData = avayaDetailName ? avayaDashboard.agents[avayaDetailName] : null;
-  const avayaAgentNames = hasFullAccess ? avayaNamesForContext(avayaDashboard, selectedTeam, selectedLeaderGroup) : [userName].filter((name) => avayaDashboard.agents[name]);
+  const avayaAgentNames = hasFullAccess ? avayaNamesForContext(avayaDashboard, selectedTeam, selectedLeaderGroup) : [userDataName].filter((name) => avayaDashboard.agents[name]);
   const avayaTeamData = aggregateAvayaAgents(avayaAgentNames.map((name) => avayaDashboard.agents[name]).filter(Boolean));
   const loggedRows = loggedComparisonRows(avayaDashboard, avayaAgentNames, scopedDashboard);
   const avayaAgentData = avayaDashboard.agents[activeName];
