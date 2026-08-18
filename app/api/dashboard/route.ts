@@ -13,11 +13,14 @@ async function authenticatedUser() {
 }
 
 function dashboardTeam(dashboard: DashboardData) {
-  const isCurrentSupplyHistory = dashboard.meta.periodKey === "2026-07"
+  return isOfficialSupplyJuly(dashboard) ? "Time Fornecimento" : (dashboard.meta.team ?? "Time Fornecimento");
+}
+
+function isOfficialSupplyJuly(dashboard: DashboardData) {
+  return dashboard.meta.periodKey === "2026-07"
     && dashboard.meta.serviceRows === 1142
     && dashboard.agents["Luciano Padilha"]?.attendanceCount === 308
     && dashboard.agents["Lívia Neves"]?.attendanceCount === 273;
-  return isCurrentSupplyHistory ? "Time Fornecimento" : (dashboard.meta.team ?? "Time Fornecimento");
 }
 
 function dashboardPeriodKey(dashboard: DashboardData) {
@@ -28,7 +31,11 @@ function mergeDashboards(dashboards: DashboardData[]) {
   const unique = new Map<string, DashboardData>();
   dashboards.forEach((dashboard) => {
     const team = dashboardTeam(dashboard);
-    unique.set(`${team}:${dashboardPeriodKey(dashboard)}`, { ...dashboard, meta: { ...dashboard.meta, team } });
+    const key = `${team}:${dashboardPeriodKey(dashboard)}`;
+    const normalized = { ...dashboard, meta: { ...dashboard.meta, team } };
+    const current = unique.get(key);
+    if (current && isOfficialSupplyJuly(current) && !isOfficialSupplyJuly(normalized)) return;
+    unique.set(key, normalized);
   });
   return [...unique.values()];
 }
