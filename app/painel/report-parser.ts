@@ -52,6 +52,20 @@ function parseDuration(value: unknown) {
   return 0;
 }
 
+function parseOptionalDuration(value: unknown) {
+  const text = String(value ?? "").trim();
+  if (!text || text === "-" || text.toUpperCase() === "#VALOR!") return null;
+  const seconds = parseDuration(text);
+  return seconds || /\b0{1,2}:0{2}:0{2}\b/.test(text) ? seconds : null;
+}
+
+function rowValue(row: ReportRow, ...keys: string[]) {
+  for (const key of keys) {
+    if (key in row) return row[key];
+  }
+  return undefined;
+}
+
 function parseDelimited(text: string) {
   const firstLine = text.replace(/^\uFEFF/, "").split(/\r?\n/, 1)[0] ?? "";
   const delimiter = [";", "\t", ","].sort((a, b) => firstLine.split(b).length - firstLine.split(a).length)[0];
@@ -143,7 +157,7 @@ function ratingName(value: unknown): RatingName | null {
 
 function isFinishedService(row: ReportRow) {
   const status = normalize(row.Status);
-  return Boolean(parseDate(row["Data de finalização"]))
+  return Boolean(parseDate(rowValue(row, "Data de finalização", "Data de finaliza��o")))
     || status === "FINALIZADO"
     || status === "FINALIZADO POR INATIVIDADE";
 }
@@ -204,12 +218,15 @@ export async function processReportFiles(
     const status = String(row.Status || "Sem status");
     const seconds = parseDuration(row["Tempo de Atendimento"]);
     const queueSeconds = parseDuration(row["Tempo em Fila"]);
+    const hasFirstResponseColumn = "Primeiro atendimento" in row;
+    const firstResponseFromColumn = parseOptionalDuration(row["Primeiro atendimento"]);
     const firstAttendance = parseDate(row["Data de Atendimento"]);
-    const firstResponseSeconds = firstAttendance && entryDate && firstAttendance >= entryDate
+    const firstResponseFromDates = firstAttendance && entryDate && firstAttendance >= entryDate
       ? Math.round((firstAttendance.getTime() - entryDate.getTime()) / 1000)
       : null;
+    const firstResponseSeconds = hasFirstResponseColumn ? firstResponseFromColumn : firstResponseFromDates;
     const finished = isFinishedService(row);
-    const service = String(row["Classificação"] || row["Serviço"] || "Sem classificação");
+    const service = String(rowValue(row, "Classificação", "Classifica��o", "Serviço", "Servi�o") || "Sem classificação");
     const call: RecentCall = {
       protocol: String(row.Protocolo || "—"), date: String(row["Data de Entrada"] || "—"),
       service, status, seconds, queueSeconds, finished, firstResponseSeconds,
