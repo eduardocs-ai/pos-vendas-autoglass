@@ -645,6 +645,6 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   {attendanceDetailOpen && data ? <AttendanceDetails name={activeName} calls={data.attendanceDetails ?? data.recent} onClose={() => setAttendanceDetailOpen(false)} /> : null}
   {surveyDetailOpen && data ? <SurveyDetails name={activeName} data={data} filter={ratingFilter} onFilterChange={setRatingFilter} onClose={() => setSurveyDetailOpen(false)} /> : null}
 
-  <footer className="dashboard-note"><span>i</span><p><strong>Como calculamos:</strong> TMA considera os registros finalizados, inclusive por inatividade. TMPA mede da abertura até o primeiro atendimento registrado. Engajamento das notas é a quantidade de avaliações recebidas dividida pela quantidade de atendimentos do período.</p></footer>
+  <footer className="dashboard-note"><span>i</span><p><strong>Como calculamos:</strong> TMA considera os registros finalizados, inclusive por inatividade. TMPA mede o tempo entre a Data de Atendimento e a Primeira Mensagem do agente; registros acima de 1h ficam fora apenas desse cálculo. Engajamento das notas é a quantidade de avaliações recebidas dividida pela quantidade de atendimentos do período.</p></footer>
   </section></main>;
 }
