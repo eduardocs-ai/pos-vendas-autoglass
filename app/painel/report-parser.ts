@@ -182,14 +182,18 @@ export async function processReportFiles(
   }
 
   const services = dedupe(serviceRows, ["Protocolo", "Agente", "Data de Entrada"]);
+  const hasOfficialServiceReport = services.some((row) => !("Primeiro atendimento" in row));
+  const officialServices = hasOfficialServiceReport
+    ? services.filter((row) => !("Primeiro atendimento" in row))
+    : services;
   const surveys = dedupe(surveyRows, ["Protocolo", "Agente", "Data"]);
   const pauses = dedupe(pauseRows, ["Agente", "Pausa", "Data da Pausa", "Data da Despausa"]);
   const logins = dedupe(loginRows, ["Agente", "Data de Login", "Data de Logout"]);
-  if (!services.length) {
+  if (!officialServices.length) {
     throw new Error("Selecione o relatório analítico de atendimentos.");
   }
 
-  const targetServiceDates = services
+  const targetServiceDates = officialServices
     .filter((row) => AGENT_ALIASES[normalize(row.Agente)])
     .map((row) => parseDate(row["Data de Entrada"]))
     .filter((date): date is Date => Boolean(date));
@@ -211,7 +215,7 @@ export async function processReportFiles(
 
   for (const name of AGENTS) { serviceBuckets[name] = {}; callsByAgent[name] = []; }
 
-  for (const row of services) {
+  for (const row of officialServices) {
     const agent = AGENT_ALIASES[normalize(row.Agente)];
     const entryDate = parseDate(row["Data de Entrada"]);
     if (!agent || !inPeriod(entryDate)) continue;
@@ -341,7 +345,7 @@ export async function processReportFiles(
   return {
     meta: {
       period, periodKey, team, firstResponseFormula: "tmpa_attendance_to_first_agent_message_max_1h",
-      serviceRows: services.length, surveyRows: surveys.length,
+      serviceRows: officialServices.length, surveyRows: surveys.length,
       statusCounts, agentCounts, importedAt: new Date().toISOString(), sourceFiles: files.map((file) => file.name),
     },
     agents,
