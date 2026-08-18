@@ -230,7 +230,9 @@ export async function processReportFiles(
       ? Math.round((firstAgentMessage.getTime() - firstAttendance.getTime()) / 1000)
       : null;
     const rawFirstResponseSeconds = hasFirstResponseColumn ? firstResponseFromColumn : firstResponseFromDates;
-    const firstResponseSeconds = rawFirstResponseSeconds !== null && rawFirstResponseSeconds <= 3600 ? rawFirstResponseSeconds : null;
+    const firstResponseSeconds = rawFirstResponseSeconds !== null && (team === "Time Cliente" || rawFirstResponseSeconds <= 3600)
+      ? rawFirstResponseSeconds
+      : null;
     const finished = isFinishedService(row);
     const service = String(rowValue(row, "Classificação", "Classifica��o", "Serviço", "Servi�o") || "Sem classificação");
     const call: RecentCall = {
@@ -344,7 +346,12 @@ export async function processReportFiles(
 
   return {
     meta: {
-      period, periodKey, team, firstResponseFormula: "tmpa_attendance_to_first_agent_message_max_1h",
+      period,
+      periodKey,
+      team,
+      firstResponseFormula: team === "Time Cliente"
+        ? "tmpa_attendance_to_first_agent_message_all_records"
+        : "tmpa_attendance_to_first_agent_message_max_1h",
       serviceRows: officialServices.length, surveyRows: surveys.length,
       statusCounts, agentCounts, importedAt: new Date().toISOString(), sourceFiles: files.map((file) => file.name),
     },
