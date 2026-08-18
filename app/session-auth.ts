@@ -4,7 +4,7 @@ export const SESSION_COOKIE = "pos_vendas_session";
 const SESSION_SECONDS = 60 * 60 * 12;
 
 const USERS = {
-  "luciano.padilla": { displayName: "Luciano Padilha", role: "agent" },
+  "luciano.padilla": { displayName: "Luciano Padilla", role: "agent" },
   "livia.neves": { displayName: "Lívia Neves", role: "agent" },
   "eduardo.calegari": { displayName: "Eduardo Calegari", role: "coordinator" },
   "amanda.piaz": { displayName: "Amanda Piaz", role: "agent" },
