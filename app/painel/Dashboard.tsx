@@ -64,11 +64,14 @@ const leaderGroups = [
 ];
 
 function dashboardTeam(dashboard: DashboardData): TeamName {
-  const isCurrentSupplyHistory = dashboard.meta.periodKey === "2026-07"
+  return isOfficialSupplyJuly(dashboard) ? "Time Fornecimento" : (dashboard.meta.team ?? "Time Fornecimento");
+}
+
+function isOfficialSupplyJuly(dashboard: DashboardData) {
+  return dashboard.meta.periodKey === "2026-07"
     && dashboard.meta.serviceRows === 1142
     && dashboard.agents["Luciano Padilha"]?.attendanceCount === 308
     && dashboard.agents["Lívia Neves"]?.attendanceCount === 273;
-  return isCurrentSupplyHistory ? "Time Fornecimento" : (dashboard.meta.team ?? "Time Fornecimento");
 }
 
 function normalizeDashboardData(dashboard: DashboardData): DashboardData {
@@ -98,7 +101,12 @@ function sortDashboards(dashboards: DashboardData[]) {
 
 function mergeDashboards(dashboards: DashboardData[]) {
   const unique = new Map<string, DashboardData>();
-  dashboards.forEach((dashboard) => unique.set(`${dashboardTeam(dashboard)}:${dashboardPeriodKey(dashboard)}`, dashboard));
+  dashboards.forEach((dashboard) => {
+    const key = `${dashboardTeam(dashboard)}:${dashboardPeriodKey(dashboard)}`;
+    const current = unique.get(key);
+    if (current && isOfficialSupplyJuly(current) && !isOfficialSupplyJuly(dashboard)) return;
+    unique.set(key, dashboard);
+  });
   return sortDashboards([...unique.values()]);
 }
 
