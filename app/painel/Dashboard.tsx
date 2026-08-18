@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import avayaData from "../avaya-data.json";
-import dashboardData from "../dashboard-data.json";
-import clientDashboardData from "../dashboard-client-data.json";
 import { processReportFiles } from "./report-parser";
 import LogoutButton from "./LogoutButton";
 import type { AgentData, DailyAttendance, DashboardData, RatingName, RecentCall, TeamName } from "./dashboard-types";
@@ -32,7 +29,7 @@ type AvayaMetrics = {
 };
 
 type AvayaAgentData = AvayaMetrics & { daily: Record<string, AvayaMetrics> };
-type AvayaDashboardData = {
+export type AvayaDashboardData = {
   meta: {
     period: string;
     hasPauseData: boolean;
@@ -42,8 +39,6 @@ type AvayaDashboardData = {
   team: AvayaAgentData;
   agents: Record<string, AvayaAgentData>;
 };
-
-const avayaDashboard = avayaData as unknown as AvayaDashboardData;
 
 const ratingOrder: RatingName[] = ["Ruim", "Regular", "Bom", "Ótimo"];
 const ratingColors: Record<RatingName, string> = { Ruim: "#ef5b55", Regular: "#f5a524", Bom: "#55a8ff", Ótimo: "#20b486" };
@@ -81,14 +76,6 @@ function normalizeDashboardData(dashboard: DashboardData): DashboardData {
     delete agents["Amanda Piazza"];
   }
   const normalized = { ...dashboard, meta: { ...dashboard.meta, team: dashboardTeam(dashboard) }, agents };
-  const bundled = dashboardData as unknown as DashboardData;
-  if (
-    normalized.meta.team === "Time Fornecimento"
-    && normalized.meta.firstResponseFormula !== "tmpa_attendance_to_first_agent_message_max_1h"
-    && normalized.meta.period === bundled.meta.period
-  ) {
-    return normalizeDashboardData({ ...bundled, meta: { ...bundled.meta, team: "Time Fornecimento" } });
-  }
   return normalized;
 }
 
@@ -112,13 +99,6 @@ function mergeDashboards(dashboards: DashboardData[]) {
     unique.set(key, dashboard);
   });
   return sortDashboards([...unique.values()]);
-}
-
-function bundledDashboards() {
-  return mergeDashboards([
-    normalizeDashboardData(dashboardData as unknown as DashboardData),
-    normalizeDashboardData(clientDashboardData as unknown as DashboardData),
-  ]);
 }
 
 function formatDuration(seconds: number, total = false) {
@@ -180,7 +160,7 @@ function scopeDashboardToAgents(dashboard: DashboardData, names: string[]) {
   return { ...dashboard, agents: Object.fromEntries(Object.entries(dashboard.agents).filter(([name]) => allowed.has(name))) };
 }
 
-function avayaNamesForContext(team: TeamName, leaderGroup?: { agents: string[] } | null) {
+function avayaNamesForContext(avayaDashboard: AvayaDashboardData, team: TeamName, leaderGroup?: { agents: string[] } | null) {
   const teamAgents = teamAgentGroups[team];
   return teamAgents.filter((name) =>
     avayaDashboard.agents[name]
@@ -189,7 +169,7 @@ function avayaNamesForContext(team: TeamName, leaderGroup?: { agents: string[] }
   );
 }
 
-function loggedComparisonRows(names: string[], dashboard?: DashboardData | null) {
+function loggedComparisonRows(avayaDashboard: AvayaDashboardData, names: string[], dashboard?: DashboardData | null) {
   return names.map((name) => {
     const agent = dashboard?.agents[name] as (AgentData & { loggedSeconds?: number }) | undefined;
     const avaya = avayaDashboard.agents[name];
@@ -398,16 +378,16 @@ function ImportPanel({ team, onUpdated }: { team: TeamName; onUpdated: (dashboar
   </div></section>;
 }
 
-function AvayaAgentDetails({ name, data, onClose }: { name: string; data: AvayaAgentData; onClose: () => void }) {
+function AvayaAgentDetails({ name, data, period, hasPauseData, hasLoggedData, onClose }: { name: string; data: AvayaAgentData; period: string; hasPauseData: boolean; hasLoggedData: boolean; onClose: () => void }) {
   const days = Object.entries(data.daily).sort(([a], [b]) => a.localeCompare(b));
   return <div className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="avaya-detail-title">
     <section className="modal-card avaya-modal">
       <div className="modal-heading">
-        <div><p className="eyebrow">Detalhes por dia</p><h2 id="avaya-detail-title">{name}</h2><p>Informações Avaya em {avayaDashboard.meta.period.toLowerCase()}.</p></div>
+        <div><p className="eyebrow">Detalhes por dia</p><h2 id="avaya-detail-title">{name}</h2><p>Informações Avaya em {period.toLowerCase()}.</p></div>
         <button type="button" className="modal-close" onClick={onClose} aria-label="Fechar detalhes">×</button>
       </div>
       <div className="table-wrap avaya-table-wrap"><table className="avaya-table"><thead><tr><th>Dia</th><th>Chamadas</th><th>Perdidas</th><th>Abandonadas</th><th>Transferidas</th><th>Pausas</th><th>T. pausa</th><th>T. logado</th></tr></thead><tbody>
-        {days.map(([day, item]) => <tr key={day}><td><strong>{formatDateLabel(day)}</strong></td><td>{item.callCount}</td><td>{item.missedCalls}</td><td>{item.abandonedCalls}</td><td>{item.transferredCalls}</td><td>{avayaDashboard.meta.hasPauseData ? item.pauseCount : "—"}</td><td>{formatMaybeDuration(item.averagePauseSeconds, avayaDashboard.meta.hasPauseData)}</td><td>{formatMaybeDuration(item.averageLoggedSeconds, avayaDashboard.meta.hasLoggedData)}</td></tr>)}
+        {days.map(([day, item]) => <tr key={day}><td><strong>{formatDateLabel(day)}</strong></td><td>{item.callCount}</td><td>{item.missedCalls}</td><td>{item.abandonedCalls}</td><td>{item.transferredCalls}</td><td>{hasPauseData ? item.pauseCount : "—"}</td><td>{formatMaybeDuration(item.averagePauseSeconds, hasPauseData)}</td><td>{formatMaybeDuration(item.averageLoggedSeconds, hasLoggedData)}</td></tr>)}
       </tbody></table>{!days.length ? <p className="empty-state">Nenhuma chamada Avaya para este agente no período.</p> : null}</div>
     </section>
   </div>;
@@ -464,7 +444,7 @@ function LoggedComparisonPanel({ rows, team }: { rows: ReturnType<typeof loggedC
   </tbody></table></div></section>;
 }
 
-function LeadershipPanel({ dashboard, userRole, userName }: { dashboard: DashboardData; userRole: DashboardUserRole; userName: string }) {
+function LeadershipPanel({ dashboard, avayaDashboard, userRole, userName }: { dashboard: DashboardData; avayaDashboard: AvayaDashboardData; userRole: DashboardUserRole; userName: string }) {
   const visibleGroups = userRole === "coordinator" ? leaderGroups : leaderGroups.filter((group) => group.leader === userName);
   if (!visibleGroups.length) return null;
   return <section className="panel leadership-panel">
@@ -504,12 +484,13 @@ function CoordinatorLeaderPicker({ onSelect }: { onSelect: (leader: string) => v
   </section>;
 }
 
-export default function Dashboard({ userName, userRole }: { userName: string; userRole: DashboardUserRole }) {
-  const initialDashboards = useMemo(() => bundledDashboards(), []);
+export default function Dashboard({ userName, userRole, hasFullAccess, initialDashboards: initialDashboardData, avayaDashboard }: { userName: string; userRole: DashboardUserRole; hasFullAccess: boolean; initialDashboards: DashboardData[]; avayaDashboard: AvayaDashboardData }) {
+  const initialDashboards = useMemo(() => mergeDashboards(initialDashboardData.map(normalizeDashboardData)), [initialDashboardData]);
   const initial = initialDashboards.find((dashboard) => dashboardTeam(dashboard) === "Time Fornecimento") ?? initialDashboards[0];
+  const initialTeam = initial ? dashboardTeam(initial) : "Time Fornecimento";
   const [availableDashboards, setAvailableDashboards] = useState<DashboardData[]>(initialDashboards);
-  const [selectedTeam, setSelectedTeam] = useState<TeamName>("Time Fornecimento");
-  const [selectedPeriodKey, setSelectedPeriodKey] = useState(dashboardPeriodKey(initial));
+  const [selectedTeam, setSelectedTeam] = useState<TeamName>(initialTeam);
+  const [selectedPeriodKey, setSelectedPeriodKey] = useState(initial ? dashboardPeriodKey(initial) : "2026-07");
   const [activeView, setActiveView] = useState<ViewName>("overview");
   const [activeName, setActiveName] = useState(userName);
   const [ratingFilter, setRatingFilter] = useState<RatingFilter>("Todas");
@@ -517,11 +498,12 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const [productivityDetailOpen, setProductivityDetailOpen] = useState(false);
   const [attendanceDetailOpen, setAttendanceDetailOpen] = useState(false);
   const [surveyDetailOpen, setSurveyDetailOpen] = useState(false);
-  const [selectedLeaderName, setSelectedLeaderName] = useState<string | null>(userRole === "leader" ? userName : null);
+  const [selectedLeaderName, setSelectedLeaderName] = useState<string | null>(userRole === "leader" && hasFullAccess ? userName : null);
+  const visibleTeams = useMemo(() => teams.filter((team) => availableDashboards.some((dashboard) => dashboardTeam(dashboard) === team)), [availableDashboards]);
   const teamDashboards = useMemo(() => sortDashboards(availableDashboards.filter((dashboard) => dashboardTeam(dashboard) === selectedTeam)), [availableDashboards, selectedTeam]);
   const currentDashboard = teamDashboards.find((dashboard) => dashboardPeriodKey(dashboard) === selectedPeriodKey) ?? teamDashboards[teamDashboards.length - 1] ?? null;
   const selectedLeaderGroup = selectedLeaderName ? leaderGroups.find((group) => group.leader === selectedLeaderName) ?? null : null;
-  const isChoosingLeader = userRole === "coordinator" && !selectedLeaderGroup;
+  const isChoosingLeader = hasFullAccess && userRole === "coordinator" && !selectedLeaderGroup;
   const scopedDashboard = currentDashboard && selectedLeaderGroup ? scopeDashboardToAgents(currentDashboard, selectedLeaderGroup.agents) : currentDashboard;
 
   useEffect(() => {
@@ -530,7 +512,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
       if (!active || !result?.dashboard) return;
       const loaded = mergeDashboards([...initialDashboards, ...(result.dashboards?.length ? result.dashboards : [result.dashboard]).map(normalizeDashboardData)]);
       setAvailableDashboards(loaded);
-      const selected = loaded.filter((dashboard) => dashboardTeam(dashboard) === "Time Fornecimento");
+      const selected = loaded.filter((dashboard) => dashboardTeam(dashboard) === selectedTeam);
       if (selected.length) setSelectedPeriodKey(dashboardPeriodKey(selected[selected.length - 1]));
     }).catch(() => undefined);
     return () => { active = false; };
@@ -542,6 +524,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   }, [activeName, names.join("|"), userName]);
 
   function chooseTeam(team: TeamName) {
+    if (!visibleTeams.includes(team)) return;
     setSelectedTeam(team);
     const dashboards = sortDashboards(availableDashboards.filter((dashboard) => dashboardTeam(dashboard) === team));
     if (dashboards.length) setSelectedPeriodKey(dashboardPeriodKey(dashboards[dashboards.length - 1]));
@@ -549,6 +532,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   }
 
   function updateDashboard(next: DashboardData) {
+    if (!hasFullAccess) return;
     const normalized = normalizeDashboardData(next);
     setAvailableDashboards((current) => mergeDashboards([...current, normalized]));
     setSelectedTeam(dashboardTeam(normalized));
@@ -574,26 +558,26 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
   const minTmpa = data?.minFirstResponseSeconds ?? (fallbackFirst.length ? Math.min(...fallbackFirst) : 0);
   const maxTmpa = data?.maxFirstResponseSeconds ?? (fallbackFirst.length ? Math.max(...fallbackFirst) : 0);
   const avayaDetailData = avayaDetailName ? avayaDashboard.agents[avayaDetailName] : null;
-  const avayaAgentNames = avayaNamesForContext(selectedTeam, selectedLeaderGroup);
+  const avayaAgentNames = hasFullAccess ? avayaNamesForContext(avayaDashboard, selectedTeam, selectedLeaderGroup) : [userName].filter((name) => avayaDashboard.agents[name]);
   const avayaTeamData = aggregateAvayaAgents(avayaAgentNames.map((name) => avayaDashboard.agents[name]).filter(Boolean));
-  const loggedRows = loggedComparisonRows(avayaAgentNames, scopedDashboard);
+  const loggedRows = loggedComparisonRows(avayaDashboard, avayaAgentNames, scopedDashboard);
   const avayaAgentData = avayaDashboard.agents[activeName];
   const productivityRows = data ? agentProductivityRows(data, avayaAgentData) : [];
   const productivityTotal = data ? data.attendanceCount + (avayaAgentData?.callCount ?? 0) : 0;
   const pauseSummary = Object.entries(avayaTeamData.pauseTypes);
   const roleLabel = userRole === "coordinator" ? "Coordenação" : userRole === "leader" ? "Líder" : "Agente";
 
-  const menu: Array<{ view: ViewName; icon: string; label: string }> = [
+  const menu = ([
     { view: "overview", icon: "⌂", label: "Visão Geral" }, { view: "agents", icon: "◎", label: "Visão Agente" }, { view: "avaya", icon: "☎", label: "Avaya" }, { view: "uploads", icon: "⇧", label: "Uploads" },
-  ];
+  ] satisfies Array<{ view: ViewName; icon: string; label: string }>).filter((item) => hasFullAccess || item.view !== "uploads");
 
   return <main className="dashboard-shell"><aside className="sidebar"><button className="sidebar-brand brand-button" onClick={() => setActiveView("overview")} aria-label="Abrir visão geral"><img src="/autoglass-logo-oficial.png" alt="Autoglass" width={132} height={40} /><span>PÓS-VENDAS</span></button><nav aria-label="Navegação principal">
     {menu.map((item) => <button key={item.view} className={activeView === item.view ? "nav-item active" : "nav-item"} onClick={() => setActiveView(item.view)}><span>{item.icon}</span>{item.label}</button>)}
   </nav>
     <div className="sidebar-foot"><p>Competência</p><strong>{currentDashboard?.meta.period ?? "Sem dados"}</strong><span>{selectedTeam}</span></div>
   </aside><section className="dashboard-main"><header className="topbar"><div><p className="eyebrow">Painel de indicadores</p><h1>Olá, {firstName}</h1></div><div className="topbar-actions">
-    {userRole === "coordinator" && selectedLeaderGroup ? <button type="button" className="detail-button" onClick={() => { setSelectedLeaderName(null); setActiveView("overview"); }}>Trocar liderança</button> : null}
-    <div className="team-switcher" role="group" aria-label="Selecionar time"><div className="team-options">{teams.map((team) => <button key={team} type="button" className={selectedTeam === team ? "active" : ""} aria-pressed={selectedTeam === team} onClick={() => chooseTeam(team)}>{team.replace("Time ", "")}</button>)}</div></div>
+    {hasFullAccess && userRole === "coordinator" && selectedLeaderGroup ? <button type="button" className="detail-button" onClick={() => { setSelectedLeaderName(null); setActiveView("overview"); }}>Trocar liderança</button> : null}
+    {hasFullAccess && visibleTeams.length > 1 ? <div className="team-switcher" role="group" aria-label="Selecionar time"><div className="team-options">{visibleTeams.map((team) => <button key={team} type="button" className={selectedTeam === team ? "active" : ""} aria-pressed={selectedTeam === team} onClick={() => chooseTeam(team)}>{team.replace("Time ", "")}</button>)}</div></div> : null}
     <div className="period-navigator"><button type="button" className="period-arrow" onClick={() => goToPeriod(-1)} disabled={currentPeriodIndex <= 0}>‹</button><span className="period-chip">◷ {currentDashboard?.meta.period ?? "Sem competência"}</span><button type="button" className="period-arrow" onClick={() => goToPeriod(1)} disabled={currentPeriodIndex < 0 || currentPeriodIndex >= teamDashboards.length - 1}>›</button></div><LogoutButton userName={userName} roleLabel={roleLabel} />
   </div></header>
 
@@ -609,7 +593,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
     <KpiCard icon="★" tone="engagement" title="% de engajamento das notas" value={formatPercent(metrics.engagement)}><p><strong>Número exato</strong></p><p>{metrics.ratingTotal} notas ÷ {metrics.attendanceCount} atendimentos × 100 = <b>{formatPercent(metrics.engagement)}</b></p></KpiCard>
     <KpiCard icon="◎" tone="attendance-total" title="Quantidade de atendimentos" value={metrics.attendanceCount}><p><strong>Média por dia</strong></p><p>{metrics.attendanceCount} ÷ {days} dias = <b>{(metrics.attendanceCount / days).toLocaleString("pt-BR", { maximumFractionDigits: 1 })} atendimentos/dia</b></p></KpiCard>
     <KpiCard icon="☎" tone="sky" title="Ligações atendidas" value={avayaTeamData.answeredCalls}><p><strong>0800 · {selectedTeam.replace("Time ", "")}</strong></p><p>{avayaTeamData.answeredCalls} ligações atendidas de {avayaTeamData.callCount} chamadas totais no período.</p></KpiCard>
-  </section><section className="charts-grid"><RatingDistribution ratings={metrics.ratings} total={metrics.ratingTotal} data={{ ratingTotal: metrics.ratingTotal, ratings: metrics.ratings, csat: metrics.csat }} /><ServicesPanel services={metrics.topServices} /></section><LoggedComparisonPanel rows={loggedRows} team={selectedTeam} />{!selectedLeaderGroup ? <LeadershipPanel dashboard={scopedDashboard} userRole={userRole} userName={userName} /> : null}</section> : null}
+  </section><section className="charts-grid"><RatingDistribution ratings={metrics.ratings} total={metrics.ratingTotal} data={{ ratingTotal: metrics.ratingTotal, ratings: metrics.ratings, csat: metrics.csat }} /><ServicesPanel services={metrics.topServices} /></section><LoggedComparisonPanel rows={loggedRows} team={selectedTeam} />{hasFullAccess && !selectedLeaderGroup ? <LeadershipPanel dashboard={scopedDashboard} avayaDashboard={avayaDashboard} userRole={userRole} userName={userName} /> : null}</section> : null}
 
   {!isChoosingLeader && scopedDashboard && data && activeView === "agents" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Desempenho individual</p><h2>Visão Agente</h2><p>Todos os indicadores exclusivos de cada agente.</p></div></div><AgentSelector names={names} activeName={activeName} dashboard={scopedDashboard} onChange={(name) => { setActiveName(name); setRatingFilter("Todas"); }} /><div className="profile-heading compact"><div><h2>{activeName}</h2><p>{selectedLeaderGroup ? `${selectedLeaderGroup.leader} · ` : ""}{selectedTeam} · {scopedDashboard.meta.period}</p></div></div><section className="kpi-grid">
     <KpiCard icon="◷" tone="primary" title="Tempo médio de atendimento" value={formatDuration(data.averageSeconds)}><div className="sla-range"><span>Menor SLA <b>{formatDuration(minTma)}</b></span><span>Maior SLA <b>{formatDuration(maxTma)}</b></span></div></KpiCard>
@@ -651,7 +635,7 @@ export default function Dashboard({ userName, userRole }: { userName: string; us
 
   {activeView === "uploads" ? <section className="view-page"><div className="page-heading"><div><p className="eyebrow">Gestão de dados</p><h2>Uploads</h2><p>Importe os relatórios no time selecionado no topo da tela.</p></div></div><ImportPanel team={selectedTeam} onUpdated={updateDashboard} /></section> : null}
 
-  {avayaDetailName && avayaDetailData ? <AvayaAgentDetails name={avayaDetailName} data={avayaDetailData} onClose={() => setAvayaDetailName(null)} /> : null}
+  {avayaDetailName && avayaDetailData ? <AvayaAgentDetails name={avayaDetailName} data={avayaDetailData} period={avayaDashboard.meta.period} hasPauseData={avayaDashboard.meta.hasPauseData} hasLoggedData={avayaDashboard.meta.hasLoggedData} onClose={() => setAvayaDetailName(null)} /> : null}
   {productivityDetailOpen && data ? <ProductivityDetails name={activeName} rows={productivityRows} onClose={() => setProductivityDetailOpen(false)} /> : null}
   {attendanceDetailOpen && data ? <AttendanceDetails name={activeName} calls={data.attendanceDetails ?? data.recent} onClose={() => setAttendanceDetailOpen(false)} /> : null}
   {surveyDetailOpen && data ? <SurveyDetails name={activeName} data={data} filter={ratingFilter} onFilterChange={setRatingFilter} onClose={() => setSurveyDetailOpen(false)} /> : null}
